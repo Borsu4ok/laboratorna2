@@ -1,0 +1,1484 @@
+
+lab_O3:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	endbr64
+    1004:	sub    rsp,0x8
+    1008:	mov    rax,QWORD PTR [rip+0x3fe1]        # 4ff0 <__gmon_start__>
+    100f:	test   rax,rax
+    1012:	je     1016 <_init+0x16>
+    1014:	call   rax
+    1016:	add    rsp,0x8
+    101a:	ret
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	push   QWORD PTR [rip+0x3f4a]        # 4f70 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	jmp    QWORD PTR [rip+0x3f4c]        # 4f78 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102c:	nop    DWORD PTR [rax+0x0]
+    1030:	endbr64
+    1034:	push   0x0
+    1039:	jmp    1020 <_init+0x20>
+    103e:	xchg   ax,ax
+    1040:	endbr64
+    1044:	push   0x1
+    1049:	jmp    1020 <_init+0x20>
+    104e:	xchg   ax,ax
+    1050:	endbr64
+    1054:	push   0x2
+    1059:	jmp    1020 <_init+0x20>
+    105e:	xchg   ax,ax
+    1060:	endbr64
+    1064:	push   0x3
+    1069:	jmp    1020 <_init+0x20>
+    106e:	xchg   ax,ax
+    1070:	endbr64
+    1074:	push   0x4
+    1079:	jmp    1020 <_init+0x20>
+    107e:	xchg   ax,ax
+    1080:	endbr64
+    1084:	push   0x5
+    1089:	jmp    1020 <_init+0x20>
+    108e:	xchg   ax,ax
+    1090:	endbr64
+    1094:	push   0x6
+    1099:	jmp    1020 <_init+0x20>
+    109e:	xchg   ax,ax
+    10a0:	endbr64
+    10a4:	push   0x7
+    10a9:	jmp    1020 <_init+0x20>
+    10ae:	xchg   ax,ax
+    10b0:	endbr64
+    10b4:	push   0x8
+    10b9:	jmp    1020 <_init+0x20>
+    10be:	xchg   ax,ax
+    10c0:	endbr64
+    10c4:	push   0x9
+    10c9:	jmp    1020 <_init+0x20>
+    10ce:	xchg   ax,ax
+    10d0:	endbr64
+    10d4:	push   0xa
+    10d9:	jmp    1020 <_init+0x20>
+    10de:	xchg   ax,ax
+
+Disassembly of section .plt.got:
+
+00000000000010e0 <__cxa_finalize@plt>:
+    10e0:	endbr64
+    10e4:	jmp    QWORD PTR [rip+0x3eee]        # 4fd8 <__cxa_finalize@GLIBC_2.2.5>
+    10ea:	nop    WORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .plt.sec:
+
+00000000000010f0 <__printf_chk@plt>:
+    10f0:	endbr64
+    10f4:	jmp    QWORD PTR [rip+0x3e86]        # 4f80 <__printf_chk@GLIBC_2.3.4>
+    10fa:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001100 <rand@plt>:
+    1100:	endbr64
+    1104:	jmp    QWORD PTR [rip+0x3e7e]        # 4f88 <rand@GLIBC_2.2.5>
+    110a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001110 <_ZSt20__throw_length_errorPKc@plt>:
+    1110:	endbr64
+    1114:	jmp    QWORD PTR [rip+0x3e76]        # 4f90 <_ZSt20__throw_length_errorPKc@GLIBCXX_3.4>
+    111a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001120 <memset@plt>:
+    1120:	endbr64
+    1124:	jmp    QWORD PTR [rip+0x3e6e]        # 4f98 <memset@GLIBC_2.2.5>
+    112a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001130 <srand@plt>:
+    1130:	endbr64
+    1134:	jmp    QWORD PTR [rip+0x3e66]        # 4fa0 <srand@GLIBC_2.2.5>
+    113a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001140 <_Znwm@plt>:
+    1140:	endbr64
+    1144:	jmp    QWORD PTR [rip+0x3e5e]        # 4fa8 <_Znwm@GLIBCXX_3.4>
+    114a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001150 <_ZdlPvm@plt>:
+    1150:	endbr64
+    1154:	jmp    QWORD PTR [rip+0x3e56]        # 4fb0 <_ZdlPvm@CXXABI_1.3.9>
+    115a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001160 <__stack_chk_fail@plt>:
+    1160:	endbr64
+    1164:	jmp    QWORD PTR [rip+0x3e4e]        # 4fb8 <__stack_chk_fail@GLIBC_2.4>
+    116a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>:
+    1170:	endbr64
+    1174:	jmp    QWORD PTR [rip+0x3e46]        # 4fc0 <_ZNSt6chrono3_V212steady_clock3nowEv@GLIBCXX_3.4.19>
+    117a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001180 <_Unwind_Resume@plt>:
+    1180:	endbr64
+    1184:	jmp    QWORD PTR [rip+0x3e3e]        # 4fc8 <_Unwind_Resume@GCC_3.0>
+    118a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001190 <__isoc23_strtol@plt>:
+    1190:	endbr64
+    1194:	jmp    QWORD PTR [rip+0x3e36]        # 4fd0 <__isoc23_strtol@GLIBC_2.38>
+    119a:	nop    WORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .text:
+
+00000000000011c0 <main.cold>:
+
+      _GLIBCXX20_CONSTEXPR
+      ~_Vector_base() _GLIBCXX_NOEXCEPT
+      {
+	_M_deallocate(_M_impl._M_start,
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    11c0:	mov    rdi,QWORD PTR [rbp-0x50]
+      _GLIBCXX20_CONSTEXPR
+      void
+      _M_deallocate(pointer __p, size_t __n)
+      {
+	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+	if (__p)
+    11c4:	test   rdi,rdi
+    11c7:	je     1272 <main.cold+0xb2>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    11cd:	mov    rsi,QWORD PTR [rbp-0x40]
+    11d1:	sub    rsi,rdi
+	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+				     std::align_val_t(alignof(_Tp)));
+	    return;
+	  }
+#endif
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    11d4:	vzeroupper
+    11d7:	call   1150 <_ZdlPvm@plt>
+    11dc:	mov    rdi,QWORD PTR [rbp-0x70]
+	if (__p)
+    11e0:	test   rdi,rdi
+    11e3:	je     11f1 <main.cold+0x31>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    11e5:	mov    rsi,QWORD PTR [rbp-0x60]
+    11e9:	sub    rsi,rdi
+    11ec:	call   1150 <_ZdlPvm@plt>
+    11f1:	mov    rdi,QWORD PTR [rbp-0x90]
+	if (__p)
+    11f8:	test   rdi,rdi
+    11fb:	je     1209 <main.cold+0x49>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    11fd:	mov    rsi,QWORD PTR [rbp-0x80]
+    1201:	sub    rsi,rdi
+    1204:	call   1150 <_ZdlPvm@plt>
+	if (__p)
+    1209:	test   r13,r13
+    120c:	je     1220 <main.cold+0x60>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    120e:	mov    rsi,QWORD PTR [rbp-0x110]
+    1215:	mov    rdi,r13
+    1218:	sub    rsi,r13
+    121b:	call   1150 <_ZdlPvm@plt>
+    1220:	mov    rdi,QWORD PTR [rbp-0xd0]
+	if (__p)
+    1227:	test   rdi,rdi
+    122a:	je     123b <main.cold+0x7b>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    122c:	mov    rsi,QWORD PTR [rbp-0xc0]
+    1233:	sub    rsi,rdi
+    1236:	call   1150 <_ZdlPvm@plt>
+    123b:	mov    rdi,QWORD PTR [rbp-0xf0]
+	if (__p)
+    1242:	test   rdi,rdi
+    1245:	je     1256 <main.cold+0x96>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    1247:	mov    rsi,QWORD PTR [rbp-0xe0]
+    124e:	sub    rsi,rdi
+    1251:	call   1150 <_ZdlPvm@plt>
+      ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    1256:	mov    rax,QWORD PTR [rbp-0x38]
+    125a:	sub    rax,QWORD PTR fs:0x28
+    1263:	jne    126d <main.cold+0xad>
+    1265:	mov    rdi,rbx
+    1268:	call   1180 <_Unwind_Resume@plt>
+    126d:	call   1160 <__stack_chk_fail@plt>
+    1272:	vzeroupper
+    1275:	jmp    11dc <main.cold+0x1c>
+    127a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001280 <main>:
+
+KERNEL uint64_t fib(int k) {
+    return k < 2 ? static_cast<uint64_t>(k) : fib(k - 1) + fib(k - 2);
+}
+
+int main(int argc, char **argv) {
+    1280:	endbr64
+    1284:	push   rbp
+    1285:	mov    rbp,rsp
+    1288:	push   r15
+    128a:	push   r14
+    128c:	push   r13
+    128e:	push   r12
+    1290:	mov    r12d,0x1
+    1296:	push   rbx
+    1297:	sub    rsp,0x108
+    129e:	mov    rax,QWORD PTR fs:0x28
+    12a7:	mov    QWORD PTR [rbp-0x38],rax
+    12ab:	xor    eax,eax
+    int scale = (argc > 1) ? std::atoi(argv[1]) : 1;
+    12ad:	cmp    edi,0x1
+    12b0:	jle    12cf <main+0x4f>
+
+#ifdef __USE_EXTERN_INLINES
+__extern_inline int
+__NTH (atoi (const char *__nptr))
+{
+  return (int) strtol (__nptr, (char **) NULL, 10);
+    12b2:	mov    rdi,QWORD PTR [rsi+0x8]
+    12b6:	mov    edx,0xa
+    12bb:	xor    esi,esi
+    12bd:	call   1190 <__isoc23_strtol@plt>
+    if (scale < 1) scale = 1;
+    12c2:	mov    edx,0x1
+    12c7:	test   eax,eax
+    12c9:	cmovg  edx,eax
+    12cc:	mov    r12d,edx
+    std::srand(12345);
+    12cf:	mov    edi,0x3039
+    12d4:	call   1130 <srand@plt>
+
+    const int n = MAT_N;
+    std::vector<float>   A(static_cast<size_t>(n) * n), B(A.size()), C(A.size());
+    12d9:	lea    rdx,[rbp-0x50]
+    12dd:	mov    esi,0x100000
+    12e2:	lea    rdi,[rbp-0xf0]
+    12e9:	call   2140 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+      /**  Returns the number of elements in the %vector.  */
+      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+      size_type
+      size() const _GLIBCXX_NOEXCEPT
+      {
+	ptrdiff_t __dif = this->_M_impl._M_finish - this->_M_impl._M_start;
+    12ee:	mov    rsi,QWORD PTR [rbp-0xe8]
+    12f5:	lea    rax,[rbp-0xd0]
+    12fc:	lea    rdx,[rbp-0x50]
+    1300:	mov    rdi,rax
+    1303:	mov    QWORD PTR [rbp-0x108],rax
+    130a:	sub    rsi,QWORD PTR [rbp-0xf0]
+    1311:	sar    rsi,0x2
+    1315:	call   2140 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+    131a:	mov    rsi,QWORD PTR [rbp-0xe8]
+    1321:	lea    rdi,[rbp-0xb0]
+    1328:	lea    rdx,[rbp-0x50]
+    132c:	mov    QWORD PTR [rbp-0xb0],0x0
+    1337:	mov    QWORD PTR [rbp-0xa0],0x0
+    1342:	sub    rsi,QWORD PTR [rbp-0xf0]
+    1349:	sar    rsi,0x2
+    134d:	call   2140 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+    1352:	mov    rcx,QWORD PTR [rbp-0xa0]
+    std::vector<float>   x(VEC_N), y(VEC_N);
+    1359:	lea    rdx,[rbp-0x50]
+    135d:	mov    esi,0x400000
+    std::vector<float>   A(static_cast<size_t>(n) * n), B(A.size()), C(A.size());
+    1362:	mov    r13,QWORD PTR [rbp-0xb0]
+    1369:	mov    QWORD PTR [rbp-0x110],rcx
+    std::vector<float>   x(VEC_N), y(VEC_N);
+    1370:	lea    rcx,[rbp-0x90]
+    1377:	mov    rdi,rcx
+    137a:	mov    QWORD PTR [rbp-0xf8],rcx
+    1381:	call   2140 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+    1386:	lea    r8,[rbp-0x70]
+    138a:	lea    rdx,[rbp-0x50]
+    138e:	mov    esi,0x400000
+    1393:	mov    rdi,r8
+    1396:	mov    QWORD PTR [rbp-0x100],r8
+    139d:	call   2140 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    13a2:	mov    edi,0x2000000
+    13a7:	call   1140 <_Znwm@plt>
+	  // Allow std::_Construct to be used in constant expressions.
+	  std::construct_at(__p, std::forward<_Args>(__args)...);
+	  return;
+	}
+#endif
+      ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...);
+    13ac:	mov    DWORD PTR [rax],0x0
+	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    13b2:	lea    r15,[rax+0x2000000]
+	  if (__n > 0)
+	    {
+	      typename iterator_traits<_ForwardIterator>::value_type* __val
+		= std::__addressof(*__first);
+	      std::_Construct(__val);
+	      ++__first;
+    13b9:	lea    rdi,[rax+0x4]
+      typedef typename __gnu_cxx::__conditional_type<__load_outside_loop,
+						     const _Tp,
+						     const _Tp&>::__type _Up;
+      _Up __val(__value);
+      for (; __first != __last; ++__first)
+	*__first = __val;
+    13bd:	mov    edx,0x1fffffc
+    13c2:	xor    esi,esi
+    13c4:	mov    QWORD PTR [rbp-0x40],r15
+	this->_M_impl._M_start = this->_M_allocate(__n);
+    13c8:	mov    QWORD PTR [rbp-0x50],rax
+    13cc:	call   1120 <memset@plt>
+      // Called by the vector(n) constructor.
+      _GLIBCXX20_CONSTEXPR
+      void
+      _M_default_initialize(size_type __n)
+      {
+	this->_M_impl._M_finish =
+    13d1:	mov    QWORD PTR [rbp-0x48],r15
+    std::vector<int32_t> br(BR_N);
+
+    auto t0 = Clock::now(), t = t0;
+    13d5:	call   1170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    const auto t_start = t0; 
+    fill_random_f(A); fill_random_f(B); fill_random_f(x); fill_random_f(y);
+    13da:	lea    rdi,[rbp-0xf0]
+    auto t0 = Clock::now(), t = t0;
+    13e1:	mov    QWORD PTR [rbp-0x120],rax
+    13e8:	mov    r15,rax
+    fill_random_f(A); fill_random_f(B); fill_random_f(x); fill_random_f(y);
+    13eb:	call   1900 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    13f0:	mov    rdi,QWORD PTR [rbp-0x108]
+    13f7:	call   1900 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    13fc:	mov    rdi,QWORD PTR [rbp-0xf8]
+    1403:	call   1900 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    1408:	mov    rdi,QWORD PTR [rbp-0x100]
+    140f:	call   1900 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    fill_random_i(br);
+    1414:	lea    rdi,[rbp-0x50]
+    1418:	call   1940 <_ZL13fill_random_iRSt6vectorIiSaIiEE>
+    t = Clock::now(); std::printf("[init  ] %7.3f s\n", secs(t0, t)); t0 = t;
+    141d:	call   1170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+	  static constexpr _ToDur
+	  __cast(const duration<_Rep, _Period>& __d)
+	  {
+	    typedef typename _ToDur::rep			__to_rep;
+	    return _ToDur(static_cast<__to_rep>(
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    1422:	vxorpd xmm4,xmm4,xmm4
+}
+
+__fortify_function int
+printf (const char *__restrict __fmt, ...)
+{
+  return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+    1426:	lea    rsi,[rip+0x1c14]        # 3041 <_IO_stdin_used+0x41>
+    142d:	mov    edi,0x2
+    1432:	mov    r14,rax
+		const duration<_Rep2, _Period2>& __rhs)
+      {
+	typedef duration<_Rep1, _Period1>			__dur1;
+	typedef duration<_Rep2, _Period2>			__dur2;
+	typedef typename common_type<__dur1,__dur2>::type	__cd;
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    1435:	sub    rax,r15
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    1438:	vcvtsi2sd xmm0,xmm4,rax
+    143d:	mov    eax,0x1
+    1442:	vdivsd xmm0,xmm0,QWORD PTR [rip+0x1c76]        # 30c0 <_IO_stdin_used+0xc0>
+    144a:	call   10f0 <__printf_chk@plt>
+
+    double check = 0.0;
+
+    for (int r = 0; r < MAT_REPS * scale; r++) matmul(A.data(), B.data(), C.data(), n);
+    144f:	lea    ebx,[r12+r12*1]
+    1453:	xor    r15d,r15d
+    1456:	cs nop WORD PTR [rax+rax*1+0x0]
+    1460:	mov    rsi,QWORD PTR [rbp-0xd0]
+    1467:	mov    rdi,QWORD PTR [rbp-0xf0]
+    146e:	mov    ecx,0x400
+    1473:	mov    rdx,r13
+    1476:	call   1980 <matmul>
+    147b:	inc    r15d
+    147e:	cmp    r15d,ebx
+    1481:	jl     1460 <main+0x1e0>
+    check += C.front() + C.back();
+    1483:	mov    rax,QWORD PTR [rbp-0xa8]
+    148a:	vmovss xmm5,DWORD PTR [r13+0x0]
+    1490:	vmovss xmm6,DWORD PTR [rax-0x4]
+    1495:	vmovss DWORD PTR [rbp-0xf8],xmm5
+    149d:	vmovss DWORD PTR [rbp-0x100],xmm6
+    t = Clock::now(); std::printf("[matmul] %7.3f s\n", secs(t0, t)); t0 = t;
+    14a5:	call   1170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    14aa:	vxorpd xmm7,xmm7,xmm7
+    14ae:	lea    rsi,[rip+0x1b9e]        # 3053 <_IO_stdin_used+0x53>
+    14b5:	mov    edi,0x2
+    14ba:	mov    rbx,rax
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    14bd:	sub    rax,r14
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    14c0:	vcvtsi2sd xmm0,xmm7,rax
+    14c5:	mov    eax,0x1
+    14ca:	vdivsd xmm0,xmm0,QWORD PTR [rip+0x1bee]        # 30c0 <_IO_stdin_used+0xc0>
+    14d2:	call   10f0 <__printf_chk@plt>
+
+    for (int r = 0; r < SAXPY_REPS * scale; r++) saxpy(1.0001f, x.data(), y.data(), VEC_N);
+    14d7:	imul   r14d,r12d,0x12c
+    14de:	xor    r15d,r15d
+    14e1:	nop    DWORD PTR [rax+0x0]
+    14e8:	mov    rsi,QWORD PTR [rbp-0x70]
+    14ec:	mov    rdi,QWORD PTR [rbp-0x90]
+    14f3:	mov    edx,0x400000
+    14f8:	vmovss xmm0,DWORD PTR [rip+0x1b08]        # 3008 <_IO_stdin_used+0x8>
+    1500:	call   1e40 <saxpy>
+    1505:	inc    r15d
+    1508:	cmp    r15d,r14d
+    150b:	jl     14e8 <main+0x268>
+    check += y.front() + y.back();
+    150d:	mov    rax,QWORD PTR [rbp-0x70]
+    1511:	vmovss xmm4,DWORD PTR [rax]
+    1515:	mov    rax,QWORD PTR [rbp-0x68]
+    1519:	vmovss xmm5,DWORD PTR [rax-0x4]
+    151e:	vmovss DWORD PTR [rbp-0x108],xmm4
+    1526:	vmovss DWORD PTR [rbp-0x114],xmm5
+    t = Clock::now(); std::printf("[saxpy ] %7.3f s\n", secs(t0, t)); t0 = t;
+    152e:	call   1170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    1533:	vxorpd xmm6,xmm6,xmm6
+    1537:	lea    rsi,[rip+0x1b27]        # 3065 <_IO_stdin_used+0x65>
+    153e:	mov    edi,0x2
+    1543:	mov    QWORD PTR [rbp-0x128],rax
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    154a:	sub    rax,rbx
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    154d:	vcvtsi2sd xmm0,xmm6,rax
+    1552:	mov    eax,0x1
+    1557:	vdivsd xmm0,xmm0,QWORD PTR [rip+0x1b61]        # 30c0 <_IO_stdin_used+0xc0>
+    155f:	call   10f0 <__printf_chk@plt>
+
+    int64_t bs = 0;
+    for (int r = 0; r < BR_REPS * scale; r++) bs += branchy_sum(br.data(), BR_N);
+    1564:	imul   r14d,r12d,0x3c
+    1568:	xor    r15d,r15d
+    int64_t bs = 0;
+    156b:	xor    ebx,ebx
+    156d:	nop    DWORD PTR [rax]
+    for (int r = 0; r < BR_REPS * scale; r++) bs += branchy_sum(br.data(), BR_N);
+    1570:	mov    rdi,QWORD PTR [rbp-0x50]
+    1574:	mov    esi,0x800000
+    1579:	call   1f40 <branchy_sum>
+    157e:	inc    r15d
+    1581:	add    rbx,rax
+    1584:	cmp    r15d,r14d
+    1587:	jl     1570 <main+0x2f0>
+    check += static_cast<double>(bs);
+    t = Clock::now(); std::printf("[branch] %7.3f s\n", secs(t0, t)); t0 = t;
+    1589:	call   1170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    158e:	vxorpd xmm7,xmm7,xmm7
+    1592:	lea    rsi,[rip+0x1ade]        # 3077 <_IO_stdin_used+0x77>
+    1599:	mov    edi,0x2
+    159e:	mov    QWORD PTR [rbp-0x130],rax
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    15a5:	sub    rax,QWORD PTR [rbp-0x128]
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    15ac:	vcvtsi2sd xmm0,xmm7,rax
+    15b1:	mov    eax,0x1
+    15b6:	vdivsd xmm0,xmm0,QWORD PTR [rip+0x1b02]        # 30c0 <_IO_stdin_used+0xc0>
+    15be:	call   10f0 <__printf_chk@plt>
+
+    uint64_t f = 0;
+    for (int r = 0; r < scale; r++) f += fib(FIB_K);
+    15c3:	xor    r15d,r15d
+    uint64_t f = 0;
+    15c6:	xor    r14d,r14d
+    15c9:	nop    DWORD PTR [rax+0x0]
+    for (int r = 0; r < scale; r++) f += fib(FIB_K);
+    15d0:	mov    edi,0x28
+    15d5:	call   20f0 <fib>
+    15da:	inc    r15d
+    15dd:	add    r14,rax
+    15e0:	cmp    r12d,r15d
+    15e3:	jne    15d0 <main+0x350>
+    check += C.front() + C.back();
+    15e5:	vmovss xmm4,DWORD PTR [rbp-0xf8]
+    check += y.front() + y.back();
+    15ed:	vmovss xmm6,DWORD PTR [rbp-0x108]
+    check += C.front() + C.back();
+    15f5:	vxorpd xmm0,xmm0,xmm0
+    check += static_cast<double>(bs);
+    15f9:	vxorpd xmm3,xmm3,xmm3
+    check += C.front() + C.back();
+    15fd:	vaddss xmm1,xmm4,DWORD PTR [rbp-0x100]
+    1605:	vcvtss2sd xmm1,xmm1,xmm1
+    1609:	vaddsd xmm1,xmm1,xmm0
+    check += y.front() + y.back();
+    160d:	vaddss xmm0,xmm6,DWORD PTR [rbp-0x114]
+    1615:	vcvtss2sd xmm0,xmm0,xmm0
+    1619:	vaddsd xmm0,xmm0,xmm1
+    check += static_cast<double>(bs);
+    161d:	vcvtsi2sd xmm1,xmm3,rbx
+    1622:	vaddsd xmm1,xmm1,xmm0
+    check += static_cast<double>(f);
+    1626:	test   r14,r14
+    1629:	js     1769 <main+0x4e9>
+    162f:	vcvtsi2sd xmm0,xmm3,r14
+    1634:	vaddsd xmm2,xmm0,xmm1
+    1638:	vmovq  rbx,xmm2
+    t = Clock::now(); std::printf("[fib   ] %7.3f s\n", secs(t0, t));
+    163d:	call   1170 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    1642:	vxorpd xmm2,xmm2,xmm2
+    1646:	lea    rsi,[rip+0x1a3c]        # 3089 <_IO_stdin_used+0x89>
+    164d:	mov    edi,0x2
+    1652:	mov    r12,rax
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    1655:	sub    rax,QWORD PTR [rbp-0x130]
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    165c:	vcvtsi2sd xmm0,xmm2,rax
+    1661:	mov    eax,0x1
+    1666:	vdivsd xmm0,xmm0,QWORD PTR [rip+0x1a52]        # 30c0 <_IO_stdin_used+0xc0>
+    166e:	call   10f0 <__printf_chk@plt>
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    1673:	sub    r12,QWORD PTR [rbp-0x120]
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    167a:	vxorpd xmm2,xmm2,xmm2
+    167e:	lea    rsi,[rip+0x1a16]        # 309b <_IO_stdin_used+0x9b>
+    1685:	mov    edi,0x2
+    168a:	mov    eax,0x1
+    168f:	vcvtsi2sd xmm0,xmm2,r12
+    1694:	vdivsd xmm0,xmm0,QWORD PTR [rip+0x1a24]        # 30c0 <_IO_stdin_used+0xc0>
+    169c:	call   10f0 <__printf_chk@plt>
+    16a1:	vmovq  xmm0,rbx
+    16a6:	lea    rsi,[rip+0x1a00]        # 30ad <_IO_stdin_used+0xad>
+    16ad:	mov    edi,0x2
+    16b2:	mov    eax,0x1
+    16b7:	call   10f0 <__printf_chk@plt>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    16bc:	mov    rdi,QWORD PTR [rbp-0x50]
+	if (__p)
+    16c0:	test   rdi,rdi
+    16c3:	je     16d1 <main+0x451>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    16c5:	mov    rsi,QWORD PTR [rbp-0x40]
+    16c9:	sub    rsi,rdi
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    16cc:	call   1150 <_ZdlPvm@plt>
+    16d1:	mov    rdi,QWORD PTR [rbp-0x70]
+	if (__p)
+    16d5:	test   rdi,rdi
+    16d8:	je     16e6 <main+0x466>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    16da:	mov    rsi,QWORD PTR [rbp-0x60]
+    16de:	sub    rsi,rdi
+    16e1:	call   1150 <_ZdlPvm@plt>
+    16e6:	mov    rdi,QWORD PTR [rbp-0x90]
+	if (__p)
+    16ed:	test   rdi,rdi
+    16f0:	je     16fe <main+0x47e>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    16f2:	mov    rsi,QWORD PTR [rbp-0x80]
+    16f6:	sub    rsi,rdi
+    16f9:	call   1150 <_ZdlPvm@plt>
+    16fe:	mov    rsi,QWORD PTR [rbp-0x110]
+    1705:	mov    rdi,r13
+    1708:	sub    rsi,r13
+    170b:	call   1150 <_ZdlPvm@plt>
+    1710:	mov    rdi,QWORD PTR [rbp-0xd0]
+	if (__p)
+    1717:	test   rdi,rdi
+    171a:	je     172b <main+0x4ab>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    171c:	mov    rsi,QWORD PTR [rbp-0xc0]
+    1723:	sub    rsi,rdi
+    1726:	call   1150 <_ZdlPvm@plt>
+    172b:	mov    rdi,QWORD PTR [rbp-0xf0]
+	if (__p)
+    1732:	test   rdi,rdi
+    1735:	je     1746 <main+0x4c6>
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    1737:	mov    rsi,QWORD PTR [rbp-0xe0]
+    173e:	sub    rsi,rdi
+    1741:	call   1150 <_ZdlPvm@plt>
+    
+    std::printf("[total ] %7.3f s\n", secs(t_start, t));
+
+    std::printf("checksum = %.6e\n", check);
+    return 0;
+}
+    1746:	mov    rax,QWORD PTR [rbp-0x38]
+    174a:	sub    rax,QWORD PTR fs:0x28
+    1753:	jne    1788 <main+0x508>
+    1755:	add    rsp,0x108
+    175c:	xor    eax,eax
+    175e:	pop    rbx
+    175f:	pop    r12
+    1761:	pop    r13
+    1763:	pop    r14
+    1765:	pop    r15
+    1767:	pop    rbp
+    1768:	ret
+    check += static_cast<double>(f);
+    1769:	mov    rax,r14
+    176c:	and    r14d,0x1
+    1770:	vxorpd xmm3,xmm3,xmm3
+    1774:	shr    rax,1
+    1777:	or     rax,r14
+    177a:	vcvtsi2sd xmm0,xmm3,rax
+    177f:	vaddsd xmm0,xmm0,xmm0
+    1783:	jmp    1634 <main+0x3b4>
+}
+    1788:	call   1160 <__stack_chk_fail@plt>
+    178d:	endbr64
+    1791:	mov    rbx,rax
+    1794:	vzeroupper
+    1797:	jmp    11dc <main.cold+0x1c>
+    179c:	endbr64
+    17a0:	mov    rbx,rax
+    17a3:	vzeroupper
+    17a6:	jmp    11f1 <main.cold+0x31>
+    17ab:	endbr64
+    17af:	mov    rbx,rax
+    17b2:	jmp    11c0 <main.cold>
+    17b7:	endbr64
+    17bb:	mov    rbx,rax
+    17be:	vzeroupper
+    17c1:	jmp    123b <main.cold+0x7b>
+    17c6:	endbr64
+	if (__p)
+    17ca:	mov    rbx,rax
+    17cd:	vzeroupper
+    17d0:	jmp    1209 <main.cold+0x49>
+    17d5:	endbr64
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    17d9:	mov    rbx,rax
+    17dc:	vzeroupper
+    17df:	jmp    1220 <main.cold+0x60>
+    17e4:	cs nop WORD PTR [rax+rax*1+0x0]
+    17ee:	xchg   ax,ax
+
+00000000000017f0 <_start>:
+    17f0:	endbr64
+    17f4:	xor    ebp,ebp
+    17f6:	mov    r9,rdx
+    17f9:	pop    rsi
+    17fa:	mov    rdx,rsp
+    17fd:	and    rsp,0xfffffffffffffff0
+    1801:	push   rax
+    1802:	push   rsp
+    1803:	xor    r8d,r8d
+    1806:	xor    ecx,ecx
+    1808:	lea    rdi,[rip+0xfffffffffffffa71]        # 1280 <main>
+    180f:	call   QWORD PTR [rip+0x37cb]        # 4fe0 <__libc_start_main@GLIBC_2.34>
+    1815:	hlt
+    1816:	cs nop WORD PTR [rax+rax*1+0x0]
+
+0000000000001820 <deregister_tm_clones>:
+    1820:	lea    rdi,[rip+0x37f1]        # 5018 <__TMC_END__>
+    1827:	lea    rax,[rip+0x37ea]        # 5018 <__TMC_END__>
+    182e:	cmp    rax,rdi
+    1831:	je     1848 <deregister_tm_clones+0x28>
+    1833:	mov    rax,QWORD PTR [rip+0x37ae]        # 4fe8 <_ITM_deregisterTMCloneTable>
+    183a:	test   rax,rax
+    183d:	je     1848 <deregister_tm_clones+0x28>
+    183f:	jmp    rax
+    1841:	nop    DWORD PTR [rax+0x0]
+    1848:	ret
+    1849:	nop    DWORD PTR [rax+0x0]
+
+0000000000001850 <register_tm_clones>:
+    1850:	lea    rdi,[rip+0x37c1]        # 5018 <__TMC_END__>
+    1857:	lea    rsi,[rip+0x37ba]        # 5018 <__TMC_END__>
+    185e:	sub    rsi,rdi
+    1861:	mov    rax,rsi
+    1864:	shr    rsi,0x3f
+    1868:	sar    rax,0x3
+    186c:	add    rsi,rax
+    186f:	sar    rsi,1
+    1872:	je     1888 <register_tm_clones+0x38>
+    1874:	mov    rax,QWORD PTR [rip+0x377d]        # 4ff8 <_ITM_registerTMCloneTable>
+    187b:	test   rax,rax
+    187e:	je     1888 <register_tm_clones+0x38>
+    1880:	jmp    rax
+    1882:	nop    WORD PTR [rax+rax*1+0x0]
+    1888:	ret
+    1889:	nop    DWORD PTR [rax+0x0]
+
+0000000000001890 <__do_global_dtors_aux>:
+    1890:	endbr64
+    1894:	cmp    BYTE PTR [rip+0x377d],0x0        # 5018 <__TMC_END__>
+    189b:	jne    18c8 <__do_global_dtors_aux+0x38>
+    189d:	push   rbp
+    189e:	cmp    QWORD PTR [rip+0x3732],0x0        # 4fd8 <__cxa_finalize@GLIBC_2.2.5>
+    18a6:	mov    rbp,rsp
+    18a9:	je     18b7 <__do_global_dtors_aux+0x27>
+    18ab:	mov    rdi,QWORD PTR [rip+0x3756]        # 5008 <__dso_handle>
+    18b2:	call   10e0 <__cxa_finalize@plt>
+    18b7:	call   1820 <deregister_tm_clones>
+    18bc:	mov    BYTE PTR [rip+0x3755],0x1        # 5018 <__TMC_END__>
+    18c3:	pop    rbp
+    18c4:	ret
+    18c5:	nop    DWORD PTR [rax]
+    18c8:	ret
+    18c9:	nop    DWORD PTR [rax+0x0]
+
+00000000000018d0 <frame_dummy>:
+    18d0:	endbr64
+    18d4:	jmp    1850 <register_tm_clones>
+    18d9:	cs nop WORD PTR [rax+rax*1+0x0]
+    18e3:	cs nop WORD PTR [rax+rax*1+0x0]
+    18ed:	cs nop WORD PTR [rax+rax*1+0x0]
+    18f7:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001900 <_ZL13fill_random_fRSt6vectorIfSaIfEE>:
+__attribute__((noipa)) static void fill_random_f(std::vector<float> &a) {
+    1900:	push   rbp
+    1901:	mov    rbp,rsp
+    1904:	push   r12
+      : _M_current() { }
+
+      __attribute__((__always_inline__))
+      explicit _GLIBCXX_CONSTEXPR
+      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+      : _M_current(__i) { }
+    1906:	mov    r12,QWORD PTR [rdi+0x8]
+    190a:	push   rbx
+    190b:	mov    rbx,QWORD PTR [rdi]
+    for (float &x : a) x = static_cast<float>(std::rand()) / static_cast<float>(RAND_MAX);
+    190e:	cmp    r12,rbx
+    1911:	je     193b <_ZL13fill_random_fRSt6vectorIfSaIfEE+0x3b>
+    1913:	nop    DWORD PTR [rax+rax*1+0x0]
+    1918:	call   1100 <rand@plt>
+    191d:	vxorps xmm1,xmm1,xmm1
+    1921:	add    rbx,0x4
+    1925:	vcvtsi2ss xmm0,xmm1,eax
+    1929:	vmulss xmm0,xmm0,DWORD PTR [rip+0x16d3]        # 3004 <_IO_stdin_used+0x4>
+    1931:	vmovss DWORD PTR [rbx-0x4],xmm0
+    1936:	cmp    r12,rbx
+    1939:	jne    1918 <_ZL13fill_random_fRSt6vectorIfSaIfEE+0x18>
+}
+    193b:	pop    rbx
+    193c:	pop    r12
+    193e:	pop    rbp
+    193f:	ret
+
+0000000000001940 <_ZL13fill_random_iRSt6vectorIiSaIiEE>:
+__attribute__((noipa)) static void fill_random_i(std::vector<int32_t> &a) {
+    1940:	push   rbp
+    1941:	mov    rbp,rsp
+    1944:	push   r12
+    1946:	mov    r12,QWORD PTR [rdi+0x8]
+    194a:	push   rbx
+    194b:	mov    rbx,QWORD PTR [rdi]
+    for (int32_t &x : a) x = std::rand() & 255;  
+    194e:	cmp    r12,rbx
+    1951:	je     196c <_ZL13fill_random_iRSt6vectorIiSaIiEE+0x2c>
+    1953:	nop    DWORD PTR [rax+rax*1+0x0]
+    1958:	call   1100 <rand@plt>
+    195d:	add    rbx,0x4
+    1961:	movzx  eax,al
+    1964:	mov    DWORD PTR [rbx-0x4],eax
+    1967:	cmp    r12,rbx
+    196a:	jne    1958 <_ZL13fill_random_iRSt6vectorIiSaIiEE+0x18>
+}
+    196c:	pop    rbx
+    196d:	pop    r12
+    196f:	pop    rbp
+    1970:	ret
+    1971:	nop    DWORD PTR [rax+0x0]
+    1975:	data16 cs nop WORD PTR [rax+rax*1+0x0]
+
+0000000000001980 <matmul>:
+                   float *__restrict C, int n) {
+    1980:	endbr64
+    1984:	push   rbp
+    for (int i = 0; i < n * n; i++) C[i] = 0.0f;
+    1985:	mov    eax,ecx
+    1987:	imul   eax,ecx
+                   float *__restrict C, int n) {
+    198a:	mov    rbp,rsp
+    198d:	push   r15
+    198f:	push   r14
+    1991:	push   r13
+    1993:	mov    r13d,ecx
+    1996:	push   r12
+    1998:	mov    r12,rsi
+    199b:	push   rbx
+    199c:	and    rsp,0xffffffffffffffe0
+    19a0:	sub    rsp,0x60
+    19a4:	mov    QWORD PTR [rsp+0x20],rdi
+    19a9:	mov    QWORD PTR [rsp+0x58],rdx
+    for (int i = 0; i < n * n; i++) C[i] = 0.0f;
+    19ae:	test   eax,eax
+    19b0:	je     19c4 <matmul+0x44>
+    19b2:	mov    rdi,rdx
+    19b5:	xor    esi,esi
+    19b7:	lea    rdx,[rax*4+0x0]
+    19bf:	call   1120 <memset@plt>
+    for (int i = 0; i < n; i++)
+    19c4:	test   r13d,r13d
+    19c7:	jle    1dc1 <matmul+0x441>
+    19cd:	lea    eax,[r13+r13*1+0x0]
+    19d2:	mov    rcx,QWORD PTR [rsp+0x20]
+    19d7:	mov    QWORD PTR [rsp+0x40],0x0
+    19e0:	movsxd rbx,r13d
+    19e3:	cdqe
+    19e5:	mov    DWORD PTR [rsp+0x1c],0x0
+    19ed:	mov    r15,QWORD PTR [rsp+0x58]
+    19f2:	lea    r10,[rbx*4+0x0]
+    19fa:	mov    QWORD PTR [rsp+0x28],rax
+    19ff:	lea    eax,[r13-0x1]
+    1a03:	mov    DWORD PTR [rsp+0x3c],eax
+    1a07:	lea    eax,[r13-0x3]
+    1a0b:	and    eax,0xfffffffe
+    1a0e:	mov    QWORD PTR [rsp+0x10],rcx
+    1a13:	add    eax,0x2
+    1a16:	mov    DWORD PTR [rsp+0x34],eax
+    1a1a:	mov    eax,r13d
+    1a1d:	shr    eax,0x3
+    1a20:	shl    rax,0x5
+    1a24:	mov    r14,rax
+    1a27:	nop    WORD PTR [rax+rax*1+0x0]
+            const float a = A[i * n + k];
+    1a30:	mov    eax,DWORD PTR [rsp+0x40]
+    1a34:	xor    r8d,r8d
+    1a37:	mov    DWORD PTR [rsp+0x38],eax
+    1a3b:	cmp    r13d,0x2
+    1a3f:	jle    1c33 <matmul+0x2b3>
+    1a45:	mov    r8d,DWORD PTR [rsp+0x34]
+    1a4a:	inc    eax
+    1a4c:	mov    QWORD PTR [rsp+0x8],r10
+    1a51:	xor    esi,esi
+    1a53:	mov    DWORD PTR [rsp+0x30],eax
+    1a57:	mov    rdi,QWORD PTR [rsp+0x10]
+        for (int k = 0; k < n; k++) {
+    1a5c:	xor    r9d,r9d
+            const float a = A[i * n + k];
+    1a5f:	mov    QWORD PTR [rsp],rbx
+    1a63:	mov    DWORD PTR [rsp+0x18],r8d
+    1a68:	mov    QWORD PTR [rsp+0x50],r14
+    1a6d:	nop    DWORD PTR [rax]
+    1a70:	cmp    DWORD PTR [rsp+0x3c],0x6
+    1a75:	vmovss xmm3,DWORD PTR [rdi]
+                C[i * n + j] += a * B[k * n + j];
+    1a79:	mov    DWORD PTR [rsp+0x48],esi
+    1a7d:	mov    ecx,esi
+    1a7f:	jbe    1df3 <matmul+0x473>
+    1a85:	mov    r14,QWORD PTR [rsp+0x50]
+    1a8a:	add    ecx,r13d
+    1a8d:	vbroadcastss ymm1,DWORD PTR [rdi+0x4]
+    1a93:	lea    r8,[r12+rsi*4]
+    1a97:	vbroadcastss ymm2,xmm3
+    1a9c:	movsxd rax,ecx
+    1a9f:	lea    rdx,[r12+rax*4]
+        for (int k = 0; k < n; k++) {
+    1aa3:	xor    eax,eax
+    1aa5:	nop    DWORD PTR [rax+rax*1+0x0]
+    1aaa:	data16 cs nop WORD PTR [rax+rax*1+0x0]
+    1ab5:	data16 cs nop WORD PTR [rax+rax*1+0x0]
+                C[i * n + j] += a * B[k * n + j];
+    1ac0:	vmovups ymm0,YMMWORD PTR [r8+rax*1]
+    1ac6:	vfmadd213ps ymm0,ymm2,YMMWORD PTR [r15+rax*1]
+    1acc:	vfmadd231ps ymm0,ymm1,YMMWORD PTR [rdx+rax*1]
+    1ad2:	vmovups YMMWORD PTR [r15+rax*1],ymm0
+            for (int j = 0; j < n; j++)
+    1ad8:	add    rax,0x20
+    1adc:	cmp    r14,rax
+    1adf:	jne    1ac0 <matmul+0x140>
+    1ae1:	mov    eax,r13d
+    1ae4:	and    eax,0xfffffff8
+    1ae7:	mov    edx,eax
+    1ae9:	cmp    r13d,eax
+    1aec:	je     1dd0 <matmul+0x450>
+    1af2:	mov    QWORD PTR [rsp+0x50],r14
+    1af7:	mov    r8d,r13d
+    1afa:	sub    r8d,edx
+    1afd:	lea    r10d,[r8-0x1]
+    1b01:	cmp    r10d,0x2
+    1b05:	jbe    1b62 <matmul+0x1e2>
+            const float a = A[i * n + k];
+    1b07:	mov    rbx,QWORD PTR [rsp+0x40]
+    1b0c:	mov    r11d,DWORD PTR [rsp+0x30]
+                C[i * n + j] += a * B[k * n + j];
+    1b11:	vbroadcastss xmm1,xmm3
+            const float a = A[i * n + k];
+    1b16:	mov    r14,QWORD PTR [rsp+0x20]
+    1b1b:	lea    r10,[rbx+rdx*1]
+    1b1f:	mov    rbx,QWORD PTR [rsp+0x58]
+    1b24:	add    r11d,r9d
+    1b27:	movsxd r11,r11d
+                C[i * n + j] += a * B[k * n + j];
+    1b2a:	lea    rbx,[rbx+r10*4]
+    1b2e:	movsxd r10,ecx
+            const float a = A[i * n + k];
+    1b31:	vbroadcastss xmm0,DWORD PTR [r14+r11*4]
+                C[i * n + j] += a * B[k * n + j];
+    1b37:	vmovups xmm4,XMMWORD PTR [rbx]
+    1b3b:	add    r10,rdx
+    1b3e:	add    rdx,rsi
+    1b41:	vfmadd132ps xmm1,xmm4,XMMWORD PTR [r12+rdx*4]
+    1b47:	vfmadd132ps xmm0,xmm1,XMMWORD PTR [r12+r10*4]
+    1b4d:	vmovups XMMWORD PTR [rbx],xmm0
+            for (int j = 0; j < n; j++)
+    1b51:	test   r8b,0x3
+    1b55:	je     1c08 <matmul+0x288>
+    1b5b:	and    r8d,0xfffffffc
+    1b5f:	add    eax,r8d
+                C[i * n + j] += a * B[k * n + j];
+    1b62:	mov    r14d,DWORD PTR [rsp+0x48]
+    1b67:	mov    ebx,DWORD PTR [rsp+0x38]
+    1b6b:	mov    r11,QWORD PTR [rsp+0x58]
+    1b70:	vmovss xmm1,DWORD PTR [rdi+0x4]
+    1b75:	lea    r8d,[r14+rax*1]
+    1b79:	lea    edx,[rbx+rax*1]
+    1b7c:	movsxd r8,r8d
+    1b7f:	movsxd rdx,edx
+    1b82:	vmovss xmm0,DWORD PTR [r12+r8*4]
+    1b88:	lea    r10,[r11+rdx*4]
+    1b8c:	lea    edx,[rcx+rax*1]
+    1b8f:	movsxd rdx,edx
+    1b92:	vfmadd213ss xmm0,xmm3,DWORD PTR [r10]
+    1b97:	vfmadd231ss xmm0,xmm1,DWORD PTR [r12+rdx*4]
+            for (int j = 0; j < n; j++)
+    1b9d:	lea    edx,[rax+0x1]
+                C[i * n + j] += a * B[k * n + j];
+    1ba0:	vmovss DWORD PTR [r10],xmm0
+            for (int j = 0; j < n; j++)
+    1ba5:	cmp    r13d,edx
+    1ba8:	jle    1c08 <matmul+0x288>
+                C[i * n + j] += a * B[k * n + j];
+    1baa:	lea    r8d,[rbx+rdx*1]
+            for (int j = 0; j < n; j++)
+    1bae:	add    eax,0x2
+                C[i * n + j] += a * B[k * n + j];
+    1bb1:	movsxd r8,r8d
+    1bb4:	lea    r10,[r11+r8*4]
+    1bb8:	lea    r8d,[rcx+rdx*1]
+    1bbc:	add    edx,r14d
+    1bbf:	movsxd rdx,edx
+    1bc2:	movsxd r8,r8d
+    1bc5:	vmovss xmm0,DWORD PTR [r12+rdx*4]
+    1bcb:	vfmadd213ss xmm0,xmm3,DWORD PTR [r10]
+    1bd0:	vfmadd231ss xmm0,xmm1,DWORD PTR [r12+r8*4]
+    1bd6:	vmovss DWORD PTR [r10],xmm0
+            for (int j = 0; j < n; j++)
+    1bdb:	cmp    r13d,eax
+    1bde:	jle    1c08 <matmul+0x288>
+                C[i * n + j] += a * B[k * n + j];
+    1be0:	lea    edx,[rbx+rax*1]
+    1be3:	add    ecx,eax
+    1be5:	add    eax,r14d
+    1be8:	movsxd rdx,edx
+    1beb:	cdqe
+    1bed:	movsxd rcx,ecx
+    1bf0:	vmovss xmm5,DWORD PTR [r11+rdx*4]
+    1bf6:	vfmadd132ss xmm3,xmm5,DWORD PTR [r12+rax*4]
+    1bfc:	vfmadd132ss xmm1,xmm3,DWORD PTR [r12+rcx*4]
+    1c02:	vmovss DWORD PTR [r11+rdx*4],xmm1
+        for (int k = 0; k < n; k++) {
+    1c08:	add    r9d,0x2
+    1c0c:	add    rdi,0x8
+    1c10:	add    rsi,QWORD PTR [rsp+0x28]
+    1c15:	cmp    r9d,DWORD PTR [rsp+0x34]
+    1c1a:	jne    1a70 <matmul+0xf0>
+    1c20:	mov    r10,QWORD PTR [rsp+0x8]
+    1c25:	mov    rbx,QWORD PTR [rsp]
+    1c29:	mov    r8d,DWORD PTR [rsp+0x18]
+    1c2e:	mov    r14,QWORD PTR [rsp+0x50]
+    1c33:	mov    rax,QWORD PTR [rsp+0x40]
+    1c38:	mov    rcx,QWORD PTR [rsp+0x20]
+    1c3d:	mov    esi,r8d
+    1c40:	mov    QWORD PTR [rsp+0x48],r15
+    1c45:	imul   esi,r13d
+    1c49:	movsxd rdi,r8d
+    1c4c:	shl    rax,0x2
+    1c50:	lea    r11,[rcx+rax*1]
+    1c54:	add    rax,QWORD PTR [rsp+0x58]
+    1c59:	mov    QWORD PTR [rsp+0x50],rax
+    1c5e:	movsxd rsi,esi
+            const float a = A[i * n + k];
+    1c61:	cmp    DWORD PTR [rsp+0x3c],0x6
+    1c66:	vmovss xmm2,DWORD PTR [r11+rdi*4]
+                C[i * n + j] += a * B[k * n + j];
+    1c6c:	mov    r9d,esi
+    1c6f:	jbe    1e1a <matmul+0x49a>
+    1c75:	mov    rax,QWORD PTR [rsp+0x50]
+    1c7a:	lea    rcx,[r12+rsi*4]
+    1c7e:	vbroadcastss ymm1,xmm2
+            const float a = A[i * n + k];
+    1c83:	xor    edx,edx
+    1c85:	nop    DWORD PTR [rax+rax*1+0x0]
+    1c8a:	data16 cs nop WORD PTR [rax+rax*1+0x0]
+    1c95:	data16 cs nop WORD PTR [rax+rax*1+0x0]
+                C[i * n + j] += a * B[k * n + j];
+    1ca0:	vmovups ymm0,YMMWORD PTR [rcx+rdx*1]
+    1ca5:	vfmadd213ps ymm0,ymm1,YMMWORD PTR [rax+rdx*1]
+    1cab:	vmovups YMMWORD PTR [rax+rdx*1],ymm0
+            for (int j = 0; j < n; j++)
+    1cb0:	add    rdx,0x20
+    1cb4:	cmp    rdx,r14
+    1cb7:	jne    1ca0 <matmul+0x320>
+    1cb9:	mov    edx,r13d
+    1cbc:	and    edx,0xfffffff8
+    1cbf:	mov    ecx,edx
+    1cc1:	cmp    r13d,edx
+    1cc4:	je     1e01 <matmul+0x481>
+    1cca:	mov    QWORD PTR [rsp+0x50],rax
+    1ccf:	mov    r8d,r13d
+    1cd2:	sub    r8d,ecx
+    1cd5:	lea    r15d,[r8-0x1]
+    1cd9:	cmp    r15d,0x2
+    1cdd:	jbe    1d14 <matmul+0x394>
+    1cdf:	mov    rax,QWORD PTR [rsp+0x40]
+                C[i * n + j] += a * B[k * n + j];
+    1ce4:	vbroadcastss xmm0,xmm2
+    1ce9:	lea    r15,[rcx+rax*1]
+    1ced:	mov    rax,QWORD PTR [rsp+0x58]
+    1cf2:	add    rcx,rsi
+    1cf5:	vmovups xmm6,XMMWORD PTR [rax+r15*4]
+    1cfb:	vfmadd132ps xmm0,xmm6,XMMWORD PTR [r12+rcx*4]
+    1d01:	vmovups XMMWORD PTR [rax+r15*4],xmm0
+            for (int j = 0; j < n; j++)
+    1d07:	test   r8b,0x3
+    1d0b:	je     1d8c <matmul+0x40c>
+    1d0d:	and    r8d,0xfffffffc
+    1d11:	add    edx,r8d
+                C[i * n + j] += a * B[k * n + j];
+    1d14:	mov    r15d,DWORD PTR [rsp+0x38]
+    1d19:	mov    rax,QWORD PTR [rsp+0x58]
+    1d1e:	lea    ecx,[r15+rdx*1]
+    1d22:	movsxd rcx,ecx
+    1d25:	lea    r8,[rax+rcx*4]
+    1d29:	lea    ecx,[r9+rdx*1]
+    1d2d:	movsxd rcx,ecx
+    1d30:	vmovss xmm0,DWORD PTR [r12+rcx*4]
+            for (int j = 0; j < n; j++)
+    1d36:	lea    ecx,[rdx+0x1]
+                C[i * n + j] += a * B[k * n + j];
+    1d39:	vfmadd213ss xmm0,xmm2,DWORD PTR [r8]
+    1d3e:	vmovss DWORD PTR [r8],xmm0
+            for (int j = 0; j < n; j++)
+    1d43:	cmp    r13d,ecx
+    1d46:	jle    1d8c <matmul+0x40c>
+                C[i * n + j] += a * B[k * n + j];
+    1d48:	lea    r8d,[r15+rcx*1]
+    1d4c:	add    ecx,r9d
+            for (int j = 0; j < n; j++)
+    1d4f:	add    edx,0x2
+                C[i * n + j] += a * B[k * n + j];
+    1d52:	movsxd rcx,ecx
+    1d55:	movsxd r8,r8d
+    1d58:	vmovss xmm0,DWORD PTR [r12+rcx*4]
+    1d5e:	vfmadd213ss xmm0,xmm2,DWORD PTR [rax+r8*4]
+    1d64:	vmovss DWORD PTR [rax+r8*4],xmm0
+            for (int j = 0; j < n; j++)
+    1d6a:	cmp    edx,r13d
+    1d6d:	jge    1d8c <matmul+0x40c>
+                C[i * n + j] += a * B[k * n + j];
+    1d6f:	lea    ecx,[r15+rdx*1]
+    1d73:	add    edx,r9d
+    1d76:	movsxd rcx,ecx
+    1d79:	movsxd rdx,edx
+    1d7c:	vmovss xmm7,DWORD PTR [rax+rcx*4]
+    1d81:	vfmadd132ss xmm2,xmm7,DWORD PTR [r12+rdx*4]
+    1d87:	vmovss DWORD PTR [rax+rcx*4],xmm2
+        for (int k = 0; k < n; k++) {
+    1d8c:	inc    rdi
+    1d8f:	add    rsi,rbx
+    1d92:	cmp    r13d,edi
+    1d95:	jg     1c61 <matmul+0x2e1>
+    for (int i = 0; i < n; i++)
+    1d9b:	inc    DWORD PTR [rsp+0x1c]
+    1d9f:	mov    r15,QWORD PTR [rsp+0x48]
+    1da4:	add    QWORD PTR [rsp+0x10],r10
+    1da9:	add    QWORD PTR [rsp+0x40],rbx
+    1dae:	add    r15,r10
+    1db1:	mov    eax,DWORD PTR [rsp+0x1c]
+    1db5:	cmp    r13d,eax
+    1db8:	jne    1a30 <matmul+0xb0>
+    1dbe:	vzeroupper
+}
+    1dc1:	lea    rsp,[rbp-0x28]
+    1dc5:	pop    rbx
+    1dc6:	pop    r12
+    1dc8:	pop    r13
+    1dca:	pop    r14
+    1dcc:	pop    r15
+    1dce:	pop    rbp
+    1dcf:	ret
+        for (int k = 0; k < n; k++) {
+    1dd0:	add    r9d,0x2
+    1dd4:	cmp    r9d,DWORD PTR [rsp+0x34]
+    1dd9:	je     1e23 <matmul+0x4a3>
+    1ddb:	add    rsi,QWORD PTR [rsp+0x28]
+            const float a = A[i * n + k];
+    1de0:	add    rdi,0x8
+    1de4:	vmovss xmm3,DWORD PTR [rdi]
+                C[i * n + j] += a * B[k * n + j];
+    1de8:	mov    DWORD PTR [rsp+0x48],esi
+    1dec:	mov    ecx,esi
+    1dee:	jmp    1a8a <matmul+0x10a>
+    1df3:	xor    edx,edx
+            for (int j = 0; j < n; j++)
+    1df5:	xor    eax,eax
+    1df7:	lea    ecx,[r13+rsi*1+0x0]
+    1dfc:	jmp    1af7 <matmul+0x177>
+        for (int k = 0; k < n; k++) {
+    1e01:	inc    rdi
+    1e04:	cmp    r13d,edi
+    1e07:	jle    1d9b <matmul+0x41b>
+    1e09:	add    rsi,rbx
+            const float a = A[i * n + k];
+    1e0c:	vmovss xmm2,DWORD PTR [r11+rdi*4]
+                C[i * n + j] += a * B[k * n + j];
+    1e12:	mov    r9d,esi
+    1e15:	jmp    1c7a <matmul+0x2fa>
+    1e1a:	xor    ecx,ecx
+            for (int j = 0; j < n; j++)
+    1e1c:	xor    edx,edx
+    1e1e:	jmp    1ccf <matmul+0x34f>
+    1e23:	mov    r10,QWORD PTR [rsp+0x8]
+    1e28:	mov    rbx,QWORD PTR [rsp]
+    1e2c:	mov    r8d,DWORD PTR [rsp+0x18]
+    1e31:	jmp    1c33 <matmul+0x2b3>
+    1e36:	cs nop WORD PTR [rax+rax*1+0x0]
+
+0000000000001e40 <saxpy>:
+KERNEL void saxpy(float a, const float *__restrict x, float *__restrict y, size_t n) {
+    1e40:	endbr64
+    1e44:	vmovaps xmm2,xmm0
+    1e48:	mov    rcx,rdx
+    for (size_t i = 0; i < n; i++)
+    1e4b:	test   rdx,rdx
+    1e4e:	je     1f33 <saxpy+0xf3>
+    1e54:	lea    rax,[rdx-0x1]
+    1e58:	cmp    rax,0x6
+    1e5c:	jbe    1f34 <saxpy+0xf4>
+    1e62:	shr    rdx,0x3
+    1e66:	vbroadcastss ymm1,xmm0
+    1e6b:	xor    eax,eax
+    1e6d:	shl    rdx,0x5
+    1e71:	nop    DWORD PTR [rax+0x0]
+    1e75:	data16 cs nop WORD PTR [rax+rax*1+0x0]
+        y[i] = a * x[i] + y[i];
+    1e80:	vmovups ymm0,YMMWORD PTR [rdi+rax*1]
+    1e85:	vfmadd213ps ymm0,ymm1,YMMWORD PTR [rsi+rax*1]
+    1e8b:	vmovups YMMWORD PTR [rsi+rax*1],ymm0
+    for (size_t i = 0; i < n; i++)
+    1e90:	add    rax,0x20
+    1e94:	cmp    rax,rdx
+    1e97:	jne    1e80 <saxpy+0x40>
+    1e99:	test   cl,0x7
+    1e9c:	je     1f30 <saxpy+0xf0>
+    1ea2:	mov    rax,rcx
+    1ea5:	and    rax,0xfffffffffffffff8
+    1ea9:	vzeroupper
+    1eac:	mov    rdx,rcx
+    1eaf:	sub    rdx,rax
+    1eb2:	lea    r8,[rdx-0x1]
+    1eb6:	cmp    r8,0x2
+    1eba:	jbe    1edd <saxpy+0x9d>
+        y[i] = a * x[i] + y[i];
+    1ebc:	vmovups xmm3,XMMWORD PTR [rsi+rax*4]
+    1ec1:	vbroadcastss xmm0,xmm2
+    1ec6:	vfmadd132ps xmm0,xmm3,XMMWORD PTR [rdi+rax*4]
+    1ecc:	vmovups XMMWORD PTR [rsi+rax*4],xmm0
+    for (size_t i = 0; i < n; i++)
+    1ed1:	test   dl,0x3
+    1ed4:	je     1f33 <saxpy+0xf3>
+    1ed6:	and    rdx,0xfffffffffffffffc
+    1eda:	add    rax,rdx
+        y[i] = a * x[i] + y[i];
+    1edd:	vmovss xmm0,DWORD PTR [rdi+rax*4]
+    1ee2:	lea    rdx,[rax*4+0x0]
+    for (size_t i = 0; i < n; i++)
+    1eea:	lea    r8,[rax+0x1]
+        y[i] = a * x[i] + y[i];
+    1eee:	vfmadd213ss xmm0,xmm2,DWORD PTR [rsi+rdx*1]
+    1ef4:	vmovss DWORD PTR [rsi+rdx*1],xmm0
+    for (size_t i = 0; i < n; i++)
+    1ef9:	cmp    r8,rcx
+    1efc:	jae    1f33 <saxpy+0xf3>
+        y[i] = a * x[i] + y[i];
+    1efe:	vmovss xmm0,DWORD PTR [rdi+rdx*1+0x4]
+    for (size_t i = 0; i < n; i++)
+    1f04:	add    rax,0x2
+        y[i] = a * x[i] + y[i];
+    1f08:	vfmadd213ss xmm0,xmm2,DWORD PTR [rsi+rdx*1+0x4]
+    1f0f:	vmovss DWORD PTR [rsi+rdx*1+0x4],xmm0
+    for (size_t i = 0; i < n; i++)
+    1f15:	cmp    rax,rcx
+    1f18:	jae    1f33 <saxpy+0xf3>
+        y[i] = a * x[i] + y[i];
+    1f1a:	vmovss xmm4,DWORD PTR [rsi+rdx*1+0x8]
+    1f20:	vfmadd132ss xmm2,xmm4,DWORD PTR [rdi+rdx*1+0x8]
+    1f27:	vmovss DWORD PTR [rsi+rdx*1+0x8],xmm2
+}
+    1f2d:	ret
+    1f2e:	xchg   ax,ax
+    1f30:	vzeroupper
+    1f33:	ret
+    for (size_t i = 0; i < n; i++)
+    1f34:	xor    eax,eax
+    1f36:	jmp    1eac <saxpy+0x6c>
+    1f3b:	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001f40 <branchy_sum>:
+KERNEL int64_t branchy_sum(const int32_t *__restrict a, size_t n) {
+    1f40:	endbr64
+    for (size_t i = 0; i < n; i++)
+    1f44:	test   rsi,rsi
+    1f47:	je     20d8 <branchy_sum+0x198>
+    1f4d:	lea    rax,[rsi-0x1]
+    1f51:	cmp    rax,0x6
+    1f55:	jbe    20db <branchy_sum+0x19b>
+    1f5b:	mov    rdx,rsi
+        if (a[i] >= 128)
+    1f5e:	vpcmpeqd ymm5,ymm5,ymm5
+    for (size_t i = 0; i < n; i++)
+    1f62:	vpxor  xmm3,xmm3,xmm3
+    1f66:	mov    rax,rdi
+    1f69:	shr    rdx,0x3
+        if (a[i] >= 128)
+    1f6d:	vpsrld ymm5,ymm5,0x19
+    1f72:	shl    rdx,0x5
+    1f76:	add    rdx,rdi
+    1f79:	nop    DWORD PTR [rax+0x0]
+    1f80:	vmovdqu ymm1,YMMWORD PTR [rax]
+    1f84:	add    rax,0x20
+    1f88:	vpcmpgtd ymm0,ymm1,ymm5
+            s += a[i];
+    1f8c:	vpmovsxdq ymm4,xmm1
+    1f91:	vextracti128 xmm1,ymm1,0x1
+    1f97:	vpmovsxdq ymm1,xmm1
+    1f9c:	vpmovsxdq ymm2,xmm0
+    1fa1:	vextracti128 xmm0,ymm0,0x1
+    1fa7:	vpand  ymm2,ymm2,ymm4
+    1fab:	vpmovsxdq ymm0,xmm0
+    1fb0:	vpaddq ymm3,ymm2,ymm3
+    1fb4:	vpand  ymm0,ymm0,ymm1
+    1fb8:	vpaddq ymm3,ymm0,ymm3
+    for (size_t i = 0; i < n; i++)
+    1fbc:	cmp    rax,rdx
+    1fbf:	jne    1f80 <branchy_sum+0x40>
+    1fc1:	vextracti128 xmm0,ymm3,0x1
+    1fc7:	vpaddq xmm0,xmm0,xmm3
+    1fcb:	vpsrldq xmm1,xmm0,0x8
+    1fd0:	vpaddq xmm1,xmm0,xmm1
+    1fd4:	vmovq  rax,xmm1
+    1fd9:	test   sil,0x7
+    1fdd:	je     20d0 <branchy_sum+0x190>
+    1fe3:	mov    rcx,rsi
+    1fe6:	vmovdqa xmm1,xmm0
+    1fea:	and    rcx,0xfffffffffffffff8
+    1fee:	vzeroupper
+    1ff1:	mov    rdx,rsi
+    1ff4:	sub    rdx,rcx
+    1ff7:	lea    r8,[rdx-0x1]
+    1ffb:	cmp    r8,0x3
+    1fff:	jbe    205b <branchy_sum+0x11b>
+        if (a[i] >= 128)
+    2001:	vmovdqu xmm2,XMMWORD PTR [rdi+rcx*4]
+    2006:	vpcmpeqd xmm0,xmm0,xmm0
+    200a:	vpsrld xmm0,xmm0,0x19
+    200f:	vpcmpgtd xmm0,xmm2,xmm0
+            s += a[i];
+    2013:	vpmovsxdq xmm4,xmm2
+    2018:	vpsrldq xmm2,xmm2,0x8
+    201d:	vpmovsxdq xmm2,xmm2
+    2022:	vpmovsxdq xmm3,xmm0
+    2027:	vpsrldq xmm0,xmm0,0x8
+    202c:	vpand  xmm3,xmm3,xmm4
+    2030:	vpmovsxdq xmm0,xmm0
+    2035:	vpaddq xmm1,xmm3,xmm1
+    for (size_t i = 0; i < n; i++)
+    2039:	vpand  xmm0,xmm0,xmm2
+    203d:	vpaddq xmm0,xmm0,xmm1
+    2041:	vpsrldq xmm1,xmm0,0x8
+    2046:	vpaddq xmm0,xmm0,xmm1
+    204a:	vmovq  rax,xmm0
+    204f:	test   dl,0x3
+    2052:	je     20d3 <branchy_sum+0x193>
+    2054:	and    rdx,0xfffffffffffffffc
+    2058:	add    rcx,rdx
+        if (a[i] >= 128)
+    205b:	movsxd rdx,DWORD PTR [rdi+rcx*4]
+    205f:	mov    r8,rdx
+            s += a[i];
+    2062:	add    rdx,rax
+    2065:	cmp    r8d,0x80
+    206c:	cmovge rax,rdx
+    for (size_t i = 0; i < n; i++)
+    2070:	lea    rdx,[rcx+0x1]
+    2074:	cmp    rdx,rsi
+    2077:	jae    20d3 <branchy_sum+0x193>
+        if (a[i] >= 128)
+    2079:	movsxd rdx,DWORD PTR [rdi+rcx*4+0x4]
+    207e:	mov    r8,rdx
+            s += a[i];
+    2081:	add    rdx,rax
+    2084:	cmp    r8d,0x80
+    208b:	cmovge rax,rdx
+    for (size_t i = 0; i < n; i++)
+    208f:	lea    rdx,[rcx+0x2]
+    2093:	cmp    rdx,rsi
+    2096:	jae    20d3 <branchy_sum+0x193>
+        if (a[i] >= 128)
+    2098:	movsxd rdx,DWORD PTR [rdi+rcx*4+0x8]
+    209d:	mov    r8,rdx
+            s += a[i];
+    20a0:	add    rdx,rax
+    20a3:	cmp    r8d,0x80
+    20aa:	cmovge rax,rdx
+    for (size_t i = 0; i < n; i++)
+    20ae:	lea    rdx,[rcx+0x3]
+    20b2:	cmp    rdx,rsi
+    20b5:	jae    20d3 <branchy_sum+0x193>
+        if (a[i] >= 128)
+    20b7:	movsxd rdx,DWORD PTR [rdi+rcx*4+0xc]
+    20bc:	mov    rcx,rdx
+            s += a[i];
+    20bf:	add    rdx,rax
+    20c2:	cmp    ecx,0x7f
+    20c5:	cmovg  rax,rdx
+    20c9:	ret
+    20ca:	nop    WORD PTR [rax+rax*1+0x0]
+    20d0:	vzeroupper
+}
+    20d3:	ret
+    20d4:	nop    DWORD PTR [rax+0x0]
+    int64_t s = 0;
+    20d8:	xor    eax,eax
+    return s;
+    20da:	ret
+    for (size_t i = 0; i < n; i++)
+    20db:	vpxor  xmm1,xmm1,xmm1
+    20df:	xor    ecx,ecx
+    int64_t s = 0;
+    20e1:	xor    eax,eax
+    20e3:	jmp    1ff1 <branchy_sum+0xb1>
+    20e8:	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000020f0 <fib>:
+KERNEL uint64_t fib(int k) {
+    20f0:	endbr64
+    20f4:	push   rbp
+    20f5:	mov    rbp,rsp
+    20f8:	push   r13
+    return k < 2 ? static_cast<uint64_t>(k) : fib(k - 1) + fib(k - 2);
+    20fa:	xor    r13d,r13d
+KERNEL uint64_t fib(int k) {
+    20fd:	push   r12
+    20ff:	mov    r12d,edi
+    2102:	push   rbx
+    2103:	sub    rsp,0x8
+    return k < 2 ? static_cast<uint64_t>(k) : fib(k - 1) + fib(k - 2);
+    2107:	cmp    edi,0x1
+    210a:	jle    2125 <fib+0x35>
+    210c:	mov    ebx,edi
+    210e:	lea    edi,[rbx-0x1]
+    2111:	sub    ebx,0x2
+    2114:	call   20f0 <fib>
+    2119:	add    r13,rax
+    211c:	cmp    ebx,0x1
+    211f:	jg     210e <fib+0x1e>
+    2121:	and    r12d,0x1
+}
+    2125:	add    rsp,0x8
+    return k < 2 ? static_cast<uint64_t>(k) : fib(k - 1) + fib(k - 2);
+    2129:	movsxd rax,r12d
+}
+    212c:	pop    rbx
+    return k < 2 ? static_cast<uint64_t>(k) : fib(k - 1) + fib(k - 2);
+    212d:	add    rax,r13
+}
+    2130:	pop    r12
+    2132:	pop    r13
+    2134:	pop    rbp
+    2135:	ret
+    2136:	cs nop WORD PTR [rax+rax*1+0x0]
+
+0000000000002140 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>:
+      vector(size_type __n, const allocator_type& __a = allocator_type())
+    2140:	endbr64
+    2144:	push   rbp
+
+      // Called by constructors to check initial size.
+      static _GLIBCXX20_CONSTEXPR size_type
+      _S_check_init_len(size_type __n, const allocator_type& __a)
+      {
+	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+    2145:	mov    rax,rsi
+      vector(size_type __n, const allocator_type& __a = allocator_type())
+    2148:	mov    rbp,rsp
+    214b:	push   r12
+    214d:	push   rbx
+    214e:	sub    rsp,0x10
+	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+    2152:	shr    rax,0x3d
+    2156:	jne    21e6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_+0xa6>
+    215c:	mov    rbx,rdi
+	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+    215f:	test   rsi,rsi
+    2162:	je     21c8 <_ZNSt6vectorIfSaIfEEC1EmRKS0_+0x88>
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    2164:	lea    r12,[rsi*4+0x0]
+    216c:	mov    QWORD PTR [rbp-0x18],rsi
+    2170:	mov    rdi,r12
+    2173:	call   1140 <_Znwm@plt>
+	       std::random_access_iterator_tag)
+    {
+#if __cplusplus >= 201103L
+      static_assert(is_integral<_Size>{}, "fill_n must pass integral size");
+#endif
+      if (__n <= 0)
+    2178:	cmp    QWORD PTR [rbp-0x18],0x1
+	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    217d:	lea    r9,[rax+r12*1]
+	this->_M_impl._M_start = this->_M_allocate(__n);
+    2181:	mov    QWORD PTR [rbx],rax
+    2184:	lea    rcx,[rax+0x4]
+	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    2188:	mov    QWORD PTR [rbx+0x10],r9
+    218c:	mov    DWORD PTR [rax],0x0
+    2192:	je     21b8 <_ZNSt6vectorIfSaIfEEC1EmRKS0_+0x78>
+	*__first = __val;
+    2194:	mov    rdi,rcx
+    2197:	lea    rdx,[r12-0x4]
+    219c:	xor    esi,esi
+    219e:	mov    QWORD PTR [rbp-0x20],r9
+    21a2:	mov    QWORD PTR [rbp-0x18],rax
+    21a6:	call   1120 <memset@plt>
+    21ab:	mov    r9,QWORD PTR [rbp-0x20]
+    21af:	lea    rcx,[r9+rax*1-0x4]
+    21b4:	sub    rcx,QWORD PTR [rbp-0x18]
+	this->_M_impl._M_finish =
+    21b8:	mov    QWORD PTR [rbx+0x8],rcx
+      { _M_default_initialize(__n); }
+    21bc:	add    rsp,0x10
+    21c0:	pop    rbx
+    21c1:	pop    r12
+    21c3:	pop    rbp
+    21c4:	ret
+    21c5:	nop    DWORD PTR [rax]
+	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+    21c8:	xor    ecx,ecx
+	this->_M_impl._M_start = this->_M_allocate(__n);
+    21ca:	mov    QWORD PTR [rdi],0x0
+	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    21d1:	mov    QWORD PTR [rdi+0x10],0x0
+	this->_M_impl._M_finish =
+    21d9:	mov    QWORD PTR [rbx+0x8],rcx
+      { _M_default_initialize(__n); }
+    21dd:	add    rsp,0x10
+    21e1:	pop    rbx
+    21e2:	pop    r12
+    21e4:	pop    rbp
+    21e5:	ret
+	  __throw_length_error(
+    21e6:	lea    rdi,[rip+0xe23]        # 3010 <_IO_stdin_used+0x10>
+    21ed:	call   1110 <_ZSt20__throw_length_errorPKc@plt>
+
+Disassembly of section .fini:
+
+00000000000021f4 <_fini>:
+    21f4:	endbr64
+    21f8:	sub    rsp,0x8
+    21fc:	add    rsp,0x8
+    2200:	ret

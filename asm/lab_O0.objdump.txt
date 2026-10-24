@@ -1,0 +1,3323 @@
+
+lab_O0:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	endbr64
+    1004:	sub    rsp,0x8
+    1008:	mov    rax,QWORD PTR [rip+0x5fe1]        # 6ff0 <__gmon_start__>
+    100f:	test   rax,rax
+    1012:	je     1016 <_init+0x16>
+    1014:	call   rax
+    1016:	add    rsp,0x8
+    101a:	ret
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	push   QWORD PTR [rip+0x5f3a]        # 6f60 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	jmp    QWORD PTR [rip+0x5f3c]        # 6f68 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102c:	nop    DWORD PTR [rax+0x0]
+    1030:	endbr64
+    1034:	push   0x0
+    1039:	jmp    1020 <_init+0x20>
+    103e:	xchg   ax,ax
+    1040:	endbr64
+    1044:	push   0x1
+    1049:	jmp    1020 <_init+0x20>
+    104e:	xchg   ax,ax
+    1050:	endbr64
+    1054:	push   0x2
+    1059:	jmp    1020 <_init+0x20>
+    105e:	xchg   ax,ax
+    1060:	endbr64
+    1064:	push   0x3
+    1069:	jmp    1020 <_init+0x20>
+    106e:	xchg   ax,ax
+    1070:	endbr64
+    1074:	push   0x4
+    1079:	jmp    1020 <_init+0x20>
+    107e:	xchg   ax,ax
+    1080:	endbr64
+    1084:	push   0x5
+    1089:	jmp    1020 <_init+0x20>
+    108e:	xchg   ax,ax
+    1090:	endbr64
+    1094:	push   0x6
+    1099:	jmp    1020 <_init+0x20>
+    109e:	xchg   ax,ax
+    10a0:	endbr64
+    10a4:	push   0x7
+    10a9:	jmp    1020 <_init+0x20>
+    10ae:	xchg   ax,ax
+    10b0:	endbr64
+    10b4:	push   0x8
+    10b9:	jmp    1020 <_init+0x20>
+    10be:	xchg   ax,ax
+    10c0:	endbr64
+    10c4:	push   0x9
+    10c9:	jmp    1020 <_init+0x20>
+    10ce:	xchg   ax,ax
+    10d0:	endbr64
+    10d4:	push   0xa
+    10d9:	jmp    1020 <_init+0x20>
+    10de:	xchg   ax,ax
+    10e0:	endbr64
+    10e4:	push   0xb
+    10e9:	jmp    1020 <_init+0x20>
+    10ee:	xchg   ax,ax
+    10f0:	endbr64
+    10f4:	push   0xc
+    10f9:	jmp    1020 <_init+0x20>
+    10fe:	xchg   ax,ax
+
+Disassembly of section .plt.got:
+
+0000000000001100 <__cxa_finalize@plt>:
+    1100:	endbr64
+    1104:	jmp    QWORD PTR [rip+0x5ece]        # 6fd8 <__cxa_finalize@GLIBC_2.2.5>
+    110a:	nop    WORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .plt.sec:
+
+0000000000001110 <printf@plt>:
+    1110:	endbr64
+    1114:	jmp    QWORD PTR [rip+0x5e56]        # 6f70 <printf@GLIBC_2.2.5>
+    111a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001120 <rand@plt>:
+    1120:	endbr64
+    1124:	jmp    QWORD PTR [rip+0x5e4e]        # 6f78 <rand@GLIBC_2.2.5>
+    112a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001130 <_ZSt21__glibcxx_assert_failPKciS0_S0_@plt>:
+    1130:	endbr64
+    1134:	jmp    QWORD PTR [rip+0x5e46]        # 6f80 <_ZSt21__glibcxx_assert_failPKciS0_S0_@GLIBCXX_3.4.30>
+    113a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001140 <_ZSt17__throw_bad_allocv@plt>:
+    1140:	endbr64
+    1144:	jmp    QWORD PTR [rip+0x5e3e]        # 6f88 <_ZSt17__throw_bad_allocv@GLIBCXX_3.4>
+    114a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001150 <_ZSt20__throw_length_errorPKc@plt>:
+    1150:	endbr64
+    1154:	jmp    QWORD PTR [rip+0x5e36]        # 6f90 <_ZSt20__throw_length_errorPKc@GLIBCXX_3.4>
+    115a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001160 <_ZSt28__throw_bad_array_new_lengthv@plt>:
+    1160:	endbr64
+    1164:	jmp    QWORD PTR [rip+0x5e2e]        # 6f98 <_ZSt28__throw_bad_array_new_lengthv@GLIBCXX_3.4.29>
+    116a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001170 <srand@plt>:
+    1170:	endbr64
+    1174:	jmp    QWORD PTR [rip+0x5e26]        # 6fa0 <srand@GLIBC_2.2.5>
+    117a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001180 <_Znwm@plt>:
+    1180:	endbr64
+    1184:	jmp    QWORD PTR [rip+0x5e1e]        # 6fa8 <_Znwm@GLIBCXX_3.4>
+    118a:	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001190 <_ZdlPvm@plt>:
+    1190:	endbr64
+    1194:	jmp    QWORD PTR [rip+0x5e16]        # 6fb0 <_ZdlPvm@CXXABI_1.3.9>
+    119a:	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011a0 <__stack_chk_fail@plt>:
+    11a0:	endbr64
+    11a4:	jmp    QWORD PTR [rip+0x5e0e]        # 6fb8 <__stack_chk_fail@GLIBC_2.4>
+    11aa:	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>:
+    11b0:	endbr64
+    11b4:	jmp    QWORD PTR [rip+0x5e06]        # 6fc0 <_ZNSt6chrono3_V212steady_clock3nowEv@GLIBCXX_3.4.19>
+    11ba:	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011c0 <atoi@plt>:
+    11c0:	endbr64
+    11c4:	jmp    QWORD PTR [rip+0x5dfe]        # 6fc8 <atoi@GLIBC_2.2.5>
+    11ca:	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011d0 <_Unwind_Resume@plt>:
+    11d0:	endbr64
+    11d4:	jmp    QWORD PTR [rip+0x5df6]        # 6fd0 <_Unwind_Resume@GCC_3.0>
+    11da:	nop    WORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .text:
+
+00000000000011e0 <_start>:
+    11e0:	endbr64
+    11e4:	xor    ebp,ebp
+    11e6:	mov    r9,rdx
+    11e9:	pop    rsi
+    11ea:	mov    rdx,rsp
+    11ed:	and    rsp,0xfffffffffffffff0
+    11f1:	push   rax
+    11f2:	push   rsp
+    11f3:	xor    r8d,r8d
+    11f6:	xor    ecx,ecx
+    11f8:	lea    rdi,[rip+0x50e]        # 170d <main>
+    11ff:	call   QWORD PTR [rip+0x5ddb]        # 6fe0 <__libc_start_main@GLIBC_2.34>
+    1205:	hlt
+    1206:	cs nop WORD PTR [rax+rax*1+0x0]
+
+0000000000001210 <deregister_tm_clones>:
+    1210:	lea    rdi,[rip+0x5e01]        # 7018 <__TMC_END__>
+    1217:	lea    rax,[rip+0x5dfa]        # 7018 <__TMC_END__>
+    121e:	cmp    rax,rdi
+    1221:	je     1238 <deregister_tm_clones+0x28>
+    1223:	mov    rax,QWORD PTR [rip+0x5dbe]        # 6fe8 <_ITM_deregisterTMCloneTable>
+    122a:	test   rax,rax
+    122d:	je     1238 <deregister_tm_clones+0x28>
+    122f:	jmp    rax
+    1231:	nop    DWORD PTR [rax+0x0]
+    1238:	ret
+    1239:	nop    DWORD PTR [rax+0x0]
+
+0000000000001240 <register_tm_clones>:
+    1240:	lea    rdi,[rip+0x5dd1]        # 7018 <__TMC_END__>
+    1247:	lea    rsi,[rip+0x5dca]        # 7018 <__TMC_END__>
+    124e:	sub    rsi,rdi
+    1251:	mov    rax,rsi
+    1254:	shr    rsi,0x3f
+    1258:	sar    rax,0x3
+    125c:	add    rsi,rax
+    125f:	sar    rsi,1
+    1262:	je     1278 <register_tm_clones+0x38>
+    1264:	mov    rax,QWORD PTR [rip+0x5d8d]        # 6ff8 <_ITM_registerTMCloneTable>
+    126b:	test   rax,rax
+    126e:	je     1278 <register_tm_clones+0x38>
+    1270:	jmp    rax
+    1272:	nop    WORD PTR [rax+rax*1+0x0]
+    1278:	ret
+    1279:	nop    DWORD PTR [rax+0x0]
+
+0000000000001280 <__do_global_dtors_aux>:
+    1280:	endbr64
+    1284:	cmp    BYTE PTR [rip+0x5d8d],0x0        # 7018 <__TMC_END__>
+    128b:	jne    12b8 <__do_global_dtors_aux+0x38>
+    128d:	push   rbp
+    128e:	cmp    QWORD PTR [rip+0x5d42],0x0        # 6fd8 <__cxa_finalize@GLIBC_2.2.5>
+    1296:	mov    rbp,rsp
+    1299:	je     12a7 <__do_global_dtors_aux+0x27>
+    129b:	mov    rdi,QWORD PTR [rip+0x5d66]        # 7008 <__dso_handle>
+    12a2:	call   1100 <__cxa_finalize@plt>
+    12a7:	call   1210 <deregister_tm_clones>
+    12ac:	mov    BYTE PTR [rip+0x5d65],0x1        # 7018 <__TMC_END__>
+    12b3:	pop    rbp
+    12b4:	ret
+    12b5:	nop    DWORD PTR [rax]
+    12b8:	ret
+    12b9:	nop    DWORD PTR [rax+0x0]
+
+00000000000012c0 <frame_dummy>:
+    12c0:	endbr64
+    12c4:	jmp    1240 <register_tm_clones>
+
+00000000000012c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>:
+constexpr size_t   BR_N       = 1u << 23;    
+constexpr int      BR_REPS    = 60;
+constexpr int      FIB_K      = 40;
+
+using Clock = std::chrono::steady_clock;
+static double secs(Clock::time_point a, Clock::time_point b) {
+    12c9:	endbr64
+    12cd:	push   rbp
+    12ce:	mov    rbp,rsp
+    12d1:	sub    rsp,0x30
+    12d5:	mov    QWORD PTR [rbp-0x28],rdi
+    12d9:	mov    QWORD PTR [rbp-0x30],rsi
+    12dd:	mov    rax,QWORD PTR fs:0x28
+    12e6:	mov    QWORD PTR [rbp-0x8],rax
+    12ea:	xor    eax,eax
+    return std::chrono::duration<double>(b - a).count();
+    12ec:	lea    rdx,[rbp-0x28]
+    12f0:	lea    rax,[rbp-0x30]
+    12f4:	mov    rsi,rdx
+    12f7:	mov    rdi,rax
+    12fa:	call   1f90 <_ZNSt6chronomiINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE>
+    12ff:	mov    QWORD PTR [rbp-0x18],rax
+    1303:	lea    rdx,[rbp-0x18]
+    1307:	lea    rax,[rbp-0x10]
+    130b:	mov    rsi,rdx
+    130e:	mov    rdi,rax
+    1311:	call   1ffc <_ZNSt6chrono8durationIdSt5ratioILl1ELl1EEEC1IlS1_ILl1ELl1000000000EEvEERKNS0_IT_T0_EE>
+    1316:	lea    rax,[rbp-0x10]
+    131a:	mov    rdi,rax
+    131d:	call   2060 <_ZNKSt6chrono8durationIdSt5ratioILl1ELl1EEE5countEv>
+}
+    1322:	mov    rax,QWORD PTR [rbp-0x8]
+    1326:	sub    rax,QWORD PTR fs:0x28
+    132f:	je     1336 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_+0x6d>
+    1331:	call   11a0 <__stack_chk_fail@plt>
+    1336:	leave
+    1337:	ret
+
+0000000000001338 <_ZL13fill_random_fRSt6vectorIfSaIfEE>:
+
+__attribute__((noipa)) static void fill_random_f(std::vector<float> &a) {
+    1338:	endbr64
+    133c:	push   rbp
+    133d:	mov    rbp,rsp
+    1340:	sub    rsp,0x50
+    1344:	mov    QWORD PTR [rbp-0x48],rdi
+    1348:	mov    rax,QWORD PTR fs:0x28
+    1351:	mov    QWORD PTR [rbp-0x8],rax
+    1355:	xor    eax,eax
+    for (float &x : a) x = static_cast<float>(std::rand()) / static_cast<float>(RAND_MAX);
+    1357:	mov    rax,QWORD PTR [rbp-0x48]
+    135b:	mov    QWORD PTR [rbp-0x28],rax
+    135f:	mov    rax,QWORD PTR [rbp-0x28]
+    1363:	mov    rdi,rax
+    1366:	call   2076 <_ZNSt6vectorIfSaIfEE5beginEv>
+    136b:	mov    QWORD PTR [rbp-0x38],rax
+    136f:	mov    rax,QWORD PTR [rbp-0x28]
+    1373:	mov    rdi,rax
+    1376:	call   20c4 <_ZNSt6vectorIfSaIfEE3endEv>
+    137b:	mov    QWORD PTR [rbp-0x30],rax
+    137f:	jmp    13b7 <_ZL13fill_random_fRSt6vectorIfSaIfEE+0x7f>
+
+      _GLIBCXX_NODISCARD __attribute__((__always_inline__))
+      _GLIBCXX_CONSTEXPR
+      reference
+      operator*() const _GLIBCXX_NOEXCEPT
+      { return *_M_current; }
+    1381:	mov    rax,QWORD PTR [rbp-0x38]
+    1385:	mov    QWORD PTR [rbp-0x20],rax
+    1389:	call   1120 <rand@plt>
+    138e:	pxor   xmm0,xmm0
+    1392:	cvtsi2ss xmm0,eax
+    1396:	movss  xmm1,DWORD PTR [rip+0x2e9e]        # 423c <_ZL5FIB_K+0x210>
+    139e:	divss  xmm0,xmm1
+    13a2:	mov    rax,QWORD PTR [rbp-0x20]
+    13a6:	movss  DWORD PTR [rax],xmm0
+      __attribute__((__always_inline__))
+      _GLIBCXX14_CONSTEXPR
+      __normal_iterator&
+      operator++() _GLIBCXX_NOEXCEPT
+      {
+	++_M_current;
+    13aa:	mov    rax,QWORD PTR [rbp-0x38]
+    13ae:	add    rax,0x4
+    13b2:	mov    QWORD PTR [rbp-0x38],rax
+	return *this;
+    13b6:	nop
+    13b7:	lea    rax,[rbp-0x38]
+    13bb:	mov    QWORD PTR [rbp-0x18],rax
+
+      _GLIBCXX_NODISCARD __attribute__((__always_inline__))
+      _GLIBCXX_CONSTEXPR
+      const _Iterator&
+      base() const _GLIBCXX_NOEXCEPT
+      { return _M_current; }
+    13bf:	mov    rax,QWORD PTR [rbp-0x18]
+    _GLIBCXX_NODISCARD __attribute__((__always_inline__)) _GLIBCXX_CONSTEXPR
+    inline bool
+    operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+	       const __normal_iterator<_Iterator, _Container>& __rhs)
+    _GLIBCXX_NOEXCEPT
+    { return __lhs.base() != __rhs.base(); }
+    13c3:	mov    rdx,QWORD PTR [rax]
+    13c6:	lea    rax,[rbp-0x30]
+    13ca:	mov    QWORD PTR [rbp-0x10],rax
+      { return _M_current; }
+    13ce:	mov    rax,QWORD PTR [rbp-0x10]
+    { return __lhs.base() != __rhs.base(); }
+    13d2:	mov    rax,QWORD PTR [rax]
+    13d5:	cmp    rdx,rax
+    13d8:	setne  al
+    13db:	test   al,al
+    13dd:	jne    1381 <_ZL13fill_random_fRSt6vectorIfSaIfEE+0x49>
+}
+    13df:	nop
+    13e0:	mov    rax,QWORD PTR [rbp-0x8]
+    13e4:	sub    rax,QWORD PTR fs:0x28
+    13ed:	je     13f4 <_ZL13fill_random_fRSt6vectorIfSaIfEE+0xbc>
+    13ef:	call   11a0 <__stack_chk_fail@plt>
+    13f4:	leave
+    13f5:	ret
+
+00000000000013f6 <_ZL13fill_random_iRSt6vectorIiSaIiEE>:
+__attribute__((noipa)) static void fill_random_i(std::vector<int32_t> &a) {
+    13f6:	endbr64
+    13fa:	push   rbp
+    13fb:	mov    rbp,rsp
+    13fe:	sub    rsp,0x50
+    1402:	mov    QWORD PTR [rbp-0x48],rdi
+    1406:	mov    rax,QWORD PTR fs:0x28
+    140f:	mov    QWORD PTR [rbp-0x8],rax
+    1413:	xor    eax,eax
+    for (int32_t &x : a) x = std::rand() & 255;  
+    1415:	mov    rax,QWORD PTR [rbp-0x48]
+    1419:	mov    QWORD PTR [rbp-0x28],rax
+    141d:	mov    rax,QWORD PTR [rbp-0x28]
+    1421:	mov    rdi,rax
+    1424:	call   2116 <_ZNSt6vectorIiSaIiEE5beginEv>
+    1429:	mov    QWORD PTR [rbp-0x38],rax
+    142d:	mov    rax,QWORD PTR [rbp-0x28]
+    1431:	mov    rdi,rax
+    1434:	call   2164 <_ZNSt6vectorIiSaIiEE3endEv>
+    1439:	mov    QWORD PTR [rbp-0x30],rax
+    143d:	jmp    1462 <_ZL13fill_random_iRSt6vectorIiSaIiEE+0x6c>
+      { return *_M_current; }
+    143f:	mov    rax,QWORD PTR [rbp-0x38]
+    1443:	mov    QWORD PTR [rbp-0x20],rax
+    1447:	call   1120 <rand@plt>
+    144c:	movzx  edx,al
+    144f:	mov    rax,QWORD PTR [rbp-0x20]
+    1453:	mov    DWORD PTR [rax],edx
+	++_M_current;
+    1455:	mov    rax,QWORD PTR [rbp-0x38]
+    1459:	add    rax,0x4
+    145d:	mov    QWORD PTR [rbp-0x38],rax
+	return *this;
+    1461:	nop
+    1462:	lea    rax,[rbp-0x38]
+    1466:	mov    QWORD PTR [rbp-0x18],rax
+      { return _M_current; }
+    146a:	mov    rax,QWORD PTR [rbp-0x18]
+    { return __lhs.base() != __rhs.base(); }
+    146e:	mov    rdx,QWORD PTR [rax]
+    1471:	lea    rax,[rbp-0x30]
+    1475:	mov    QWORD PTR [rbp-0x10],rax
+      { return _M_current; }
+    1479:	mov    rax,QWORD PTR [rbp-0x10]
+    { return __lhs.base() != __rhs.base(); }
+    147d:	mov    rax,QWORD PTR [rax]
+    1480:	cmp    rdx,rax
+    1483:	setne  al
+    1486:	test   al,al
+    1488:	jne    143f <_ZL13fill_random_iRSt6vectorIiSaIiEE+0x49>
+}
+    148a:	nop
+    148b:	mov    rax,QWORD PTR [rbp-0x8]
+    148f:	sub    rax,QWORD PTR fs:0x28
+    1498:	je     149f <_ZL13fill_random_iRSt6vectorIiSaIiEE+0xa9>
+    149a:	call   11a0 <__stack_chk_fail@plt>
+    149f:	leave
+    14a0:	ret
+
+00000000000014a1 <matmul>:
+
+KERNEL void matmul(const float *__restrict A, const float *__restrict B,
+                   float *__restrict C, int n) {
+    14a1:	endbr64
+    14a5:	push   rbp
+    14a6:	mov    rbp,rsp
+    14a9:	mov    QWORD PTR [rbp-0x28],rdi
+    14ad:	mov    QWORD PTR [rbp-0x30],rsi
+    14b1:	mov    QWORD PTR [rbp-0x38],rdx
+    14b5:	mov    DWORD PTR [rbp-0x3c],ecx
+    for (int i = 0; i < n * n; i++) C[i] = 0.0f;
+    14b8:	mov    DWORD PTR [rbp-0x14],0x0
+    14bf:	jmp    14e1 <matmul+0x40>
+    14c1:	mov    eax,DWORD PTR [rbp-0x14]
+    14c4:	cdqe
+    14c6:	lea    rdx,[rax*4+0x0]
+    14ce:	mov    rax,QWORD PTR [rbp-0x38]
+    14d2:	add    rax,rdx
+    14d5:	pxor   xmm0,xmm0
+    14d9:	movss  DWORD PTR [rax],xmm0
+    14dd:	add    DWORD PTR [rbp-0x14],0x1
+    14e1:	mov    eax,DWORD PTR [rbp-0x3c]
+    14e4:	imul   eax,eax
+    14e7:	cmp    DWORD PTR [rbp-0x14],eax
+    14ea:	jl     14c1 <matmul+0x20>
+    for (int i = 0; i < n; i++)
+    14ec:	mov    DWORD PTR [rbp-0x10],0x0
+    14f3:	jmp    15c7 <matmul+0x126>
+        for (int k = 0; k < n; k++) {
+    14f8:	mov    DWORD PTR [rbp-0xc],0x0
+    14ff:	jmp    15b7 <matmul+0x116>
+            const float a = A[i * n + k];
+    1504:	mov    eax,DWORD PTR [rbp-0x10]
+    1507:	imul   eax,DWORD PTR [rbp-0x3c]
+    150b:	mov    edx,eax
+    150d:	mov    eax,DWORD PTR [rbp-0xc]
+    1510:	add    eax,edx
+    1512:	cdqe
+    1514:	lea    rdx,[rax*4+0x0]
+    151c:	mov    rax,QWORD PTR [rbp-0x28]
+    1520:	add    rax,rdx
+    1523:	movss  xmm0,DWORD PTR [rax]
+    1527:	movss  DWORD PTR [rbp-0x4],xmm0
+            for (int j = 0; j < n; j++)
+    152c:	mov    DWORD PTR [rbp-0x8],0x0
+    1533:	jmp    15ab <matmul+0x10a>
+                C[i * n + j] += a * B[k * n + j];
+    1535:	mov    eax,DWORD PTR [rbp-0x10]
+    1538:	imul   eax,DWORD PTR [rbp-0x3c]
+    153c:	mov    edx,eax
+    153e:	mov    eax,DWORD PTR [rbp-0x8]
+    1541:	add    eax,edx
+    1543:	cdqe
+    1545:	lea    rdx,[rax*4+0x0]
+    154d:	mov    rax,QWORD PTR [rbp-0x38]
+    1551:	add    rax,rdx
+    1554:	movss  xmm1,DWORD PTR [rax]
+    1558:	mov    eax,DWORD PTR [rbp-0xc]
+    155b:	imul   eax,DWORD PTR [rbp-0x3c]
+    155f:	mov    edx,eax
+    1561:	mov    eax,DWORD PTR [rbp-0x8]
+    1564:	add    eax,edx
+    1566:	cdqe
+    1568:	lea    rdx,[rax*4+0x0]
+    1570:	mov    rax,QWORD PTR [rbp-0x30]
+    1574:	add    rax,rdx
+    1577:	movss  xmm0,DWORD PTR [rax]
+    157b:	mulss  xmm0,DWORD PTR [rbp-0x4]
+    1580:	mov    eax,DWORD PTR [rbp-0x10]
+    1583:	imul   eax,DWORD PTR [rbp-0x3c]
+    1587:	mov    edx,eax
+    1589:	mov    eax,DWORD PTR [rbp-0x8]
+    158c:	add    eax,edx
+    158e:	cdqe
+    1590:	lea    rdx,[rax*4+0x0]
+    1598:	mov    rax,QWORD PTR [rbp-0x38]
+    159c:	add    rax,rdx
+    159f:	addss  xmm0,xmm1
+    15a3:	movss  DWORD PTR [rax],xmm0
+            for (int j = 0; j < n; j++)
+    15a7:	add    DWORD PTR [rbp-0x8],0x1
+    15ab:	mov    eax,DWORD PTR [rbp-0x8]
+    15ae:	cmp    eax,DWORD PTR [rbp-0x3c]
+    15b1:	jl     1535 <matmul+0x94>
+        for (int k = 0; k < n; k++) {
+    15b3:	add    DWORD PTR [rbp-0xc],0x1
+    15b7:	mov    eax,DWORD PTR [rbp-0xc]
+    15ba:	cmp    eax,DWORD PTR [rbp-0x3c]
+    15bd:	jl     1504 <matmul+0x63>
+    for (int i = 0; i < n; i++)
+    15c3:	add    DWORD PTR [rbp-0x10],0x1
+    15c7:	mov    eax,DWORD PTR [rbp-0x10]
+    15ca:	cmp    eax,DWORD PTR [rbp-0x3c]
+    15cd:	jl     14f8 <matmul+0x57>
+        }
+}
+    15d3:	nop
+    15d4:	nop
+    15d5:	pop    rbp
+    15d6:	ret
+
+00000000000015d7 <saxpy>:
+
+KERNEL void saxpy(float a, const float *__restrict x, float *__restrict y, size_t n) {
+    15d7:	endbr64
+    15db:	push   rbp
+    15dc:	mov    rbp,rsp
+    15df:	movss  DWORD PTR [rbp-0x14],xmm0
+    15e4:	mov    QWORD PTR [rbp-0x20],rdi
+    15e8:	mov    QWORD PTR [rbp-0x28],rsi
+    15ec:	mov    QWORD PTR [rbp-0x30],rdx
+    for (size_t i = 0; i < n; i++)
+    15f0:	mov    QWORD PTR [rbp-0x8],0x0
+    15f8:	jmp    1650 <saxpy+0x79>
+        y[i] = a * x[i] + y[i];
+    15fa:	mov    rax,QWORD PTR [rbp-0x8]
+    15fe:	lea    rdx,[rax*4+0x0]
+    1606:	mov    rax,QWORD PTR [rbp-0x20]
+    160a:	add    rax,rdx
+    160d:	movss  xmm0,DWORD PTR [rax]
+    1611:	movaps xmm1,xmm0
+    1614:	mulss  xmm1,DWORD PTR [rbp-0x14]
+    1619:	mov    rax,QWORD PTR [rbp-0x8]
+    161d:	lea    rdx,[rax*4+0x0]
+    1625:	mov    rax,QWORD PTR [rbp-0x28]
+    1629:	add    rax,rdx
+    162c:	movss  xmm0,DWORD PTR [rax]
+    1630:	mov    rax,QWORD PTR [rbp-0x8]
+    1634:	lea    rdx,[rax*4+0x0]
+    163c:	mov    rax,QWORD PTR [rbp-0x28]
+    1640:	add    rax,rdx
+    1643:	addss  xmm0,xmm1
+    1647:	movss  DWORD PTR [rax],xmm0
+    for (size_t i = 0; i < n; i++)
+    164b:	add    QWORD PTR [rbp-0x8],0x1
+    1650:	mov    rax,QWORD PTR [rbp-0x8]
+    1654:	cmp    rax,QWORD PTR [rbp-0x30]
+    1658:	jb     15fa <saxpy+0x23>
+}
+    165a:	nop
+    165b:	nop
+    165c:	pop    rbp
+    165d:	ret
+
+000000000000165e <branchy_sum>:
+
+KERNEL int64_t branchy_sum(const int32_t *__restrict a, size_t n) {
+    165e:	endbr64
+    1662:	push   rbp
+    1663:	mov    rbp,rsp
+    1666:	mov    QWORD PTR [rbp-0x18],rdi
+    166a:	mov    QWORD PTR [rbp-0x20],rsi
+    int64_t s = 0;
+    166e:	mov    QWORD PTR [rbp-0x10],0x0
+    for (size_t i = 0; i < n; i++)
+    1676:	mov    QWORD PTR [rbp-0x8],0x0
+    167e:	jmp    16ba <branchy_sum+0x5c>
+        if (a[i] >= 128)
+    1680:	mov    rax,QWORD PTR [rbp-0x8]
+    1684:	lea    rdx,[rax*4+0x0]
+    168c:	mov    rax,QWORD PTR [rbp-0x18]
+    1690:	add    rax,rdx
+    1693:	mov    eax,DWORD PTR [rax]
+    1695:	cmp    eax,0x7f
+    1698:	jle    16b5 <branchy_sum+0x57>
+            s += a[i];
+    169a:	mov    rax,QWORD PTR [rbp-0x8]
+    169e:	lea    rdx,[rax*4+0x0]
+    16a6:	mov    rax,QWORD PTR [rbp-0x18]
+    16aa:	add    rax,rdx
+    16ad:	mov    eax,DWORD PTR [rax]
+    16af:	cdqe
+    16b1:	add    QWORD PTR [rbp-0x10],rax
+    for (size_t i = 0; i < n; i++)
+    16b5:	add    QWORD PTR [rbp-0x8],0x1
+    16ba:	mov    rax,QWORD PTR [rbp-0x8]
+    16be:	cmp    rax,QWORD PTR [rbp-0x20]
+    16c2:	jb     1680 <branchy_sum+0x22>
+    return s;
+    16c4:	mov    rax,QWORD PTR [rbp-0x10]
+}
+    16c8:	pop    rbp
+    16c9:	ret
+
+00000000000016ca <fib>:
+
+KERNEL uint64_t fib(int k) {
+    16ca:	endbr64
+    16ce:	push   rbp
+    16cf:	mov    rbp,rsp
+    16d2:	push   rbx
+    16d3:	sub    rsp,0x18
+    16d7:	mov    DWORD PTR [rbp-0x14],edi
+    return k < 2 ? static_cast<uint64_t>(k) : fib(k - 1) + fib(k - 2);
+    16da:	cmp    DWORD PTR [rbp-0x14],0x1
+    16de:	jg     16e7 <fib+0x1d>
+    16e0:	mov    eax,DWORD PTR [rbp-0x14]
+    16e3:	cdqe
+    16e5:	jmp    1707 <fib+0x3d>
+    16e7:	mov    eax,DWORD PTR [rbp-0x14]
+    16ea:	sub    eax,0x1
+    16ed:	mov    edi,eax
+    16ef:	call   16ca <fib>
+    16f4:	mov    rbx,rax
+    16f7:	mov    eax,DWORD PTR [rbp-0x14]
+    16fa:	sub    eax,0x2
+    16fd:	mov    edi,eax
+    16ff:	call   16ca <fib>
+    1704:	add    rax,rbx
+}
+    1707:	mov    rbx,QWORD PTR [rbp-0x8]
+    170b:	leave
+    170c:	ret
+
+000000000000170d <main>:
+
+int main(int argc, char **argv) {
+    170d:	endbr64
+    1711:	push   rbp
+    1712:	mov    rbp,rsp
+    1715:	push   r12
+    1717:	push   rbx
+    1718:	sub    rsp,0x150
+    171f:	mov    DWORD PTR [rbp-0x154],edi
+    1725:	mov    QWORD PTR [rbp-0x160],rsi
+    172c:	mov    rax,QWORD PTR fs:0x28
+    1735:	mov    QWORD PTR [rbp-0x18],rax
+    1739:	xor    eax,eax
+    int scale = (argc > 1) ? std::atoi(argv[1]) : 1;
+    173b:	cmp    DWORD PTR [rbp-0x154],0x1
+    1742:	jle    1762 <main+0x55>
+    1744:	mov    rax,QWORD PTR [rbp-0x160]
+    174b:	add    rax,0x8
+    174f:	mov    rax,QWORD PTR [rax]
+    1752:	mov    rdi,rax
+    1755:	call   11c0 <atoi@plt>
+    175a:	mov    DWORD PTR [rbp-0x148],eax
+    1760:	jmp    176c <main+0x5f>
+    1762:	mov    DWORD PTR [rbp-0x148],0x1
+    if (scale < 1) scale = 1;
+    176c:	cmp    DWORD PTR [rbp-0x148],0x0
+    1773:	jg     177f <main+0x72>
+    1775:	mov    DWORD PTR [rbp-0x148],0x1
+    std::srand(12345);
+    177f:	mov    edi,0x3039
+    1784:	call   1170 <srand@plt>
+
+    const int n = MAT_N;
+    1789:	mov    DWORD PTR [rbp-0x134],0x400
+    1793:	lea    rax,[rbp-0x30]
+    1797:	mov    QWORD PTR [rbp-0x100],rax
+      typedef std::true_type propagate_on_container_move_assignment;
+#endif
+
+      __attribute__((__always_inline__))
+      _GLIBCXX20_CONSTEXPR
+      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    179e:	nop
+
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // 3035. std::allocator's constructors should be constexpr
+      __attribute__((__always_inline__))
+      _GLIBCXX20_CONSTEXPR
+      allocator() _GLIBCXX_NOTHROW { }
+    179f:	nop
+    std::vector<float>   A(static_cast<size_t>(n) * n), B(A.size()), C(A.size());
+    17a0:	lea    rdx,[rbp-0x30]
+    17a4:	lea    rax,[rbp-0xd0]
+    17ab:	mov    esi,0x100000
+    17b0:	mov    rdi,rax
+    17b3:	call   21b6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+
+      __attribute__((__always_inline__))
+#if __cpp_constexpr_dynamic_alloc
+      constexpr
+#endif
+      ~allocator() _GLIBCXX_NOTHROW { }
+    17b8:	lea    rax,[rbp-0x30]
+    17bc:	mov    rdi,rax
+    17bf:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    17c4:	nop
+    17c5:	lea    rax,[rbp-0x30]
+    17c9:	mov    QWORD PTR [rbp-0xf8],rax
+    17d0:	nop
+      allocator() _GLIBCXX_NOTHROW { }
+    17d1:	nop
+    17d2:	lea    rax,[rbp-0xd0]
+    17d9:	mov    rdi,rax
+    17dc:	call   228e <_ZNKSt6vectorIfSaIfEE4sizeEv>
+    17e1:	mov    rcx,rax
+    17e4:	lea    rdx,[rbp-0x30]
+    17e8:	lea    rax,[rbp-0xb0]
+    17ef:	mov    rsi,rcx
+    17f2:	mov    rdi,rax
+    17f5:	call   21b6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+      ~allocator() _GLIBCXX_NOTHROW { }
+    17fa:	lea    rax,[rbp-0x30]
+    17fe:	mov    rdi,rax
+    1801:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1806:	nop
+    1807:	lea    rax,[rbp-0x30]
+    180b:	mov    QWORD PTR [rbp-0xf0],rax
+    1812:	nop
+      allocator() _GLIBCXX_NOTHROW { }
+    1813:	nop
+    1814:	lea    rax,[rbp-0xd0]
+    181b:	mov    rdi,rax
+    181e:	call   228e <_ZNKSt6vectorIfSaIfEE4sizeEv>
+    1823:	mov    rcx,rax
+    1826:	lea    rdx,[rbp-0x30]
+    182a:	lea    rax,[rbp-0x90]
+    1831:	mov    rsi,rcx
+    1834:	mov    rdi,rax
+    1837:	call   21b6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+      ~allocator() _GLIBCXX_NOTHROW { }
+    183c:	lea    rax,[rbp-0x30]
+    1840:	mov    rdi,rax
+    1843:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1848:	nop
+    1849:	lea    rax,[rbp-0x30]
+    184d:	mov    QWORD PTR [rbp-0xe8],rax
+    1854:	nop
+      allocator() _GLIBCXX_NOTHROW { }
+    1855:	nop
+    std::vector<float>   x(VEC_N), y(VEC_N);
+    1856:	lea    rdx,[rbp-0x30]
+    185a:	lea    rax,[rbp-0x70]
+    185e:	mov    esi,0x400000
+    1863:	mov    rdi,rax
+    1866:	call   21b6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+      ~allocator() _GLIBCXX_NOTHROW { }
+    186b:	lea    rax,[rbp-0x30]
+    186f:	mov    rdi,rax
+    1872:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1877:	nop
+    1878:	lea    rax,[rbp-0x30]
+    187c:	mov    QWORD PTR [rbp-0xe0],rax
+    1883:	nop
+      allocator() _GLIBCXX_NOTHROW { }
+    1884:	nop
+    1885:	lea    rdx,[rbp-0x30]
+    1889:	lea    rax,[rbp-0x50]
+    188d:	mov    esi,0x400000
+    1892:	mov    rdi,rax
+    1895:	call   21b6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>
+      ~allocator() _GLIBCXX_NOTHROW { }
+    189a:	lea    rax,[rbp-0x30]
+    189e:	mov    rdi,rax
+    18a1:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    18a6:	nop
+    18a7:	lea    rax,[rbp-0x120]
+    18ae:	mov    QWORD PTR [rbp-0xd8],rax
+    18b5:	nop
+      allocator() _GLIBCXX_NOTHROW { }
+    18b6:	nop
+    std::vector<int32_t> br(BR_N);
+    18b7:	lea    rdx,[rbp-0x120]
+    18be:	lea    rax,[rbp-0x30]
+    18c2:	mov    esi,0x800000
+    18c7:	mov    rdi,rax
+    18ca:	call   22c2 <_ZNSt6vectorIiSaIiEEC1EmRKS0_>
+      ~allocator() _GLIBCXX_NOTHROW { }
+    18cf:	lea    rax,[rbp-0x120]
+    18d6:	mov    rdi,rax
+    18d9:	call   27ce <_ZNSt15__new_allocatorIiED1Ev>
+    18de:	nop
+
+    auto t0 = Clock::now(), t = t0;
+    18df:	call   11b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    18e4:	mov    QWORD PTR [rbp-0x130],rax
+    18eb:	mov    rax,QWORD PTR [rbp-0x130]
+    18f2:	mov    QWORD PTR [rbp-0x128],rax
+    const auto t_start = t0; 
+    18f9:	mov    rax,QWORD PTR [rbp-0x130]
+    1900:	mov    QWORD PTR [rbp-0x120],rax
+    fill_random_f(A); fill_random_f(B); fill_random_f(x); fill_random_f(y);
+    1907:	lea    rax,[rbp-0xd0]
+    190e:	mov    rdi,rax
+    1911:	call   1338 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    1916:	lea    rax,[rbp-0xb0]
+    191d:	mov    rdi,rax
+    1920:	call   1338 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    1925:	lea    rax,[rbp-0x70]
+    1929:	mov    rdi,rax
+    192c:	call   1338 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    1931:	lea    rax,[rbp-0x50]
+    1935:	mov    rdi,rax
+    1938:	call   1338 <_ZL13fill_random_fRSt6vectorIfSaIfEE>
+    fill_random_i(br);
+    193d:	lea    rax,[rbp-0x30]
+    1941:	mov    rdi,rax
+    1944:	call   13f6 <_ZL13fill_random_iRSt6vectorIiSaIiEE>
+    t = Clock::now(); std::printf("[init  ] %7.3f s\n", secs(t0, t)); t0 = t;
+    1949:	call   11b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    194e:	mov    QWORD PTR [rbp-0x128],rax
+    1955:	mov    rdx,QWORD PTR [rbp-0x128]
+    195c:	mov    rax,QWORD PTR [rbp-0x130]
+    1963:	mov    rsi,rdx
+    1966:	mov    rdi,rax
+    1969:	call   12c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>
+    196e:	movq   rax,xmm0
+    1973:	lea    rdx,[rip+0x26b6]        # 4030 <_ZL5FIB_K+0x4>
+    197a:	movq   xmm0,rax
+    197f:	mov    rdi,rdx
+    1982:	mov    eax,0x1
+    1987:	call   1110 <printf@plt>
+    198c:	mov    rax,QWORD PTR [rbp-0x128]
+    1993:	mov    QWORD PTR [rbp-0x130],rax
+
+    double check = 0.0;
+    199a:	pxor   xmm0,xmm0
+    199e:	movsd  QWORD PTR [rbp-0x108],xmm0
+
+    for (int r = 0; r < MAT_REPS * scale; r++) matmul(A.data(), B.data(), C.data(), n);
+    19a6:	mov    DWORD PTR [rbp-0x144],0x0
+    19b0:	jmp    19ff <main+0x2f2>
+    19b2:	lea    rax,[rbp-0x90]
+    19b9:	mov    rdi,rax
+    19bc:	call   239a <_ZNSt6vectorIfSaIfEE4dataEv>
+    19c1:	mov    r12,rax
+    19c4:	lea    rax,[rbp-0xb0]
+    19cb:	mov    rdi,rax
+    19ce:	call   239a <_ZNSt6vectorIfSaIfEE4dataEv>
+    19d3:	mov    rbx,rax
+    19d6:	lea    rax,[rbp-0xd0]
+    19dd:	mov    rdi,rax
+    19e0:	call   239a <_ZNSt6vectorIfSaIfEE4dataEv>
+    19e5:	mov    ecx,0x400
+    19ea:	mov    rdx,r12
+    19ed:	mov    rsi,rbx
+    19f0:	mov    rdi,rax
+    19f3:	call   14a1 <matmul>
+    19f8:	add    DWORD PTR [rbp-0x144],0x1
+    19ff:	mov    eax,DWORD PTR [rbp-0x148]
+    1a05:	add    eax,eax
+    1a07:	cmp    DWORD PTR [rbp-0x144],eax
+    1a0d:	jl     19b2 <main+0x2a5>
+    check += C.front() + C.back();
+    1a0f:	lea    rax,[rbp-0x90]
+    1a16:	mov    rdi,rax
+    1a19:	call   23c2 <_ZNSt6vectorIfSaIfEE5frontEv>
+    1a1e:	movss  xmm2,DWORD PTR [rax]
+    1a22:	movss  DWORD PTR [rbp-0x158],xmm2
+    1a2a:	lea    rax,[rbp-0x90]
+    1a31:	mov    rdi,rax
+    1a34:	call   2446 <_ZNSt6vectorIfSaIfEE4backEv>
+    1a39:	movss  xmm0,DWORD PTR [rax]
+    1a3d:	addss  xmm0,DWORD PTR [rbp-0x158]
+    1a45:	cvtss2sd xmm0,xmm0
+    1a49:	movsd  xmm1,QWORD PTR [rbp-0x108]
+    1a51:	addsd  xmm0,xmm1
+    1a55:	movsd  QWORD PTR [rbp-0x108],xmm0
+    t = Clock::now(); std::printf("[matmul] %7.3f s\n", secs(t0, t)); t0 = t;
+    1a5d:	call   11b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    1a62:	mov    QWORD PTR [rbp-0x128],rax
+    1a69:	mov    rdx,QWORD PTR [rbp-0x128]
+    1a70:	mov    rax,QWORD PTR [rbp-0x130]
+    1a77:	mov    rsi,rdx
+    1a7a:	mov    rdi,rax
+    1a7d:	call   12c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>
+    1a82:	movq   rax,xmm0
+    1a87:	lea    rdx,[rip+0x25b4]        # 4042 <_ZL5FIB_K+0x16>
+    1a8e:	movq   xmm0,rax
+    1a93:	mov    rdi,rdx
+    1a96:	mov    eax,0x1
+    1a9b:	call   1110 <printf@plt>
+    1aa0:	mov    rax,QWORD PTR [rbp-0x128]
+    1aa7:	mov    QWORD PTR [rbp-0x130],rax
+
+    for (int r = 0; r < SAXPY_REPS * scale; r++) saxpy(1.0001f, x.data(), y.data(), VEC_N);
+    1aae:	mov    DWORD PTR [rbp-0x140],0x0
+    1ab8:	jmp    1af6 <main+0x3e9>
+    1aba:	lea    rax,[rbp-0x50]
+    1abe:	mov    rdi,rax
+    1ac1:	call   239a <_ZNSt6vectorIfSaIfEE4dataEv>
+    1ac6:	mov    rbx,rax
+    1ac9:	lea    rax,[rbp-0x70]
+    1acd:	mov    rdi,rax
+    1ad0:	call   239a <_ZNSt6vectorIfSaIfEE4dataEv>
+    1ad5:	mov    edx,0x400000
+    1ada:	mov    rsi,rbx
+    1add:	mov    rdi,rax
+    1ae0:	mov    eax,DWORD PTR [rip+0x275a]        # 4240 <_ZL5FIB_K+0x214>
+    1ae6:	movd   xmm0,eax
+    1aea:	call   15d7 <saxpy>
+    1aef:	add    DWORD PTR [rbp-0x140],0x1
+    1af6:	mov    eax,DWORD PTR [rbp-0x148]
+    1afc:	imul   eax,eax,0x12c
+    1b02:	cmp    DWORD PTR [rbp-0x140],eax
+    1b08:	jl     1aba <main+0x3ad>
+    check += y.front() + y.back();
+    1b0a:	lea    rax,[rbp-0x50]
+    1b0e:	mov    rdi,rax
+    1b11:	call   23c2 <_ZNSt6vectorIfSaIfEE5frontEv>
+    1b16:	movss  xmm3,DWORD PTR [rax]
+    1b1a:	movss  DWORD PTR [rbp-0x158],xmm3
+    1b22:	lea    rax,[rbp-0x50]
+    1b26:	mov    rdi,rax
+    1b29:	call   2446 <_ZNSt6vectorIfSaIfEE4backEv>
+    1b2e:	movss  xmm0,DWORD PTR [rax]
+    1b32:	addss  xmm0,DWORD PTR [rbp-0x158]
+    1b3a:	cvtss2sd xmm0,xmm0
+    1b3e:	movsd  xmm1,QWORD PTR [rbp-0x108]
+    1b46:	addsd  xmm0,xmm1
+    1b4a:	movsd  QWORD PTR [rbp-0x108],xmm0
+    t = Clock::now(); std::printf("[saxpy ] %7.3f s\n", secs(t0, t)); t0 = t;
+    1b52:	call   11b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    1b57:	mov    QWORD PTR [rbp-0x128],rax
+    1b5e:	mov    rdx,QWORD PTR [rbp-0x128]
+    1b65:	mov    rax,QWORD PTR [rbp-0x130]
+    1b6c:	mov    rsi,rdx
+    1b6f:	mov    rdi,rax
+    1b72:	call   12c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>
+    1b77:	movq   rax,xmm0
+    1b7c:	lea    rdx,[rip+0x24d1]        # 4054 <_ZL5FIB_K+0x28>
+    1b83:	movq   xmm0,rax
+    1b88:	mov    rdi,rdx
+    1b8b:	mov    eax,0x1
+    1b90:	call   1110 <printf@plt>
+    1b95:	mov    rax,QWORD PTR [rbp-0x128]
+    1b9c:	mov    QWORD PTR [rbp-0x130],rax
+
+    int64_t bs = 0;
+    1ba3:	mov    QWORD PTR [rbp-0x118],0x0
+    for (int r = 0; r < BR_REPS * scale; r++) bs += branchy_sum(br.data(), BR_N);
+    1bae:	mov    DWORD PTR [rbp-0x13c],0x0
+    1bb8:	jmp    1be1 <main+0x4d4>
+    1bba:	lea    rax,[rbp-0x30]
+    1bbe:	mov    rdi,rax
+    1bc1:	call   24fa <_ZNSt6vectorIiSaIiEE4dataEv>
+    1bc6:	mov    esi,0x800000
+    1bcb:	mov    rdi,rax
+    1bce:	call   165e <branchy_sum>
+    1bd3:	add    QWORD PTR [rbp-0x118],rax
+    1bda:	add    DWORD PTR [rbp-0x13c],0x1
+    1be1:	mov    eax,DWORD PTR [rbp-0x148]
+    1be7:	imul   eax,eax,0x3c
+    1bea:	cmp    DWORD PTR [rbp-0x13c],eax
+    1bf0:	jl     1bba <main+0x4ad>
+    check += static_cast<double>(bs);
+    1bf2:	pxor   xmm0,xmm0
+    1bf6:	cvtsi2sd xmm0,QWORD PTR [rbp-0x118]
+    1bff:	movsd  xmm1,QWORD PTR [rbp-0x108]
+    1c07:	addsd  xmm0,xmm1
+    1c0b:	movsd  QWORD PTR [rbp-0x108],xmm0
+    t = Clock::now(); std::printf("[branch] %7.3f s\n", secs(t0, t)); t0 = t;
+    1c13:	call   11b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    1c18:	mov    QWORD PTR [rbp-0x128],rax
+    1c1f:	mov    rdx,QWORD PTR [rbp-0x128]
+    1c26:	mov    rax,QWORD PTR [rbp-0x130]
+    1c2d:	mov    rsi,rdx
+    1c30:	mov    rdi,rax
+    1c33:	call   12c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>
+    1c38:	movq   rax,xmm0
+    1c3d:	lea    rdx,[rip+0x2422]        # 4066 <_ZL5FIB_K+0x3a>
+    1c44:	movq   xmm0,rax
+    1c49:	mov    rdi,rdx
+    1c4c:	mov    eax,0x1
+    1c51:	call   1110 <printf@plt>
+    1c56:	mov    rax,QWORD PTR [rbp-0x128]
+    1c5d:	mov    QWORD PTR [rbp-0x130],rax
+
+    uint64_t f = 0;
+    1c64:	mov    QWORD PTR [rbp-0x110],0x0
+    for (int r = 0; r < scale; r++) f += fib(FIB_K);
+    1c6f:	mov    DWORD PTR [rbp-0x138],0x0
+    1c79:	jmp    1c93 <main+0x586>
+    1c7b:	mov    edi,0x28
+    1c80:	call   16ca <fib>
+    1c85:	add    QWORD PTR [rbp-0x110],rax
+    1c8c:	add    DWORD PTR [rbp-0x138],0x1
+    1c93:	mov    eax,DWORD PTR [rbp-0x138]
+    1c99:	cmp    eax,DWORD PTR [rbp-0x148]
+    1c9f:	jl     1c7b <main+0x56e>
+    check += static_cast<double>(f);
+    1ca1:	mov    rax,QWORD PTR [rbp-0x110]
+    1ca8:	test   rax,rax
+    1cab:	js     1cb8 <main+0x5ab>
+    1cad:	pxor   xmm0,xmm0
+    1cb1:	cvtsi2sd xmm0,rax
+    1cb6:	jmp    1cd1 <main+0x5c4>
+    1cb8:	mov    rdx,rax
+    1cbb:	shr    rdx,1
+    1cbe:	and    eax,0x1
+    1cc1:	or     rdx,rax
+    1cc4:	pxor   xmm0,xmm0
+    1cc8:	cvtsi2sd xmm0,rdx
+    1ccd:	addsd  xmm0,xmm0
+    1cd1:	movsd  xmm1,QWORD PTR [rbp-0x108]
+    1cd9:	addsd  xmm0,xmm1
+    1cdd:	movsd  QWORD PTR [rbp-0x108],xmm0
+    t = Clock::now(); std::printf("[fib   ] %7.3f s\n", secs(t0, t));
+    1ce5:	call   11b0 <_ZNSt6chrono3_V212steady_clock3nowEv@plt>
+    1cea:	mov    QWORD PTR [rbp-0x128],rax
+    1cf1:	mov    rdx,QWORD PTR [rbp-0x128]
+    1cf8:	mov    rax,QWORD PTR [rbp-0x130]
+    1cff:	mov    rsi,rdx
+    1d02:	mov    rdi,rax
+    1d05:	call   12c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>
+    1d0a:	movq   rax,xmm0
+    1d0f:	lea    rdx,[rip+0x2362]        # 4078 <_ZL5FIB_K+0x4c>
+    1d16:	movq   xmm0,rax
+    1d1b:	mov    rdi,rdx
+    1d1e:	mov    eax,0x1
+    1d23:	call   1110 <printf@plt>
+    
+    std::printf("[total ] %7.3f s\n", secs(t_start, t));
+    1d28:	mov    rdx,QWORD PTR [rbp-0x128]
+    1d2f:	mov    rax,QWORD PTR [rbp-0x120]
+    1d36:	mov    rsi,rdx
+    1d39:	mov    rdi,rax
+    1d3c:	call   12c9 <_ZL4secsNSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEES7_>
+    1d41:	movq   rax,xmm0
+    1d46:	lea    rdx,[rip+0x233d]        # 408a <_ZL5FIB_K+0x5e>
+    1d4d:	movq   xmm0,rax
+    1d52:	mov    rdi,rdx
+    1d55:	mov    eax,0x1
+    1d5a:	call   1110 <printf@plt>
+
+    std::printf("checksum = %.6e\n", check);
+    1d5f:	mov    rax,QWORD PTR [rbp-0x108]
+    1d66:	lea    rdx,[rip+0x232f]        # 409c <_ZL5FIB_K+0x70>
+    1d6d:	movq   xmm0,rax
+    1d72:	mov    rdi,rdx
+    1d75:	mov    eax,0x1
+    1d7a:	call   1110 <printf@plt>
+    return 0;
+    1d7f:	mov    ebx,0x0
+}
+    1d84:	lea    rax,[rbp-0x30]
+    1d88:	mov    rdi,rax
+    1d8b:	call   2340 <_ZNSt6vectorIiSaIiEED1Ev>
+    1d90:	lea    rax,[rbp-0x50]
+    1d94:	mov    rdi,rax
+    1d97:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1d9c:	lea    rax,[rbp-0x70]
+    1da0:	mov    rdi,rax
+    1da3:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1da8:	lea    rax,[rbp-0x90]
+    1daf:	mov    rdi,rax
+    1db2:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1db7:	lea    rax,[rbp-0xb0]
+    1dbe:	mov    rdi,rax
+    1dc1:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1dc6:	lea    rax,[rbp-0xd0]
+    1dcd:	mov    rdi,rax
+    1dd0:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1dd5:	mov    eax,ebx
+    1dd7:	mov    rdx,QWORD PTR [rbp-0x18]
+    1ddb:	sub    rdx,QWORD PTR fs:0x28
+    1de4:	je     1f12 <main+0x805>
+    1dea:	jmp    1f0d <main+0x800>
+    1def:	endbr64
+    1df3:	mov    rbx,rax
+    1df6:	lea    rax,[rbp-0x30]
+    1dfa:	mov    rdi,rax
+    1dfd:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1e02:	nop
+    1e03:	mov    rax,rbx
+    1e06:	mov    rdx,QWORD PTR [rbp-0x18]
+    1e0a:	sub    rdx,QWORD PTR fs:0x28
+    1e13:	je     1e1a <main+0x70d>
+    1e15:	call   11a0 <__stack_chk_fail@plt>
+    1e1a:	mov    rdi,rax
+    1e1d:	call   11d0 <_Unwind_Resume@plt>
+    1e22:	endbr64
+    1e26:	mov    rbx,rax
+    1e29:	lea    rax,[rbp-0x30]
+    1e2d:	mov    rdi,rax
+    1e30:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1e35:	nop
+    1e36:	jmp    1edf <main+0x7d2>
+    1e3b:	endbr64
+    1e3f:	mov    rbx,rax
+    1e42:	lea    rax,[rbp-0x30]
+    1e46:	mov    rdi,rax
+    1e49:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1e4e:	nop
+    1e4f:	jmp    1ed0 <main+0x7c3>
+    1e51:	endbr64
+    1e55:	mov    rbx,rax
+    1e58:	lea    rax,[rbp-0x30]
+    1e5c:	mov    rdi,rax
+    1e5f:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1e64:	nop
+    1e65:	jmp    1ec1 <main+0x7b4>
+    1e67:	endbr64
+    1e6b:	mov    rbx,rax
+    1e6e:	lea    rax,[rbp-0x30]
+    1e72:	mov    rdi,rax
+    1e75:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    1e7a:	nop
+    1e7b:	jmp    1eb5 <main+0x7a8>
+    1e7d:	endbr64
+    1e81:	mov    rbx,rax
+    1e84:	lea    rax,[rbp-0x120]
+    1e8b:	mov    rdi,rax
+    1e8e:	call   27ce <_ZNSt15__new_allocatorIiED1Ev>
+    1e93:	nop
+    1e94:	jmp    1ea9 <main+0x79c>
+    1e96:	endbr64
+    1e9a:	mov    rbx,rax
+    1e9d:	lea    rax,[rbp-0x30]
+    1ea1:	mov    rdi,rax
+    1ea4:	call   2340 <_ZNSt6vectorIiSaIiEED1Ev>
+    1ea9:	lea    rax,[rbp-0x50]
+    1ead:	mov    rdi,rax
+    1eb0:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1eb5:	lea    rax,[rbp-0x70]
+    1eb9:	mov    rdi,rax
+    1ebc:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1ec1:	lea    rax,[rbp-0x90]
+    1ec8:	mov    rdi,rax
+    1ecb:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1ed0:	lea    rax,[rbp-0xb0]
+    1ed7:	mov    rdi,rax
+    1eda:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1edf:	lea    rax,[rbp-0xd0]
+    1ee6:	mov    rdi,rax
+    1ee9:	call   2234 <_ZNSt6vectorIfSaIfEED1Ev>
+    1eee:	mov    rax,rbx
+    1ef1:	mov    rdx,QWORD PTR [rbp-0x18]
+    1ef5:	sub    rdx,QWORD PTR fs:0x28
+    1efe:	je     1f05 <main+0x7f8>
+    1f00:	call   11a0 <__stack_chk_fail@plt>
+    1f05:	mov    rdi,rax
+    1f08:	call   11d0 <_Unwind_Resume@plt>
+    1f0d:	call   11a0 <__stack_chk_fail@plt>
+    1f12:	add    rsp,0x150
+    1f19:	pop    rbx
+    1f1a:	pop    r12
+    1f1c:	pop    rbp
+    1f1d:	ret
+
+0000000000001f1e <_ZNSt6chrono8durationIlSt5ratioILl1ELl1000000000EEEC1IlvEERKT_>:
+	// _GLIBCXX_RESOLVE_LIB_DEFECTS
+	// 3050. Conversion specification problem in chrono::duration
+	template<typename _Rep2, typename = _Require<
+		 is_convertible<const _Rep2&, rep>,
+		 __or_<__is_float<rep>, __not_<__is_float<_Rep2>>>>>
+	  constexpr explicit duration(const _Rep2& __rep)
+    1f1e:	endbr64
+    1f22:	push   rbp
+    1f23:	mov    rbp,rsp
+    1f26:	mov    QWORD PTR [rbp-0x8],rdi
+    1f2a:	mov    QWORD PTR [rbp-0x10],rsi
+	  : __r(static_cast<rep>(__rep)) { }
+    1f2e:	mov    rax,QWORD PTR [rbp-0x10]
+    1f32:	mov    rdx,QWORD PTR [rax]
+    1f35:	mov    rax,QWORD PTR [rbp-0x8]
+    1f39:	mov    QWORD PTR [rax],rdx
+    1f3c:	nop
+    1f3d:	pop    rbp
+    1f3e:	ret
+    1f3f:	nop
+
+0000000000001f40 <_ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv>:
+	~duration() = default;
+	duration& operator=(const duration&) = default;
+
+	// 20.11.5.2 observer
+	constexpr rep
+	count() const
+    1f40:	endbr64
+    1f44:	push   rbp
+    1f45:	mov    rbp,rsp
+    1f48:	mov    QWORD PTR [rbp-0x8],rdi
+	{ return __r; }
+    1f4c:	mov    rax,QWORD PTR [rbp-0x8]
+    1f50:	mov    rax,QWORD PTR [rax]
+    1f53:	pop    rbp
+    1f54:	ret
+
+0000000000001f55 <_ZSt17__size_to_integerm>:
+  inline _GLIBCXX_CONSTEXPR unsigned
+  __size_to_integer(unsigned __n) { return __n; }
+  inline _GLIBCXX_CONSTEXPR long
+  __size_to_integer(long __n) { return __n; }
+  inline _GLIBCXX_CONSTEXPR unsigned long
+  __size_to_integer(unsigned long __n) { return __n; }
+    1f55:	endbr64
+    1f59:	push   rbp
+    1f5a:	mov    rbp,rsp
+    1f5d:	mov    QWORD PTR [rbp-0x8],rdi
+    1f61:	mov    rax,QWORD PTR [rbp-0x8]
+    1f65:	pop    rbp
+    1f66:	ret
+
+0000000000001f67 <_ZnwmPv>:
+
+// Default placement versions of operator new.
+_GLIBCXX_NODISCARD _GLIBCXX_PLACEMENT_CONSTEXPR
+void* operator new(std::size_t, void* __p)
+  _GLIBCXX_TXN_SAFE _GLIBCXX_USE_NOEXCEPT
+{ return __p; }
+    1f67:	endbr64
+    1f6b:	push   rbp
+    1f6c:	mov    rbp,rsp
+    1f6f:	mov    QWORD PTR [rbp-0x8],rdi
+    1f73:	mov    QWORD PTR [rbp-0x10],rsi
+    1f77:	mov    rax,QWORD PTR [rbp-0x10]
+    1f7b:	pop    rbp
+    1f7c:	ret
+
+0000000000001f7d <_ZdlPvS_>:
+#undef _GLIBCXX_PLACEMENT_CONSTEXPR
+
+// Default placement versions of operator delete.
+inline void operator delete  (void*, void*)
+  _GLIBCXX_TXN_SAFE _GLIBCXX_USE_NOEXCEPT
+{ }
+    1f7d:	endbr64
+    1f81:	push   rbp
+    1f82:	mov    rbp,rsp
+    1f85:	mov    QWORD PTR [rbp-0x8],rdi
+    1f89:	mov    QWORD PTR [rbp-0x10],rsi
+    1f8d:	nop
+    1f8e:	pop    rbp
+    1f8f:	ret
+
+0000000000001f90 <_ZNSt6chronomiINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE>:
+      }
+
+    /// The difference between two time points (as a duration)
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr typename common_type<_Dur1, _Dur2>::type
+      operator-(const time_point<_Clock, _Dur1>& __lhs,
+    1f90:	endbr64
+    1f94:	push   rbp
+    1f95:	mov    rbp,rsp
+    1f98:	sub    rsp,0x30
+    1f9c:	mov    QWORD PTR [rbp-0x28],rdi
+    1fa0:	mov    QWORD PTR [rbp-0x30],rsi
+    1fa4:	mov    rax,QWORD PTR fs:0x28
+    1fad:	mov    QWORD PTR [rbp-0x8],rax
+    1fb1:	xor    eax,eax
+		const time_point<_Clock, _Dur2>& __rhs)
+      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
+    1fb3:	mov    rax,QWORD PTR [rbp-0x30]
+    1fb7:	mov    rdi,rax
+    1fba:	call   2522 <_ZNKSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv>
+    1fbf:	mov    QWORD PTR [rbp-0x10],rax
+    1fc3:	mov    rax,QWORD PTR [rbp-0x28]
+    1fc7:	mov    rdi,rax
+    1fca:	call   2522 <_ZNKSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv>
+    1fcf:	mov    QWORD PTR [rbp-0x18],rax
+    1fd3:	lea    rdx,[rbp-0x10]
+    1fd7:	lea    rax,[rbp-0x18]
+    1fdb:	mov    rsi,rdx
+    1fde:	mov    rdi,rax
+    1fe1:	call   2537 <_ZNSt6chronomiIlSt5ratioILl1ELl1000000000EElS2_EENSt11common_typeIJNS_8durationIT_T0_EENS4_IT1_T2_EEEE4typeERKS7_RKSA_>
+    1fe6:	mov    rdx,QWORD PTR [rbp-0x8]
+    1fea:	sub    rdx,QWORD PTR fs:0x28
+    1ff3:	je     1ffa <_ZNSt6chronomiINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE+0x6a>
+    1ff5:	call   11a0 <__stack_chk_fail@plt>
+    1ffa:	leave
+    1ffb:	ret
+
+0000000000001ffc <_ZNSt6chrono8durationIdSt5ratioILl1ELl1EEEC1IlS1_ILl1ELl1000000000EEvEERKNS0_IT_T0_EE>:
+	  constexpr duration(const duration<_Rep2, _Period2>& __d)
+    1ffc:	endbr64
+    2000:	push   rbp
+    2001:	mov    rbp,rsp
+    2004:	sub    rsp,0x20
+    2008:	mov    QWORD PTR [rbp-0x18],rdi
+    200c:	mov    QWORD PTR [rbp-0x20],rsi
+    2010:	mov    rax,QWORD PTR fs:0x28
+    2019:	mov    QWORD PTR [rbp-0x8],rax
+    201d:	xor    eax,eax
+	  : __r(duration_cast<duration>(__d).count()) { }
+    201f:	mov    rax,QWORD PTR [rbp-0x20]
+    2023:	mov    rdi,rax
+    2026:	call   25c7 <_ZNSt6chrono13duration_castINS_8durationIdSt5ratioILl1ELl1EEEElS2_ILl1ELl1000000000EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE>
+    202b:	movsd  QWORD PTR [rbp-0x10],xmm0
+    2030:	lea    rax,[rbp-0x10]
+    2034:	mov    rdi,rax
+    2037:	call   2060 <_ZNKSt6chrono8durationIdSt5ratioILl1ELl1EEE5countEv>
+    203c:	movq   rax,xmm0
+    2041:	mov    rdx,QWORD PTR [rbp-0x18]
+    2045:	mov    QWORD PTR [rdx],rax
+    2048:	nop
+    2049:	mov    rax,QWORD PTR [rbp-0x8]
+    204d:	sub    rax,QWORD PTR fs:0x28
+    2056:	je     205d <_ZNSt6chrono8durationIdSt5ratioILl1ELl1EEEC1IlS1_ILl1ELl1000000000EEvEERKNS0_IT_T0_EE+0x61>
+    2058:	call   11a0 <__stack_chk_fail@plt>
+    205d:	leave
+    205e:	ret
+    205f:	nop
+
+0000000000002060 <_ZNKSt6chrono8durationIdSt5ratioILl1ELl1EEE5countEv>:
+	count() const
+    2060:	endbr64
+    2064:	push   rbp
+    2065:	mov    rbp,rsp
+    2068:	mov    QWORD PTR [rbp-0x8],rdi
+	{ return __r; }
+    206c:	mov    rax,QWORD PTR [rbp-0x8]
+    2070:	movsd  xmm0,QWORD PTR [rax]
+    2074:	pop    rbp
+    2075:	ret
+
+0000000000002076 <_ZNSt6vectorIfSaIfEE5beginEv>:
+       *  element in the %vector.  Iteration is done in ordinary
+       *  element order.
+       */
+      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+      iterator
+      begin() _GLIBCXX_NOEXCEPT
+    2076:	endbr64
+    207a:	push   rbp
+    207b:	mov    rbp,rsp
+    207e:	sub    rsp,0x30
+    2082:	mov    QWORD PTR [rbp-0x28],rdi
+    2086:	mov    rax,QWORD PTR fs:0x28
+    208f:	mov    QWORD PTR [rbp-0x8],rax
+    2093:	xor    eax,eax
+      { return iterator(this->_M_impl._M_start); }
+    2095:	mov    rax,QWORD PTR [rbp-0x28]
+    2099:	mov    QWORD PTR [rbp-0x10],rax
+      : _M_current(__i) { }
+    209d:	mov    rax,QWORD PTR [rbp-0x10]
+    20a1:	mov    rax,QWORD PTR [rax]
+    20a4:	mov    QWORD PTR [rbp-0x18],rax
+    20a8:	nop
+    20a9:	mov    rax,QWORD PTR [rbp-0x18]
+    20ad:	mov    rdx,QWORD PTR [rbp-0x8]
+    20b1:	sub    rdx,QWORD PTR fs:0x28
+    20ba:	je     20c1 <_ZNSt6vectorIfSaIfEE5beginEv+0x4b>
+    20bc:	call   11a0 <__stack_chk_fail@plt>
+    20c1:	leave
+    20c2:	ret
+    20c3:	nop
+
+00000000000020c4 <_ZNSt6vectorIfSaIfEE3endEv>:
+       *  element in the %vector.  Iteration is done in ordinary
+       *  element order.
+       */
+      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+      iterator
+      end() _GLIBCXX_NOEXCEPT
+    20c4:	endbr64
+    20c8:	push   rbp
+    20c9:	mov    rbp,rsp
+    20cc:	sub    rsp,0x30
+    20d0:	mov    QWORD PTR [rbp-0x28],rdi
+    20d4:	mov    rax,QWORD PTR fs:0x28
+    20dd:	mov    QWORD PTR [rbp-0x8],rax
+    20e1:	xor    eax,eax
+      { return iterator(this->_M_impl._M_finish); }
+    20e3:	mov    rax,QWORD PTR [rbp-0x28]
+    20e7:	add    rax,0x8
+    20eb:	mov    QWORD PTR [rbp-0x10],rax
+    20ef:	mov    rax,QWORD PTR [rbp-0x10]
+    20f3:	mov    rax,QWORD PTR [rax]
+    20f6:	mov    QWORD PTR [rbp-0x18],rax
+    20fa:	nop
+    20fb:	mov    rax,QWORD PTR [rbp-0x18]
+    20ff:	mov    rdx,QWORD PTR [rbp-0x8]
+    2103:	sub    rdx,QWORD PTR fs:0x28
+    210c:	je     2113 <_ZNSt6vectorIfSaIfEE3endEv+0x4f>
+    210e:	call   11a0 <__stack_chk_fail@plt>
+    2113:	leave
+    2114:	ret
+    2115:	nop
+
+0000000000002116 <_ZNSt6vectorIiSaIiEE5beginEv>:
+      begin() _GLIBCXX_NOEXCEPT
+    2116:	endbr64
+    211a:	push   rbp
+    211b:	mov    rbp,rsp
+    211e:	sub    rsp,0x30
+    2122:	mov    QWORD PTR [rbp-0x28],rdi
+    2126:	mov    rax,QWORD PTR fs:0x28
+    212f:	mov    QWORD PTR [rbp-0x8],rax
+    2133:	xor    eax,eax
+      { return iterator(this->_M_impl._M_start); }
+    2135:	mov    rax,QWORD PTR [rbp-0x28]
+    2139:	mov    QWORD PTR [rbp-0x10],rax
+    213d:	mov    rax,QWORD PTR [rbp-0x10]
+    2141:	mov    rax,QWORD PTR [rax]
+    2144:	mov    QWORD PTR [rbp-0x18],rax
+    2148:	nop
+    2149:	mov    rax,QWORD PTR [rbp-0x18]
+    214d:	mov    rdx,QWORD PTR [rbp-0x8]
+    2151:	sub    rdx,QWORD PTR fs:0x28
+    215a:	je     2161 <_ZNSt6vectorIiSaIiEE5beginEv+0x4b>
+    215c:	call   11a0 <__stack_chk_fail@plt>
+    2161:	leave
+    2162:	ret
+    2163:	nop
+
+0000000000002164 <_ZNSt6vectorIiSaIiEE3endEv>:
+      end() _GLIBCXX_NOEXCEPT
+    2164:	endbr64
+    2168:	push   rbp
+    2169:	mov    rbp,rsp
+    216c:	sub    rsp,0x30
+    2170:	mov    QWORD PTR [rbp-0x28],rdi
+    2174:	mov    rax,QWORD PTR fs:0x28
+    217d:	mov    QWORD PTR [rbp-0x8],rax
+    2181:	xor    eax,eax
+      { return iterator(this->_M_impl._M_finish); }
+    2183:	mov    rax,QWORD PTR [rbp-0x28]
+    2187:	add    rax,0x8
+    218b:	mov    QWORD PTR [rbp-0x10],rax
+    218f:	mov    rax,QWORD PTR [rbp-0x10]
+    2193:	mov    rax,QWORD PTR [rax]
+    2196:	mov    QWORD PTR [rbp-0x18],rax
+    219a:	nop
+    219b:	mov    rax,QWORD PTR [rbp-0x18]
+    219f:	mov    rdx,QWORD PTR [rbp-0x8]
+    21a3:	sub    rdx,QWORD PTR fs:0x28
+    21ac:	je     21b3 <_ZNSt6vectorIiSaIiEE3endEv+0x4f>
+    21ae:	call   11a0 <__stack_chk_fail@plt>
+    21b3:	leave
+    21b4:	ret
+    21b5:	nop
+
+00000000000021b6 <_ZNSt6vectorIfSaIfEEC1EmRKS0_>:
+      vector(size_type __n, const allocator_type& __a = allocator_type())
+    21b6:	endbr64
+    21ba:	push   rbp
+    21bb:	mov    rbp,rsp
+    21be:	push   rbx
+    21bf:	sub    rsp,0x28
+    21c3:	mov    QWORD PTR [rbp-0x18],rdi
+    21c7:	mov    QWORD PTR [rbp-0x20],rsi
+    21cb:	mov    QWORD PTR [rbp-0x28],rdx
+      : _Base(_S_check_init_len(__n, __a), __a)
+    21cf:	mov    rbx,QWORD PTR [rbp-0x18]
+    21d3:	mov    rdx,QWORD PTR [rbp-0x28]
+    21d7:	mov    rax,QWORD PTR [rbp-0x20]
+    21db:	mov    rsi,rdx
+    21de:	mov    rdi,rax
+    21e1:	call   25f5 <_ZNSt6vectorIfSaIfEE17_S_check_init_lenEmRKS0_>
+    21e6:	mov    rcx,rax
+    21e9:	mov    rax,QWORD PTR [rbp-0x28]
+    21ed:	mov    rdx,rax
+    21f0:	mov    rsi,rcx
+    21f3:	mov    rdi,rbx
+    21f6:	call   26c0 <_ZNSt12_Vector_baseIfSaIfEEC1EmRKS0_>
+      { _M_default_initialize(__n); }
+    21fb:	mov    rdx,QWORD PTR [rbp-0x20]
+    21ff:	mov    rax,QWORD PTR [rbp-0x18]
+    2203:	mov    rsi,rdx
+    2206:	mov    rdi,rax
+    2209:	call   2778 <_ZNSt6vectorIfSaIfEE21_M_default_initializeEm>
+    220e:	jmp    222e <_ZNSt6vectorIfSaIfEEC1EmRKS0_+0x78>
+    2210:	endbr64
+    2214:	mov    rbx,rax
+    2217:	mov    rax,QWORD PTR [rbp-0x18]
+    221b:	mov    rdi,rax
+    221e:	call   2726 <_ZNSt12_Vector_baseIfSaIfEED1Ev>
+    2223:	mov    rax,rbx
+    2226:	mov    rdi,rax
+    2229:	call   11d0 <_Unwind_Resume@plt>
+    222e:	mov    rbx,QWORD PTR [rbp-0x8]
+    2232:	leave
+    2233:	ret
+
+0000000000002234 <_ZNSt6vectorIfSaIfEED1Ev>:
+      ~vector() _GLIBCXX_NOEXCEPT
+    2234:	endbr64
+    2238:	push   rbp
+    2239:	mov    rbp,rsp
+    223c:	sub    rsp,0x30
+    2240:	mov    QWORD PTR [rbp-0x28],rdi
+		      _M_get_Tp_allocator());
+    2244:	mov    rax,QWORD PTR [rbp-0x28]
+    2248:	mov    rdi,rax
+    224b:	call   27bc <_ZNSt12_Vector_baseIfSaIfEE19_M_get_Tp_allocatorEv>
+	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+    2250:	mov    rdx,QWORD PTR [rbp-0x28]
+    2254:	mov    rdx,QWORD PTR [rdx+0x8]
+    2258:	mov    rcx,QWORD PTR [rbp-0x28]
+    225c:	mov    rcx,QWORD PTR [rcx]
+    225f:	mov    QWORD PTR [rbp-0x18],rcx
+    2263:	mov    QWORD PTR [rbp-0x10],rdx
+    2267:	mov    QWORD PTR [rbp-0x8],rax
+    __attribute__((__always_inline__)) _GLIBCXX20_CONSTEXPR
+    inline void
+    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
+	     allocator<_Tp>&)
+    {
+      std::_Destroy(__first, __last);
+    226b:	mov    rdx,QWORD PTR [rbp-0x10]
+    226f:	mov    rax,QWORD PTR [rbp-0x18]
+    2273:	mov    rsi,rdx
+    2276:	mov    rdi,rax
+    2279:	call   2c6f <_ZSt8_DestroyIPfEvT_S1_>
+    }
+    227e:	nop
+      }
+    227f:	mov    rax,QWORD PTR [rbp-0x28]
+    2283:	mov    rdi,rax
+    2286:	call   2726 <_ZNSt12_Vector_baseIfSaIfEED1Ev>
+    228b:	nop
+    228c:	leave
+    228d:	ret
+
+000000000000228e <_ZNKSt6vectorIfSaIfEE4sizeEv>:
+
+      // [23.2.4.2] capacity
+      /**  Returns the number of elements in the %vector.  */
+      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+      size_type
+      size() const _GLIBCXX_NOEXCEPT
+    228e:	endbr64
+    2292:	push   rbp
+    2293:	mov    rbp,rsp
+    2296:	mov    QWORD PTR [rbp-0x18],rdi
+      {
+	ptrdiff_t __dif = this->_M_impl._M_finish - this->_M_impl._M_start;
+    229a:	mov    rax,QWORD PTR [rbp-0x18]
+    229e:	mov    rdx,QWORD PTR [rax+0x8]
+    22a2:	mov    rax,QWORD PTR [rbp-0x18]
+    22a6:	mov    rax,QWORD PTR [rax]
+    22a9:	sub    rdx,rax
+    22ac:	mov    rax,rdx
+    22af:	sar    rax,0x2
+    22b3:	mov    QWORD PTR [rbp-0x8],rax
+	if (__dif < 0)
+    22b7:	cmp    QWORD PTR [rbp-0x8],0x0
+	   __builtin_unreachable ();
+	return size_type(__dif);
+    22bc:	mov    rax,QWORD PTR [rbp-0x8]
+      }
+    22c0:	pop    rbp
+    22c1:	ret
+
+00000000000022c2 <_ZNSt6vectorIiSaIiEEC1EmRKS0_>:
+      vector(size_type __n, const allocator_type& __a = allocator_type())
+    22c2:	endbr64
+    22c6:	push   rbp
+    22c7:	mov    rbp,rsp
+    22ca:	push   rbx
+    22cb:	sub    rsp,0x28
+    22cf:	mov    QWORD PTR [rbp-0x18],rdi
+    22d3:	mov    QWORD PTR [rbp-0x20],rsi
+    22d7:	mov    QWORD PTR [rbp-0x28],rdx
+      : _Base(_S_check_init_len(__n, __a), __a)
+    22db:	mov    rbx,QWORD PTR [rbp-0x18]
+    22df:	mov    rdx,QWORD PTR [rbp-0x28]
+    22e3:	mov    rax,QWORD PTR [rbp-0x20]
+    22e7:	mov    rsi,rdx
+    22ea:	mov    rdi,rax
+    22ed:	call   27dd <_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_>
+    22f2:	mov    rcx,rax
+    22f5:	mov    rax,QWORD PTR [rbp-0x28]
+    22f9:	mov    rdx,rax
+    22fc:	mov    rsi,rcx
+    22ff:	mov    rdi,rbx
+    2302:	call   28a8 <_ZNSt12_Vector_baseIiSaIiEEC1EmRKS0_>
+      { _M_default_initialize(__n); }
+    2307:	mov    rdx,QWORD PTR [rbp-0x20]
+    230b:	mov    rax,QWORD PTR [rbp-0x18]
+    230f:	mov    rsi,rdx
+    2312:	mov    rdi,rax
+    2315:	call   2960 <_ZNSt6vectorIiSaIiEE21_M_default_initializeEm>
+    231a:	jmp    233a <_ZNSt6vectorIiSaIiEEC1EmRKS0_+0x78>
+    231c:	endbr64
+    2320:	mov    rbx,rax
+    2323:	mov    rax,QWORD PTR [rbp-0x18]
+    2327:	mov    rdi,rax
+    232a:	call   290e <_ZNSt12_Vector_baseIiSaIiEED1Ev>
+    232f:	mov    rax,rbx
+    2332:	mov    rdi,rax
+    2335:	call   11d0 <_Unwind_Resume@plt>
+    233a:	mov    rbx,QWORD PTR [rbp-0x8]
+    233e:	leave
+    233f:	ret
+
+0000000000002340 <_ZNSt6vectorIiSaIiEED1Ev>:
+      ~vector() _GLIBCXX_NOEXCEPT
+    2340:	endbr64
+    2344:	push   rbp
+    2345:	mov    rbp,rsp
+    2348:	sub    rsp,0x30
+    234c:	mov    QWORD PTR [rbp-0x28],rdi
+		      _M_get_Tp_allocator());
+    2350:	mov    rax,QWORD PTR [rbp-0x28]
+    2354:	mov    rdi,rax
+    2357:	call   29a4 <_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv>
+	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+    235c:	mov    rdx,QWORD PTR [rbp-0x28]
+    2360:	mov    rdx,QWORD PTR [rdx+0x8]
+    2364:	mov    rcx,QWORD PTR [rbp-0x28]
+    2368:	mov    rcx,QWORD PTR [rcx]
+    236b:	mov    QWORD PTR [rbp-0x18],rcx
+    236f:	mov    QWORD PTR [rbp-0x10],rdx
+    2373:	mov    QWORD PTR [rbp-0x8],rax
+      std::_Destroy(__first, __last);
+    2377:	mov    rdx,QWORD PTR [rbp-0x10]
+    237b:	mov    rax,QWORD PTR [rbp-0x18]
+    237f:	mov    rsi,rdx
+    2382:	mov    rdi,rax
+    2385:	call   2e23 <_ZSt8_DestroyIPiEvT_S1_>
+    }
+    238a:	nop
+      }
+    238b:	mov    rax,QWORD PTR [rbp-0x28]
+    238f:	mov    rdi,rax
+    2392:	call   290e <_ZNSt12_Vector_baseIiSaIiEED1Ev>
+    2397:	nop
+    2398:	leave
+    2399:	ret
+
+000000000000239a <_ZNSt6vectorIfSaIfEE4dataEv>:
+       *   Returns a pointer such that [data(), data() + size()) is a valid
+       *   range.  For a non-empty %vector, data() == &front().
+       */
+      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+      _Tp*
+      data() _GLIBCXX_NOEXCEPT
+    239a:	endbr64
+    239e:	push   rbp
+    239f:	mov    rbp,rsp
+    23a2:	sub    rsp,0x10
+    23a6:	mov    QWORD PTR [rbp-0x8],rdi
+      { return _M_data_ptr(this->_M_impl._M_start); }
+    23aa:	mov    rax,QWORD PTR [rbp-0x8]
+    23ae:	mov    rdx,QWORD PTR [rax]
+    23b1:	mov    rax,QWORD PTR [rbp-0x8]
+    23b5:	mov    rsi,rdx
+    23b8:	mov    rdi,rax
+    23bb:	call   29b6 <_ZNKSt6vectorIfSaIfEE11_M_data_ptrIfEEPT_S4_>
+    23c0:	leave
+    23c1:	ret
+
+00000000000023c2 <_ZNSt6vectorIfSaIfEE5frontEv>:
+      front() _GLIBCXX_NOEXCEPT
+    23c2:	endbr64
+    23c6:	push   rbp
+    23c7:	mov    rbp,rsp
+    23ca:	sub    rsp,0x20
+    23ce:	mov    QWORD PTR [rbp-0x18],rdi
+    23d2:	mov    rax,QWORD PTR fs:0x28
+    23db:	mov    QWORD PTR [rbp-0x8],rax
+    23df:	xor    eax,eax
+	__glibcxx_requires_nonempty();
+    23e1:	mov    rax,QWORD PTR [rbp-0x18]
+    23e5:	mov    rdi,rax
+    23e8:	call   29cc <_ZNKSt6vectorIfSaIfEE5emptyEv>
+    23ed:	movzx  eax,al
+    23f0:	test   rax,rax
+    23f3:	setne  al
+    23f6:	test   al,al
+    23f8:	je     241c <_ZNSt6vectorIfSaIfEE5frontEv+0x5a>
+    23fa:	lea    rcx,[rip+0x1cac]        # 40ad <_ZL5FIB_K+0x81>
+    2401:	lea    rdx,[rip+0x1cb8]        # 40c0 <_ZL5FIB_K+0x94>
+    2408:	lea    rax,[rip+0x1d41]        # 4150 <_ZL5FIB_K+0x124>
+    240f:	mov    esi,0x542
+    2414:	mov    rdi,rax
+    2417:	call   1130 <_ZSt21__glibcxx_assert_failPKciS0_S0_@plt>
+	return *begin();
+    241c:	mov    rax,QWORD PTR [rbp-0x18]
+    2420:	mov    rdi,rax
+    2423:	call   2076 <_ZNSt6vectorIfSaIfEE5beginEv>
+    2428:	mov    QWORD PTR [rbp-0x10],rax
+      { return *_M_current; }
+    242c:	mov    rax,QWORD PTR [rbp-0x10]
+      }
+    2430:	mov    rdx,QWORD PTR [rbp-0x8]
+    2434:	sub    rdx,QWORD PTR fs:0x28
+    243d:	je     2444 <_ZNSt6vectorIfSaIfEE5frontEv+0x82>
+    243f:	call   11a0 <__stack_chk_fail@plt>
+    2444:	leave
+    2445:	ret
+
+0000000000002446 <_ZNSt6vectorIfSaIfEE4backEv>:
+      back() _GLIBCXX_NOEXCEPT
+    2446:	endbr64
+    244a:	push   rbp
+    244b:	mov    rbp,rsp
+    244e:	sub    rsp,0x40
+    2452:	mov    QWORD PTR [rbp-0x38],rdi
+    2456:	mov    rax,QWORD PTR fs:0x28
+    245f:	mov    QWORD PTR [rbp-0x8],rax
+    2463:	xor    eax,eax
+	__glibcxx_requires_nonempty();
+    2465:	mov    rax,QWORD PTR [rbp-0x38]
+    2469:	mov    rdi,rax
+    246c:	call   29cc <_ZNKSt6vectorIfSaIfEE5emptyEv>
+    2471:	movzx  eax,al
+    2474:	test   rax,rax
+    2477:	setne  al
+    247a:	test   al,al
+    247c:	je     24a0 <_ZNSt6vectorIfSaIfEE4backEv+0x5a>
+    247e:	lea    rcx,[rip+0x1c28]        # 40ad <_ZL5FIB_K+0x81>
+    2485:	lea    rdx,[rip+0x1cec]        # 4178 <_ZL5FIB_K+0x14c>
+    248c:	lea    rax,[rip+0x1cbd]        # 4150 <_ZL5FIB_K+0x124>
+    2493:	mov    esi,0x55a
+    2498:	mov    rdi,rax
+    249b:	call   1130 <_ZSt21__glibcxx_assert_failPKciS0_S0_@plt>
+	return *(end() - 1);
+    24a0:	mov    rax,QWORD PTR [rbp-0x38]
+    24a4:	mov    rdi,rax
+    24a7:	call   20c4 <_ZNSt6vectorIfSaIfEE3endEv>
+    24ac:	mov    QWORD PTR [rbp-0x28],rax
+    24b0:	mov    QWORD PTR [rbp-0x10],0x1
+      { return __normal_iterator(_M_current - __n); }
+    24b8:	mov    rax,QWORD PTR [rbp-0x28]
+    24bc:	mov    rdx,QWORD PTR [rbp-0x10]
+    24c0:	shl    rdx,0x2
+    24c4:	neg    rdx
+    24c7:	add    rax,rdx
+    24ca:	mov    QWORD PTR [rbp-0x20],rax
+      : _M_current(__i) { }
+    24ce:	mov    rax,QWORD PTR [rbp-0x20]
+    24d2:	mov    QWORD PTR [rbp-0x18],rax
+    24d6:	nop
+      { return __normal_iterator(_M_current - __n); }
+    24d7:	mov    rax,QWORD PTR [rbp-0x18]
+    24db:	mov    QWORD PTR [rbp-0x18],rax
+      { return *_M_current; }
+    24df:	mov    rax,QWORD PTR [rbp-0x18]
+      }
+    24e3:	mov    rdx,QWORD PTR [rbp-0x8]
+    24e7:	sub    rdx,QWORD PTR fs:0x28
+    24f0:	je     24f7 <_ZNSt6vectorIfSaIfEE4backEv+0xb1>
+    24f2:	call   11a0 <__stack_chk_fail@plt>
+    24f7:	leave
+    24f8:	ret
+    24f9:	nop
+
+00000000000024fa <_ZNSt6vectorIiSaIiEE4dataEv>:
+      data() _GLIBCXX_NOEXCEPT
+    24fa:	endbr64
+    24fe:	push   rbp
+    24ff:	mov    rbp,rsp
+    2502:	sub    rsp,0x10
+    2506:	mov    QWORD PTR [rbp-0x8],rdi
+      { return _M_data_ptr(this->_M_impl._M_start); }
+    250a:	mov    rax,QWORD PTR [rbp-0x8]
+    250e:	mov    rdx,QWORD PTR [rax]
+    2511:	mov    rax,QWORD PTR [rbp-0x8]
+    2515:	mov    rsi,rdx
+    2518:	mov    rdi,rax
+    251b:	call   2a46 <_ZNKSt6vectorIiSaIiEE11_M_data_ptrIiEEPT_S4_>
+    2520:	leave
+    2521:	ret
+
+0000000000002522 <_ZNKSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv>:
+	time_since_epoch() const
+    2522:	endbr64
+    2526:	push   rbp
+    2527:	mov    rbp,rsp
+    252a:	mov    QWORD PTR [rbp-0x8],rdi
+	{ return __d; }
+    252e:	mov    rax,QWORD PTR [rbp-0x8]
+    2532:	mov    rax,QWORD PTR [rax]
+    2535:	pop    rbp
+    2536:	ret
+
+0000000000002537 <_ZNSt6chronomiIlSt5ratioILl1ELl1000000000EElS2_EENSt11common_typeIJNS_8durationIT_T0_EENS4_IT1_T2_EEEE4typeERKS7_RKSA_>:
+      operator-(const duration<_Rep1, _Period1>& __lhs,
+    2537:	endbr64
+    253b:	push   rbp
+    253c:	mov    rbp,rsp
+    253f:	push   rbx
+    2540:	sub    rsp,0x48
+    2544:	mov    QWORD PTR [rbp-0x48],rdi
+    2548:	mov    QWORD PTR [rbp-0x50],rsi
+    254c:	mov    rax,QWORD PTR fs:0x28
+    2555:	mov    QWORD PTR [rbp-0x18],rax
+    2559:	xor    eax,eax
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+    255b:	mov    rax,QWORD PTR [rbp-0x48]
+    255f:	mov    rax,QWORD PTR [rax]
+    2562:	mov    QWORD PTR [rbp-0x38],rax
+    2566:	lea    rax,[rbp-0x38]
+    256a:	mov    rdi,rax
+    256d:	call   1f40 <_ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv>
+    2572:	mov    rbx,rax
+    2575:	mov    rax,QWORD PTR [rbp-0x50]
+    2579:	mov    rax,QWORD PTR [rax]
+    257c:	mov    QWORD PTR [rbp-0x30],rax
+    2580:	lea    rax,[rbp-0x30]
+    2584:	mov    rdi,rax
+    2587:	call   1f40 <_ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv>
+    258c:	sub    rbx,rax
+    258f:	mov    rdx,rbx
+    2592:	mov    QWORD PTR [rbp-0x28],rdx
+    2596:	lea    rdx,[rbp-0x28]
+    259a:	lea    rax,[rbp-0x20]
+    259e:	mov    rsi,rdx
+    25a1:	mov    rdi,rax
+    25a4:	call   1f1e <_ZNSt6chrono8durationIlSt5ratioILl1ELl1000000000EEEC1IlvEERKT_>
+    25a9:	mov    rax,QWORD PTR [rbp-0x20]
+      }
+    25ad:	mov    rdx,QWORD PTR [rbp-0x18]
+    25b1:	sub    rdx,QWORD PTR fs:0x28
+    25ba:	je     25c1 <_ZNSt6chronomiIlSt5ratioILl1ELl1000000000EElS2_EENSt11common_typeIJNS_8durationIT_T0_EENS4_IT1_T2_EEEE4typeERKS7_RKSA_+0x8a>
+    25bc:	call   11a0 <__stack_chk_fail@plt>
+    25c1:	mov    rbx,QWORD PTR [rbp-0x8]
+    25c5:	leave
+    25c6:	ret
+
+00000000000025c7 <_ZNSt6chrono13duration_castINS_8durationIdSt5ratioILl1ELl1EEEElS2_ILl1ELl1000000000EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE>:
+      duration_cast(const duration<_Rep, _Period>& __d)
+    25c7:	endbr64
+    25cb:	push   rbp
+    25cc:	mov    rbp,rsp
+    25cf:	sub    rsp,0x10
+    25d3:	mov    QWORD PTR [rbp-0x8],rdi
+	  return __dc::__cast(__d);
+    25d7:	mov    rax,QWORD PTR [rbp-0x8]
+    25db:	mov    rdi,rax
+    25de:	call   2a5c <_ZNSt6chrono20__duration_cast_implINS_8durationIdSt5ratioILl1ELl1EEEES2_ILl1ELl1000000000EEdLb1ELb0EE6__castIlS5_EES4_RKNS1_IT_T0_EE>
+      }
+    25e3:	leave
+    25e4:	ret
+    25e5:	nop
+
+00000000000025e6 <_ZNSt15__new_allocatorIfED1Ev>:
+#if __cplusplus >= 201103L
+      __new_allocator& operator=(const __new_allocator&) = default;
+#endif
+
+#if __cplusplus <= 201703L
+      ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    25e6:	endbr64
+    25ea:	push   rbp
+    25eb:	mov    rbp,rsp
+    25ee:	mov    QWORD PTR [rbp-0x8],rdi
+    25f2:	nop
+    25f3:	pop    rbp
+    25f4:	ret
+
+00000000000025f5 <_ZNSt6vectorIfSaIfEE17_S_check_init_lenEmRKS0_>:
+	return (__len < size() || __len > max_size()) ? max_size() : __len;
+      }
+
+      // Called by constructors to check initial size.
+      static _GLIBCXX20_CONSTEXPR size_type
+      _S_check_init_len(size_type __n, const allocator_type& __a)
+    25f5:	endbr64
+    25f9:	push   rbp
+    25fa:	mov    rbp,rsp
+    25fd:	push   rbx
+    25fe:	sub    rsp,0x48
+    2602:	mov    QWORD PTR [rbp-0x48],rdi
+    2606:	mov    QWORD PTR [rbp-0x50],rsi
+    260a:	mov    rax,QWORD PTR fs:0x28
+    2613:	mov    QWORD PTR [rbp-0x18],rax
+    2617:	xor    eax,eax
+    2619:	mov    rax,QWORD PTR [rbp-0x50]
+    261d:	mov    QWORD PTR [rbp-0x30],rax
+    2621:	lea    rax,[rbp-0x31]
+    2625:	mov    QWORD PTR [rbp-0x28],rax
+    2629:	mov    rax,QWORD PTR [rbp-0x30]
+    262d:	mov    QWORD PTR [rbp-0x20],rax
+      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    2631:	nop
+      : __allocator_base<_Tp>(__a) { }
+    2632:	nop
+      {
+	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+    2633:	lea    rax,[rbp-0x31]
+    2637:	mov    rdi,rax
+    263a:	call   2acf <_ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_>
+    263f:	cmp    rax,QWORD PTR [rbp-0x48]
+    2643:	setb   bl
+      ~allocator() _GLIBCXX_NOTHROW { }
+    2646:	lea    rax,[rbp-0x31]
+    264a:	mov    rdi,rax
+    264d:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    2652:	nop
+    2653:	test   bl,bl
+    2655:	je     267a <_ZNSt6vectorIfSaIfEE17_S_check_init_lenEmRKS0_+0x85>
+	  __throw_length_error(
+    2657:	mov    rax,QWORD PTR [rbp-0x18]
+    265b:	sub    rax,QWORD PTR fs:0x28
+    2664:	je     266b <_ZNSt6vectorIfSaIfEE17_S_check_init_lenEmRKS0_+0x76>
+    2666:	call   11a0 <__stack_chk_fail@plt>
+    266b:	lea    rax,[rip+0x1b96]        # 4208 <_ZL5FIB_K+0x1dc>
+    2672:	mov    rdi,rax
+    2675:	call   1150 <_ZSt20__throw_length_errorPKc@plt>
+	      __N("cannot create std::vector larger than max_size()"));
+	return __n;
+    267a:	mov    rax,QWORD PTR [rbp-0x48]
+      }
+    267e:	mov    rdx,QWORD PTR [rbp-0x18]
+    2682:	sub    rdx,QWORD PTR fs:0x28
+    268b:	je     2692 <_ZNSt6vectorIfSaIfEE17_S_check_init_lenEmRKS0_+0x9d>
+    268d:	call   11a0 <__stack_chk_fail@plt>
+    2692:	mov    rbx,QWORD PTR [rbp-0x8]
+    2696:	leave
+    2697:	ret
+
+0000000000002698 <_ZNSt12_Vector_baseIfSaIfEE12_Vector_implD1Ev>:
+      struct _Vector_impl
+    2698:	endbr64
+    269c:	push   rbp
+    269d:	mov    rbp,rsp
+    26a0:	sub    rsp,0x20
+    26a4:	mov    QWORD PTR [rbp-0x18],rdi
+    26a8:	mov    rax,QWORD PTR [rbp-0x18]
+    26ac:	mov    QWORD PTR [rbp-0x8],rax
+    26b0:	mov    rax,QWORD PTR [rbp-0x8]
+    26b4:	mov    rdi,rax
+    26b7:	call   25e6 <_ZNSt15__new_allocatorIfED1Ev>
+    26bc:	nop
+    26bd:	nop
+    26be:	leave
+    26bf:	ret
+
+00000000000026c0 <_ZNSt12_Vector_baseIfSaIfEEC1EmRKS0_>:
+      _Vector_base(size_t __n, const allocator_type& __a)
+    26c0:	endbr64
+    26c4:	push   rbp
+    26c5:	mov    rbp,rsp
+    26c8:	push   rbx
+    26c9:	sub    rsp,0x28
+    26cd:	mov    QWORD PTR [rbp-0x18],rdi
+    26d1:	mov    QWORD PTR [rbp-0x20],rsi
+    26d5:	mov    QWORD PTR [rbp-0x28],rdx
+      : _M_impl(__a)
+    26d9:	mov    rax,QWORD PTR [rbp-0x18]
+    26dd:	mov    rdx,QWORD PTR [rbp-0x28]
+    26e1:	mov    rsi,rdx
+    26e4:	mov    rdi,rax
+    26e7:	call   2b50 <_ZNSt12_Vector_baseIfSaIfEE12_Vector_implC1ERKS0_>
+      { _M_create_storage(__n); }
+    26ec:	mov    rdx,QWORD PTR [rbp-0x20]
+    26f0:	mov    rax,QWORD PTR [rbp-0x18]
+    26f4:	mov    rsi,rdx
+    26f7:	mov    rdi,rax
+    26fa:	call   2b96 <_ZNSt12_Vector_baseIfSaIfEE17_M_create_storageEm>
+    26ff:	jmp    271f <_ZNSt12_Vector_baseIfSaIfEEC1EmRKS0_+0x5f>
+    2701:	endbr64
+    2705:	mov    rbx,rax
+    2708:	mov    rax,QWORD PTR [rbp-0x18]
+    270c:	mov    rdi,rax
+    270f:	call   2698 <_ZNSt12_Vector_baseIfSaIfEE12_Vector_implD1Ev>
+    2714:	mov    rax,rbx
+    2717:	mov    rdi,rax
+    271a:	call   11d0 <_Unwind_Resume@plt>
+    271f:	mov    rbx,QWORD PTR [rbp-0x8]
+    2723:	leave
+    2724:	ret
+    2725:	nop
+
+0000000000002726 <_ZNSt12_Vector_baseIfSaIfEED1Ev>:
+      ~_Vector_base() _GLIBCXX_NOEXCEPT
+    2726:	endbr64
+    272a:	push   rbp
+    272b:	mov    rbp,rsp
+    272e:	sub    rsp,0x10
+    2732:	mov    QWORD PTR [rbp-0x8],rdi
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    2736:	mov    rax,QWORD PTR [rbp-0x8]
+    273a:	mov    rdx,QWORD PTR [rax+0x10]
+    273e:	mov    rax,QWORD PTR [rbp-0x8]
+    2742:	mov    rax,QWORD PTR [rax]
+    2745:	sub    rdx,rax
+    2748:	mov    rax,rdx
+    274b:	sar    rax,0x2
+	_M_deallocate(_M_impl._M_start,
+    274f:	mov    rdx,rax
+    2752:	mov    rax,QWORD PTR [rbp-0x8]
+    2756:	mov    rcx,QWORD PTR [rax]
+    2759:	mov    rax,QWORD PTR [rbp-0x8]
+    275d:	mov    rsi,rcx
+    2760:	mov    rdi,rax
+    2763:	call   2bf0 <_ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfm>
+      }
+    2768:	mov    rax,QWORD PTR [rbp-0x8]
+    276c:	mov    rdi,rax
+    276f:	call   2698 <_ZNSt12_Vector_baseIfSaIfEE12_Vector_implD1Ev>
+    2774:	nop
+    2775:	leave
+    2776:	ret
+    2777:	nop
+
+0000000000002778 <_ZNSt6vectorIfSaIfEE21_M_default_initializeEm>:
+      _M_default_initialize(size_type __n)
+    2778:	endbr64
+    277c:	push   rbp
+    277d:	mov    rbp,rsp
+    2780:	sub    rsp,0x10
+    2784:	mov    QWORD PTR [rbp-0x8],rdi
+    2788:	mov    QWORD PTR [rbp-0x10],rsi
+					   _M_get_Tp_allocator());
+    278c:	mov    rax,QWORD PTR [rbp-0x8]
+    2790:	mov    rdi,rax
+    2793:	call   27bc <_ZNSt12_Vector_baseIfSaIfEE19_M_get_Tp_allocatorEv>
+    2798:	mov    rdx,rax
+	  std::__uninitialized_default_n_a(this->_M_impl._M_start, __n,
+    279b:	mov    rax,QWORD PTR [rbp-0x8]
+    279f:	mov    rax,QWORD PTR [rax]
+    27a2:	mov    rcx,QWORD PTR [rbp-0x10]
+    27a6:	mov    rsi,rcx
+    27a9:	mov    rdi,rax
+    27ac:	call   2c42 <_ZSt27__uninitialized_default_n_aIPfmfET_S1_T0_RSaIT1_E>
+	this->_M_impl._M_finish =
+    27b1:	mov    rdx,QWORD PTR [rbp-0x8]
+    27b5:	mov    QWORD PTR [rdx+0x8],rax
+      }
+    27b9:	nop
+    27ba:	leave
+    27bb:	ret
+
+00000000000027bc <_ZNSt12_Vector_baseIfSaIfEE19_M_get_Tp_allocatorEv>:
+      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+    27bc:	endbr64
+    27c0:	push   rbp
+    27c1:	mov    rbp,rsp
+    27c4:	mov    QWORD PTR [rbp-0x8],rdi
+      { return this->_M_impl; }
+    27c8:	mov    rax,QWORD PTR [rbp-0x8]
+    27cc:	pop    rbp
+    27cd:	ret
+
+00000000000027ce <_ZNSt15__new_allocatorIiED1Ev>:
+      ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    27ce:	endbr64
+    27d2:	push   rbp
+    27d3:	mov    rbp,rsp
+    27d6:	mov    QWORD PTR [rbp-0x8],rdi
+    27da:	nop
+    27db:	pop    rbp
+    27dc:	ret
+
+00000000000027dd <_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_>:
+      _S_check_init_len(size_type __n, const allocator_type& __a)
+    27dd:	endbr64
+    27e1:	push   rbp
+    27e2:	mov    rbp,rsp
+    27e5:	push   rbx
+    27e6:	sub    rsp,0x48
+    27ea:	mov    QWORD PTR [rbp-0x48],rdi
+    27ee:	mov    QWORD PTR [rbp-0x50],rsi
+    27f2:	mov    rax,QWORD PTR fs:0x28
+    27fb:	mov    QWORD PTR [rbp-0x18],rax
+    27ff:	xor    eax,eax
+    2801:	mov    rax,QWORD PTR [rbp-0x50]
+    2805:	mov    QWORD PTR [rbp-0x30],rax
+    2809:	lea    rax,[rbp-0x31]
+    280d:	mov    QWORD PTR [rbp-0x28],rax
+    2811:	mov    rax,QWORD PTR [rbp-0x30]
+    2815:	mov    QWORD PTR [rbp-0x20],rax
+      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    2819:	nop
+      : __allocator_base<_Tp>(__a) { }
+    281a:	nop
+	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+    281b:	lea    rax,[rbp-0x31]
+    281f:	mov    rdi,rax
+    2822:	call   2c82 <_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_>
+    2827:	cmp    rax,QWORD PTR [rbp-0x48]
+    282b:	setb   bl
+      ~allocator() _GLIBCXX_NOTHROW { }
+    282e:	lea    rax,[rbp-0x31]
+    2832:	mov    rdi,rax
+    2835:	call   27ce <_ZNSt15__new_allocatorIiED1Ev>
+    283a:	nop
+    283b:	test   bl,bl
+    283d:	je     2862 <_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_+0x85>
+	  __throw_length_error(
+    283f:	mov    rax,QWORD PTR [rbp-0x18]
+    2843:	sub    rax,QWORD PTR fs:0x28
+    284c:	je     2853 <_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_+0x76>
+    284e:	call   11a0 <__stack_chk_fail@plt>
+    2853:	lea    rax,[rip+0x19ae]        # 4208 <_ZL5FIB_K+0x1dc>
+    285a:	mov    rdi,rax
+    285d:	call   1150 <_ZSt20__throw_length_errorPKc@plt>
+	return __n;
+    2862:	mov    rax,QWORD PTR [rbp-0x48]
+      }
+    2866:	mov    rdx,QWORD PTR [rbp-0x18]
+    286a:	sub    rdx,QWORD PTR fs:0x28
+    2873:	je     287a <_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_+0x9d>
+    2875:	call   11a0 <__stack_chk_fail@plt>
+    287a:	mov    rbx,QWORD PTR [rbp-0x8]
+    287e:	leave
+    287f:	ret
+
+0000000000002880 <_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev>:
+      struct _Vector_impl
+    2880:	endbr64
+    2884:	push   rbp
+    2885:	mov    rbp,rsp
+    2888:	sub    rsp,0x20
+    288c:	mov    QWORD PTR [rbp-0x18],rdi
+    2890:	mov    rax,QWORD PTR [rbp-0x18]
+    2894:	mov    QWORD PTR [rbp-0x8],rax
+    2898:	mov    rax,QWORD PTR [rbp-0x8]
+    289c:	mov    rdi,rax
+    289f:	call   27ce <_ZNSt15__new_allocatorIiED1Ev>
+    28a4:	nop
+    28a5:	nop
+    28a6:	leave
+    28a7:	ret
+
+00000000000028a8 <_ZNSt12_Vector_baseIiSaIiEEC1EmRKS0_>:
+      _Vector_base(size_t __n, const allocator_type& __a)
+    28a8:	endbr64
+    28ac:	push   rbp
+    28ad:	mov    rbp,rsp
+    28b0:	push   rbx
+    28b1:	sub    rsp,0x28
+    28b5:	mov    QWORD PTR [rbp-0x18],rdi
+    28b9:	mov    QWORD PTR [rbp-0x20],rsi
+    28bd:	mov    QWORD PTR [rbp-0x28],rdx
+      : _M_impl(__a)
+    28c1:	mov    rax,QWORD PTR [rbp-0x18]
+    28c5:	mov    rdx,QWORD PTR [rbp-0x28]
+    28c9:	mov    rsi,rdx
+    28cc:	mov    rdi,rax
+    28cf:	call   2d04 <_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1ERKS0_>
+      { _M_create_storage(__n); }
+    28d4:	mov    rdx,QWORD PTR [rbp-0x20]
+    28d8:	mov    rax,QWORD PTR [rbp-0x18]
+    28dc:	mov    rsi,rdx
+    28df:	mov    rdi,rax
+    28e2:	call   2d4a <_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm>
+    28e7:	jmp    2907 <_ZNSt12_Vector_baseIiSaIiEEC1EmRKS0_+0x5f>
+    28e9:	endbr64
+    28ed:	mov    rbx,rax
+    28f0:	mov    rax,QWORD PTR [rbp-0x18]
+    28f4:	mov    rdi,rax
+    28f7:	call   2880 <_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev>
+    28fc:	mov    rax,rbx
+    28ff:	mov    rdi,rax
+    2902:	call   11d0 <_Unwind_Resume@plt>
+    2907:	mov    rbx,QWORD PTR [rbp-0x8]
+    290b:	leave
+    290c:	ret
+    290d:	nop
+
+000000000000290e <_ZNSt12_Vector_baseIiSaIiEED1Ev>:
+      ~_Vector_base() _GLIBCXX_NOEXCEPT
+    290e:	endbr64
+    2912:	push   rbp
+    2913:	mov    rbp,rsp
+    2916:	sub    rsp,0x10
+    291a:	mov    QWORD PTR [rbp-0x8],rdi
+		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    291e:	mov    rax,QWORD PTR [rbp-0x8]
+    2922:	mov    rdx,QWORD PTR [rax+0x10]
+    2926:	mov    rax,QWORD PTR [rbp-0x8]
+    292a:	mov    rax,QWORD PTR [rax]
+    292d:	sub    rdx,rax
+    2930:	mov    rax,rdx
+    2933:	sar    rax,0x2
+	_M_deallocate(_M_impl._M_start,
+    2937:	mov    rdx,rax
+    293a:	mov    rax,QWORD PTR [rbp-0x8]
+    293e:	mov    rcx,QWORD PTR [rax]
+    2941:	mov    rax,QWORD PTR [rbp-0x8]
+    2945:	mov    rsi,rcx
+    2948:	mov    rdi,rax
+    294b:	call   2da4 <_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim>
+      }
+    2950:	mov    rax,QWORD PTR [rbp-0x8]
+    2954:	mov    rdi,rax
+    2957:	call   2880 <_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev>
+    295c:	nop
+    295d:	leave
+    295e:	ret
+    295f:	nop
+
+0000000000002960 <_ZNSt6vectorIiSaIiEE21_M_default_initializeEm>:
+      _M_default_initialize(size_type __n)
+    2960:	endbr64
+    2964:	push   rbp
+    2965:	mov    rbp,rsp
+    2968:	sub    rsp,0x10
+    296c:	mov    QWORD PTR [rbp-0x8],rdi
+    2970:	mov    QWORD PTR [rbp-0x10],rsi
+					   _M_get_Tp_allocator());
+    2974:	mov    rax,QWORD PTR [rbp-0x8]
+    2978:	mov    rdi,rax
+    297b:	call   29a4 <_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv>
+    2980:	mov    rdx,rax
+	  std::__uninitialized_default_n_a(this->_M_impl._M_start, __n,
+    2983:	mov    rax,QWORD PTR [rbp-0x8]
+    2987:	mov    rax,QWORD PTR [rax]
+    298a:	mov    rcx,QWORD PTR [rbp-0x10]
+    298e:	mov    rsi,rcx
+    2991:	mov    rdi,rax
+    2994:	call   2df6 <_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E>
+	this->_M_impl._M_finish =
+    2999:	mov    rdx,QWORD PTR [rbp-0x8]
+    299d:	mov    QWORD PTR [rdx+0x8],rax
+      }
+    29a1:	nop
+    29a2:	leave
+    29a3:	ret
+
+00000000000029a4 <_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv>:
+      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+    29a4:	endbr64
+    29a8:	push   rbp
+    29a9:	mov    rbp,rsp
+    29ac:	mov    QWORD PTR [rbp-0x8],rdi
+      { return this->_M_impl; }
+    29b0:	mov    rax,QWORD PTR [rbp-0x8]
+    29b4:	pop    rbp
+    29b5:	ret
+
+00000000000029b6 <_ZNKSt6vectorIfSaIfEE11_M_data_ptrIfEEPT_S4_>:
+#endif
+
+      template<typename _Up>
+	_GLIBCXX20_CONSTEXPR
+	_Up*
+	_M_data_ptr(_Up* __ptr) const _GLIBCXX_NOEXCEPT
+    29b6:	endbr64
+    29ba:	push   rbp
+    29bb:	mov    rbp,rsp
+    29be:	mov    QWORD PTR [rbp-0x8],rdi
+    29c2:	mov    QWORD PTR [rbp-0x10],rsi
+	{ return __ptr; }
+    29c6:	mov    rax,QWORD PTR [rbp-0x10]
+    29ca:	pop    rbp
+    29cb:	ret
+
+00000000000029cc <_ZNKSt6vectorIfSaIfEE5emptyEv>:
+      empty() const _GLIBCXX_NOEXCEPT
+    29cc:	endbr64
+    29d0:	push   rbp
+    29d1:	mov    rbp,rsp
+    29d4:	sub    rsp,0x40
+    29d8:	mov    QWORD PTR [rbp-0x38],rdi
+    29dc:	mov    rax,QWORD PTR fs:0x28
+    29e5:	mov    QWORD PTR [rbp-0x8],rax
+    29e9:	xor    eax,eax
+      { return begin() == end(); }
+    29eb:	mov    rax,QWORD PTR [rbp-0x38]
+    29ef:	mov    rdi,rax
+    29f2:	call   2e84 <_ZNKSt6vectorIfSaIfEE3endEv>
+    29f7:	mov    QWORD PTR [rbp-0x20],rax
+    29fb:	mov    rax,QWORD PTR [rbp-0x38]
+    29ff:	mov    rdi,rax
+    2a02:	call   2e36 <_ZNKSt6vectorIfSaIfEE5beginEv>
+    2a07:	mov    QWORD PTR [rbp-0x28],rax
+    2a0b:	lea    rax,[rbp-0x28]
+    2a0f:	mov    QWORD PTR [rbp-0x18],rax
+      { return _M_current; }
+    2a13:	mov    rax,QWORD PTR [rbp-0x18]
+    { return __lhs.base() == __rhs.base(); }
+    2a17:	mov    rdx,QWORD PTR [rax]
+    2a1a:	lea    rax,[rbp-0x20]
+    2a1e:	mov    QWORD PTR [rbp-0x10],rax
+      { return _M_current; }
+    2a22:	mov    rax,QWORD PTR [rbp-0x10]
+    { return __lhs.base() == __rhs.base(); }
+    2a26:	mov    rax,QWORD PTR [rax]
+    2a29:	cmp    rdx,rax
+    2a2c:	sete   al
+    2a2f:	mov    rdx,QWORD PTR [rbp-0x8]
+    2a33:	sub    rdx,QWORD PTR fs:0x28
+    2a3c:	je     2a43 <_ZNKSt6vectorIfSaIfEE5emptyEv+0x77>
+    2a3e:	call   11a0 <__stack_chk_fail@plt>
+    2a43:	leave
+    2a44:	ret
+    2a45:	nop
+
+0000000000002a46 <_ZNKSt6vectorIiSaIiEE11_M_data_ptrIiEEPT_S4_>:
+	_M_data_ptr(_Up* __ptr) const _GLIBCXX_NOEXCEPT
+    2a46:	endbr64
+    2a4a:	push   rbp
+    2a4b:	mov    rbp,rsp
+    2a4e:	mov    QWORD PTR [rbp-0x8],rdi
+    2a52:	mov    QWORD PTR [rbp-0x10],rsi
+	{ return __ptr; }
+    2a56:	mov    rax,QWORD PTR [rbp-0x10]
+    2a5a:	pop    rbp
+    2a5b:	ret
+
+0000000000002a5c <_ZNSt6chrono20__duration_cast_implINS_8durationIdSt5ratioILl1ELl1EEEES2_ILl1ELl1000000000EEdLb1ELb0EE6__castIlS5_EES4_RKNS1_IT_T0_EE>:
+	  __cast(const duration<_Rep, _Period>& __d)
+    2a5c:	endbr64
+    2a60:	push   rbp
+    2a61:	mov    rbp,rsp
+    2a64:	sub    rsp,0x30
+    2a68:	mov    QWORD PTR [rbp-0x28],rdi
+    2a6c:	mov    rax,QWORD PTR fs:0x28
+    2a75:	mov    QWORD PTR [rbp-0x8],rax
+    2a79:	xor    eax,eax
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    2a7b:	mov    rax,QWORD PTR [rbp-0x28]
+    2a7f:	mov    rdi,rax
+    2a82:	call   1f40 <_ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv>
+    2a87:	pxor   xmm0,xmm0
+    2a8b:	cvtsi2sd xmm0,rax
+    2a90:	movsd  xmm1,QWORD PTR [rip+0x17b0]        # 4248 <_ZL5FIB_K+0x21c>
+    2a98:	divsd  xmm0,xmm1
+	    return _ToDur(static_cast<__to_rep>(
+    2a9c:	movsd  QWORD PTR [rbp-0x18],xmm0
+    2aa1:	lea    rdx,[rbp-0x18]
+    2aa5:	lea    rax,[rbp-0x10]
+    2aa9:	mov    rsi,rdx
+    2aac:	mov    rdi,rax
+    2aaf:	call   2ed6 <_ZNSt6chrono8durationIdSt5ratioILl1ELl1EEEC1IdvEERKT_>
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+    2ab4:	movsd  xmm0,QWORD PTR [rbp-0x10]
+	  }
+    2ab9:	mov    rax,QWORD PTR [rbp-0x8]
+    2abd:	sub    rax,QWORD PTR fs:0x28
+    2ac6:	je     2acd <_ZNSt6chrono20__duration_cast_implINS_8durationIdSt5ratioILl1ELl1EEEES2_ILl1ELl1000000000EEdLb1ELb0EE6__castIlS5_EES4_RKNS1_IT_T0_EE+0x71>
+    2ac8:	call   11a0 <__stack_chk_fail@plt>
+    2acd:	leave
+    2ace:	ret
+
+0000000000002acf <_ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_>:
+      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+    2acf:	endbr64
+    2ad3:	push   rbp
+    2ad4:	mov    rbp,rsp
+    2ad7:	sub    rsp,0x40
+    2adb:	mov    QWORD PTR [rbp-0x38],rdi
+    2adf:	mov    rax,QWORD PTR fs:0x28
+    2ae8:	mov    QWORD PTR [rbp-0x8],rax
+    2aec:	xor    eax,eax
+	const size_t __diffmax
+    2aee:	movabs rax,0x1fffffffffffffff
+    2af8:	mov    QWORD PTR [rbp-0x30],rax
+    2afc:	mov    rax,QWORD PTR [rbp-0x38]
+    2b00:	mov    QWORD PTR [rbp-0x20],rax
+    2b04:	mov    rax,QWORD PTR [rbp-0x20]
+    2b08:	mov    QWORD PTR [rbp-0x18],rax
+    2b0c:	mov    rax,QWORD PTR [rbp-0x18]
+    2b10:	mov    QWORD PTR [rbp-0x10],rax
+      __attribute__((__always_inline__))
+      _GLIBCXX_CONSTEXPR size_type
+      _M_max_size() const _GLIBCXX_USE_NOEXCEPT
+      {
+#if __PTRDIFF_MAX__ < __SIZE_MAX__
+	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    2b14:	movabs rax,0x1fffffffffffffff
+      { return _M_max_size(); }
+    2b1e:	nop
+	return __a.max_size();
+    2b1f:	nop
+	const size_t __allocmax = _Alloc_traits::max_size(__a);
+    2b20:	mov    QWORD PTR [rbp-0x28],rax
+	return (std::min)(__diffmax, __allocmax);
+    2b24:	lea    rdx,[rbp-0x28]
+    2b28:	lea    rax,[rbp-0x30]
+    2b2c:	mov    rsi,rdx
+    2b2f:	mov    rdi,rax
+    2b32:	call   2ef9 <_ZSt3minImERKT_S2_S2_>
+    2b37:	mov    rax,QWORD PTR [rax]
+      }
+    2b3a:	mov    rdx,QWORD PTR [rbp-0x8]
+    2b3e:	sub    rdx,QWORD PTR fs:0x28
+    2b47:	je     2b4e <_ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_+0x7f>
+    2b49:	call   11a0 <__stack_chk_fail@plt>
+    2b4e:	leave
+    2b4f:	ret
+
+0000000000002b50 <_ZNSt12_Vector_baseIfSaIfEE12_Vector_implC1ERKS0_>:
+	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+    2b50:	endbr64
+    2b54:	push   rbp
+    2b55:	mov    rbp,rsp
+    2b58:	sub    rsp,0x30
+    2b5c:	mov    QWORD PTR [rbp-0x28],rdi
+    2b60:	mov    QWORD PTR [rbp-0x30],rsi
+    2b64:	mov    rax,QWORD PTR [rbp-0x28]
+    2b68:	mov    QWORD PTR [rbp-0x20],rax
+    2b6c:	mov    rax,QWORD PTR [rbp-0x30]
+    2b70:	mov    QWORD PTR [rbp-0x18],rax
+    2b74:	mov    rax,QWORD PTR [rbp-0x20]
+    2b78:	mov    QWORD PTR [rbp-0x10],rax
+    2b7c:	mov    rax,QWORD PTR [rbp-0x18]
+    2b80:	mov    QWORD PTR [rbp-0x8],rax
+      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    2b84:	nop
+      : __allocator_base<_Tp>(__a) { }
+    2b85:	nop
+	: _Tp_alloc_type(__a)
+    2b86:	mov    rax,QWORD PTR [rbp-0x28]
+    2b8a:	mov    rdi,rax
+    2b8d:	call   2f28 <_ZNSt12_Vector_baseIfSaIfEE17_Vector_impl_dataC1Ev>
+	{ }
+    2b92:	nop
+    2b93:	leave
+    2b94:	ret
+    2b95:	nop
+
+0000000000002b96 <_ZNSt12_Vector_baseIfSaIfEE17_M_create_storageEm>:
+      _M_create_storage(size_t __n)
+    2b96:	endbr64
+    2b9a:	push   rbp
+    2b9b:	mov    rbp,rsp
+    2b9e:	sub    rsp,0x10
+    2ba2:	mov    QWORD PTR [rbp-0x8],rdi
+    2ba6:	mov    QWORD PTR [rbp-0x10],rsi
+	this->_M_impl._M_start = this->_M_allocate(__n);
+    2baa:	mov    rdx,QWORD PTR [rbp-0x10]
+    2bae:	mov    rax,QWORD PTR [rbp-0x8]
+    2bb2:	mov    rsi,rdx
+    2bb5:	mov    rdi,rax
+    2bb8:	call   2f5a <_ZNSt12_Vector_baseIfSaIfEE11_M_allocateEm>
+    2bbd:	mov    rdx,QWORD PTR [rbp-0x8]
+    2bc1:	mov    QWORD PTR [rdx],rax
+	this->_M_impl._M_finish = this->_M_impl._M_start;
+    2bc4:	mov    rax,QWORD PTR [rbp-0x8]
+    2bc8:	mov    rdx,QWORD PTR [rax]
+    2bcb:	mov    rax,QWORD PTR [rbp-0x8]
+    2bcf:	mov    QWORD PTR [rax+0x8],rdx
+	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    2bd3:	mov    rax,QWORD PTR [rbp-0x8]
+    2bd7:	mov    rax,QWORD PTR [rax]
+    2bda:	mov    rdx,QWORD PTR [rbp-0x10]
+    2bde:	shl    rdx,0x2
+    2be2:	add    rdx,rax
+    2be5:	mov    rax,QWORD PTR [rbp-0x8]
+    2be9:	mov    QWORD PTR [rax+0x10],rdx
+      }
+    2bed:	nop
+    2bee:	leave
+    2bef:	ret
+
+0000000000002bf0 <_ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfm>:
+      _M_deallocate(pointer __p, size_t __n)
+    2bf0:	endbr64
+    2bf4:	push   rbp
+    2bf5:	mov    rbp,rsp
+    2bf8:	sub    rsp,0x40
+    2bfc:	mov    QWORD PTR [rbp-0x28],rdi
+    2c00:	mov    QWORD PTR [rbp-0x30],rsi
+    2c04:	mov    QWORD PTR [rbp-0x38],rdx
+	if (__p)
+    2c08:	cmp    QWORD PTR [rbp-0x30],0x0
+    2c0d:	je     2c3f <_ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfm+0x4f>
+	  _Tr::deallocate(_M_impl, __p, __n);
+    2c0f:	mov    rax,QWORD PTR [rbp-0x28]
+    2c13:	mov    QWORD PTR [rbp-0x18],rax
+    2c17:	mov    rax,QWORD PTR [rbp-0x30]
+    2c1b:	mov    QWORD PTR [rbp-0x10],rax
+    2c1f:	mov    rax,QWORD PTR [rbp-0x38]
+    2c23:	mov    QWORD PTR [rbp-0x8],rax
+      { __a.deallocate(__p, __n); }
+    2c27:	mov    rdx,QWORD PTR [rbp-0x8]
+    2c2b:	mov    rcx,QWORD PTR [rbp-0x10]
+    2c2f:	mov    rax,QWORD PTR [rbp-0x18]
+    2c33:	mov    rsi,rcx
+    2c36:	mov    rdi,rax
+    2c39:	call   3080 <_ZNSt15__new_allocatorIfE10deallocateEPfm>
+    2c3e:	nop
+      }
+    2c3f:	nop
+    2c40:	leave
+    2c41:	ret
+
+0000000000002c42 <_ZSt27__uninitialized_default_n_aIPfmfET_S1_T0_RSaIT1_E>:
+  // __uninitialized_default_n_a specialization for std::allocator,
+  // which ignores the allocator and value-initializes the elements.
+  template<typename _ForwardIterator, typename _Size, typename _Tp>
+    _GLIBCXX20_CONSTEXPR
+    inline _ForwardIterator
+    __uninitialized_default_n_a(_ForwardIterator __first, _Size __n,
+    2c42:	endbr64
+    2c46:	push   rbp
+    2c47:	mov    rbp,rsp
+    2c4a:	sub    rsp,0x20
+    2c4e:	mov    QWORD PTR [rbp-0x8],rdi
+    2c52:	mov    QWORD PTR [rbp-0x10],rsi
+    2c56:	mov    QWORD PTR [rbp-0x18],rdx
+				allocator<_Tp>&)
+    { return std::__uninitialized_default_n(__first, __n); }
+    2c5a:	mov    rdx,QWORD PTR [rbp-0x10]
+    2c5e:	mov    rax,QWORD PTR [rbp-0x8]
+    2c62:	mov    rsi,rdx
+    2c65:	mov    rdi,rax
+    2c68:	call   2fa7 <_ZSt25__uninitialized_default_nIPfmET_S1_T0_>
+    2c6d:	leave
+    2c6e:	ret
+
+0000000000002c6f <_ZSt8_DestroyIPfEvT_S1_>:
+   * a trivial destructor, the compiler should optimize all of this
+   * away, otherwise the objects' destructors must be invoked.
+   */
+  template<typename _ForwardIterator>
+    _GLIBCXX20_CONSTEXPR inline void
+    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+    2c6f:	endbr64
+    2c73:	push   rbp
+    2c74:	mov    rbp,rsp
+    2c77:	mov    QWORD PTR [rbp-0x8],rdi
+    2c7b:	mov    QWORD PTR [rbp-0x10],rsi
+#endif
+#else
+      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
+	__destroy(__first, __last);
+#endif
+    }
+    2c7f:	nop
+    2c80:	pop    rbp
+    2c81:	ret
+
+0000000000002c82 <_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_>:
+      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+    2c82:	endbr64
+    2c86:	push   rbp
+    2c87:	mov    rbp,rsp
+    2c8a:	sub    rsp,0x40
+    2c8e:	mov    QWORD PTR [rbp-0x38],rdi
+    2c92:	mov    rax,QWORD PTR fs:0x28
+    2c9b:	mov    QWORD PTR [rbp-0x8],rax
+    2c9f:	xor    eax,eax
+	const size_t __diffmax
+    2ca1:	movabs rax,0x1fffffffffffffff
+    2cab:	mov    QWORD PTR [rbp-0x30],rax
+    2caf:	mov    rax,QWORD PTR [rbp-0x38]
+    2cb3:	mov    QWORD PTR [rbp-0x20],rax
+    2cb7:	mov    rax,QWORD PTR [rbp-0x20]
+    2cbb:	mov    QWORD PTR [rbp-0x18],rax
+    2cbf:	mov    rax,QWORD PTR [rbp-0x18]
+    2cc3:	mov    QWORD PTR [rbp-0x10],rax
+	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    2cc7:	movabs rax,0x1fffffffffffffff
+      { return _M_max_size(); }
+    2cd1:	nop
+	return __a.max_size();
+    2cd2:	nop
+	const size_t __allocmax = _Alloc_traits::max_size(__a);
+    2cd3:	mov    QWORD PTR [rbp-0x28],rax
+	return (std::min)(__diffmax, __allocmax);
+    2cd7:	lea    rdx,[rbp-0x28]
+    2cdb:	lea    rax,[rbp-0x30]
+    2cdf:	mov    rsi,rdx
+    2ce2:	mov    rdi,rax
+    2ce5:	call   2ef9 <_ZSt3minImERKT_S2_S2_>
+    2cea:	mov    rax,QWORD PTR [rax]
+      }
+    2ced:	mov    rdx,QWORD PTR [rbp-0x8]
+    2cf1:	sub    rdx,QWORD PTR fs:0x28
+    2cfa:	je     2d01 <_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_+0x7f>
+    2cfc:	call   11a0 <__stack_chk_fail@plt>
+    2d01:	leave
+    2d02:	ret
+    2d03:	nop
+
+0000000000002d04 <_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1ERKS0_>:
+	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+    2d04:	endbr64
+    2d08:	push   rbp
+    2d09:	mov    rbp,rsp
+    2d0c:	sub    rsp,0x30
+    2d10:	mov    QWORD PTR [rbp-0x28],rdi
+    2d14:	mov    QWORD PTR [rbp-0x30],rsi
+    2d18:	mov    rax,QWORD PTR [rbp-0x28]
+    2d1c:	mov    QWORD PTR [rbp-0x20],rax
+    2d20:	mov    rax,QWORD PTR [rbp-0x30]
+    2d24:	mov    QWORD PTR [rbp-0x18],rax
+    2d28:	mov    rax,QWORD PTR [rbp-0x20]
+    2d2c:	mov    QWORD PTR [rbp-0x10],rax
+    2d30:	mov    rax,QWORD PTR [rbp-0x18]
+    2d34:	mov    QWORD PTR [rbp-0x8],rax
+      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    2d38:	nop
+    2d39:	nop
+	: _Tp_alloc_type(__a)
+    2d3a:	mov    rax,QWORD PTR [rbp-0x28]
+    2d3e:	mov    rdi,rax
+    2d41:	call   2fd4 <_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC1Ev>
+	{ }
+    2d46:	nop
+    2d47:	leave
+    2d48:	ret
+    2d49:	nop
+
+0000000000002d4a <_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm>:
+      _M_create_storage(size_t __n)
+    2d4a:	endbr64
+    2d4e:	push   rbp
+    2d4f:	mov    rbp,rsp
+    2d52:	sub    rsp,0x10
+    2d56:	mov    QWORD PTR [rbp-0x8],rdi
+    2d5a:	mov    QWORD PTR [rbp-0x10],rsi
+	this->_M_impl._M_start = this->_M_allocate(__n);
+    2d5e:	mov    rdx,QWORD PTR [rbp-0x10]
+    2d62:	mov    rax,QWORD PTR [rbp-0x8]
+    2d66:	mov    rsi,rdx
+    2d69:	mov    rdi,rax
+    2d6c:	call   3006 <_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm>
+    2d71:	mov    rdx,QWORD PTR [rbp-0x8]
+    2d75:	mov    QWORD PTR [rdx],rax
+	this->_M_impl._M_finish = this->_M_impl._M_start;
+    2d78:	mov    rax,QWORD PTR [rbp-0x8]
+    2d7c:	mov    rdx,QWORD PTR [rax]
+    2d7f:	mov    rax,QWORD PTR [rbp-0x8]
+    2d83:	mov    QWORD PTR [rax+0x8],rdx
+	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    2d87:	mov    rax,QWORD PTR [rbp-0x8]
+    2d8b:	mov    rax,QWORD PTR [rax]
+    2d8e:	mov    rdx,QWORD PTR [rbp-0x10]
+    2d92:	shl    rdx,0x2
+    2d96:	add    rdx,rax
+    2d99:	mov    rax,QWORD PTR [rbp-0x8]
+    2d9d:	mov    QWORD PTR [rax+0x10],rdx
+      }
+    2da1:	nop
+    2da2:	leave
+    2da3:	ret
+
+0000000000002da4 <_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim>:
+      _M_deallocate(pointer __p, size_t __n)
+    2da4:	endbr64
+    2da8:	push   rbp
+    2da9:	mov    rbp,rsp
+    2dac:	sub    rsp,0x40
+    2db0:	mov    QWORD PTR [rbp-0x28],rdi
+    2db4:	mov    QWORD PTR [rbp-0x30],rsi
+    2db8:	mov    QWORD PTR [rbp-0x38],rdx
+	if (__p)
+    2dbc:	cmp    QWORD PTR [rbp-0x30],0x0
+    2dc1:	je     2df3 <_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim+0x4f>
+	  _Tr::deallocate(_M_impl, __p, __n);
+    2dc3:	mov    rax,QWORD PTR [rbp-0x28]
+    2dc7:	mov    QWORD PTR [rbp-0x18],rax
+    2dcb:	mov    rax,QWORD PTR [rbp-0x30]
+    2dcf:	mov    QWORD PTR [rbp-0x10],rax
+    2dd3:	mov    rax,QWORD PTR [rbp-0x38]
+    2dd7:	mov    QWORD PTR [rbp-0x8],rax
+      { __a.deallocate(__p, __n); }
+    2ddb:	mov    rdx,QWORD PTR [rbp-0x8]
+    2ddf:	mov    rcx,QWORD PTR [rbp-0x10]
+    2de3:	mov    rax,QWORD PTR [rbp-0x18]
+    2de7:	mov    rsi,rcx
+    2dea:	mov    rdi,rax
+    2ded:	call   31c0 <_ZNSt15__new_allocatorIiE10deallocateEPim>
+    2df2:	nop
+      }
+    2df3:	nop
+    2df4:	leave
+    2df5:	ret
+
+0000000000002df6 <_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E>:
+    __uninitialized_default_n_a(_ForwardIterator __first, _Size __n,
+    2df6:	endbr64
+    2dfa:	push   rbp
+    2dfb:	mov    rbp,rsp
+    2dfe:	sub    rsp,0x20
+    2e02:	mov    QWORD PTR [rbp-0x8],rdi
+    2e06:	mov    QWORD PTR [rbp-0x10],rsi
+    2e0a:	mov    QWORD PTR [rbp-0x18],rdx
+    { return std::__uninitialized_default_n(__first, __n); }
+    2e0e:	mov    rdx,QWORD PTR [rbp-0x10]
+    2e12:	mov    rax,QWORD PTR [rbp-0x8]
+    2e16:	mov    rsi,rdx
+    2e19:	mov    rdi,rax
+    2e1c:	call   3053 <_ZSt25__uninitialized_default_nIPimET_S1_T0_>
+    2e21:	leave
+    2e22:	ret
+
+0000000000002e23 <_ZSt8_DestroyIPiEvT_S1_>:
+    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+    2e23:	endbr64
+    2e27:	push   rbp
+    2e28:	mov    rbp,rsp
+    2e2b:	mov    QWORD PTR [rbp-0x8],rdi
+    2e2f:	mov    QWORD PTR [rbp-0x10],rsi
+    }
+    2e33:	nop
+    2e34:	pop    rbp
+    2e35:	ret
+
+0000000000002e36 <_ZNKSt6vectorIfSaIfEE5beginEv>:
+      begin() const _GLIBCXX_NOEXCEPT
+    2e36:	endbr64
+    2e3a:	push   rbp
+    2e3b:	mov    rbp,rsp
+    2e3e:	sub    rsp,0x30
+    2e42:	mov    QWORD PTR [rbp-0x28],rdi
+    2e46:	mov    rax,QWORD PTR fs:0x28
+    2e4f:	mov    QWORD PTR [rbp-0x8],rax
+    2e53:	xor    eax,eax
+      { return const_iterator(this->_M_impl._M_start); }
+    2e55:	mov    rax,QWORD PTR [rbp-0x28]
+    2e59:	mov    QWORD PTR [rbp-0x10],rax
+      : _M_current(__i) { }
+    2e5d:	mov    rax,QWORD PTR [rbp-0x10]
+    2e61:	mov    rax,QWORD PTR [rax]
+    2e64:	mov    QWORD PTR [rbp-0x18],rax
+    2e68:	nop
+    2e69:	mov    rax,QWORD PTR [rbp-0x18]
+    2e6d:	mov    rdx,QWORD PTR [rbp-0x8]
+    2e71:	sub    rdx,QWORD PTR fs:0x28
+    2e7a:	je     2e81 <_ZNKSt6vectorIfSaIfEE5beginEv+0x4b>
+    2e7c:	call   11a0 <__stack_chk_fail@plt>
+    2e81:	leave
+    2e82:	ret
+    2e83:	nop
+
+0000000000002e84 <_ZNKSt6vectorIfSaIfEE3endEv>:
+      end() const _GLIBCXX_NOEXCEPT
+    2e84:	endbr64
+    2e88:	push   rbp
+    2e89:	mov    rbp,rsp
+    2e8c:	sub    rsp,0x30
+    2e90:	mov    QWORD PTR [rbp-0x28],rdi
+    2e94:	mov    rax,QWORD PTR fs:0x28
+    2e9d:	mov    QWORD PTR [rbp-0x8],rax
+    2ea1:	xor    eax,eax
+      { return const_iterator(this->_M_impl._M_finish); }
+    2ea3:	mov    rax,QWORD PTR [rbp-0x28]
+    2ea7:	add    rax,0x8
+    2eab:	mov    QWORD PTR [rbp-0x10],rax
+    2eaf:	mov    rax,QWORD PTR [rbp-0x10]
+    2eb3:	mov    rax,QWORD PTR [rax]
+    2eb6:	mov    QWORD PTR [rbp-0x18],rax
+    2eba:	nop
+    2ebb:	mov    rax,QWORD PTR [rbp-0x18]
+    2ebf:	mov    rdx,QWORD PTR [rbp-0x8]
+    2ec3:	sub    rdx,QWORD PTR fs:0x28
+    2ecc:	je     2ed3 <_ZNKSt6vectorIfSaIfEE3endEv+0x4f>
+    2ece:	call   11a0 <__stack_chk_fail@plt>
+    2ed3:	leave
+    2ed4:	ret
+    2ed5:	nop
+
+0000000000002ed6 <_ZNSt6chrono8durationIdSt5ratioILl1ELl1EEEC1IdvEERKT_>:
+	  constexpr explicit duration(const _Rep2& __rep)
+    2ed6:	endbr64
+    2eda:	push   rbp
+    2edb:	mov    rbp,rsp
+    2ede:	mov    QWORD PTR [rbp-0x8],rdi
+    2ee2:	mov    QWORD PTR [rbp-0x10],rsi
+	  : __r(static_cast<rep>(__rep)) { }
+    2ee6:	mov    rax,QWORD PTR [rbp-0x10]
+    2eea:	movsd  xmm0,QWORD PTR [rax]
+    2eee:	mov    rax,QWORD PTR [rbp-0x8]
+    2ef2:	movsd  QWORD PTR [rax],xmm0
+    2ef6:	nop
+    2ef7:	pop    rbp
+    2ef8:	ret
+
+0000000000002ef9 <_ZSt3minImERKT_S2_S2_>:
+    min(const _Tp& __a, const _Tp& __b)
+    2ef9:	endbr64
+    2efd:	push   rbp
+    2efe:	mov    rbp,rsp
+    2f01:	mov    QWORD PTR [rbp-0x8],rdi
+    2f05:	mov    QWORD PTR [rbp-0x10],rsi
+      if (__b < __a)
+    2f09:	mov    rax,QWORD PTR [rbp-0x10]
+    2f0d:	mov    rdx,QWORD PTR [rax]
+    2f10:	mov    rax,QWORD PTR [rbp-0x8]
+    2f14:	mov    rax,QWORD PTR [rax]
+    2f17:	cmp    rdx,rax
+    2f1a:	jae    2f22 <_ZSt3minImERKT_S2_S2_+0x29>
+	return __b;
+    2f1c:	mov    rax,QWORD PTR [rbp-0x10]
+    2f20:	jmp    2f26 <_ZSt3minImERKT_S2_S2_+0x2d>
+      return __a;
+    2f22:	mov    rax,QWORD PTR [rbp-0x8]
+    }
+    2f26:	pop    rbp
+    2f27:	ret
+
+0000000000002f28 <_ZNSt12_Vector_baseIfSaIfEE17_Vector_impl_dataC1Ev>:
+	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+    2f28:	endbr64
+    2f2c:	push   rbp
+    2f2d:	mov    rbp,rsp
+    2f30:	mov    QWORD PTR [rbp-0x8],rdi
+	: _M_start(), _M_finish(), _M_end_of_storage()
+    2f34:	mov    rax,QWORD PTR [rbp-0x8]
+    2f38:	mov    QWORD PTR [rax],0x0
+    2f3f:	mov    rax,QWORD PTR [rbp-0x8]
+    2f43:	mov    QWORD PTR [rax+0x8],0x0
+    2f4b:	mov    rax,QWORD PTR [rbp-0x8]
+    2f4f:	mov    QWORD PTR [rax+0x10],0x0
+	{ }
+    2f57:	nop
+    2f58:	pop    rbp
+    2f59:	ret
+
+0000000000002f5a <_ZNSt12_Vector_baseIfSaIfEE11_M_allocateEm>:
+      _M_allocate(size_t __n)
+    2f5a:	endbr64
+    2f5e:	push   rbp
+    2f5f:	mov    rbp,rsp
+    2f62:	sub    rsp,0x20
+    2f66:	mov    QWORD PTR [rbp-0x18],rdi
+    2f6a:	mov    QWORD PTR [rbp-0x20],rsi
+	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+    2f6e:	cmp    QWORD PTR [rbp-0x20],0x0
+    2f73:	je     2fa0 <_ZNSt12_Vector_baseIfSaIfEE11_M_allocateEm+0x46>
+    2f75:	mov    rax,QWORD PTR [rbp-0x18]
+    2f79:	mov    QWORD PTR [rbp-0x10],rax
+    2f7d:	mov    rax,QWORD PTR [rbp-0x20]
+    2f81:	mov    QWORD PTR [rbp-0x8],rax
+      { return __a.allocate(__n); }
+    2f85:	mov    rcx,QWORD PTR [rbp-0x8]
+    2f89:	mov    rax,QWORD PTR [rbp-0x10]
+    2f8d:	mov    edx,0x0
+    2f92:	mov    rsi,rcx
+    2f95:	mov    rdi,rax
+    2f98:	call   3300 <_ZNSt15__new_allocatorIfE8allocateEmPKv>
+    2f9d:	nop
+    2f9e:	jmp    2fa5 <_ZNSt12_Vector_baseIfSaIfEE11_M_allocateEm+0x4b>
+    2fa0:	mov    eax,0x0
+      }
+    2fa5:	leave
+    2fa6:	ret
+
+0000000000002fa7 <_ZSt25__uninitialized_default_nIPfmET_S1_T0_>:
+    __uninitialized_default_n(_ForwardIterator __first, _Size __n)
+    2fa7:	endbr64
+    2fab:	push   rbp
+    2fac:	mov    rbp,rsp
+    2faf:	sub    rsp,0x20
+    2fb3:	mov    QWORD PTR [rbp-0x18],rdi
+    2fb7:	mov    QWORD PTR [rbp-0x20],rsi
+      constexpr bool __can_fill
+    2fbb:	mov    BYTE PTR [rbp-0x1],0x1
+	__uninit_default_n(__first, __n);
+    2fbf:	mov    rdx,QWORD PTR [rbp-0x20]
+    2fc3:	mov    rax,QWORD PTR [rbp-0x18]
+    2fc7:	mov    rsi,rdx
+    2fca:	mov    rdi,rax
+    2fcd:	call   30b5 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfmEET_S3_T0_>
+    }
+    2fd2:	leave
+    2fd3:	ret
+
+0000000000002fd4 <_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC1Ev>:
+	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+    2fd4:	endbr64
+    2fd8:	push   rbp
+    2fd9:	mov    rbp,rsp
+    2fdc:	mov    QWORD PTR [rbp-0x8],rdi
+	: _M_start(), _M_finish(), _M_end_of_storage()
+    2fe0:	mov    rax,QWORD PTR [rbp-0x8]
+    2fe4:	mov    QWORD PTR [rax],0x0
+    2feb:	mov    rax,QWORD PTR [rbp-0x8]
+    2fef:	mov    QWORD PTR [rax+0x8],0x0
+    2ff7:	mov    rax,QWORD PTR [rbp-0x8]
+    2ffb:	mov    QWORD PTR [rax+0x10],0x0
+	{ }
+    3003:	nop
+    3004:	pop    rbp
+    3005:	ret
+
+0000000000003006 <_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm>:
+      _M_allocate(size_t __n)
+    3006:	endbr64
+    300a:	push   rbp
+    300b:	mov    rbp,rsp
+    300e:	sub    rsp,0x20
+    3012:	mov    QWORD PTR [rbp-0x18],rdi
+    3016:	mov    QWORD PTR [rbp-0x20],rsi
+	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+    301a:	cmp    QWORD PTR [rbp-0x20],0x0
+    301f:	je     304c <_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm+0x46>
+    3021:	mov    rax,QWORD PTR [rbp-0x18]
+    3025:	mov    QWORD PTR [rbp-0x10],rax
+    3029:	mov    rax,QWORD PTR [rbp-0x20]
+    302d:	mov    QWORD PTR [rbp-0x8],rax
+    3031:	mov    rcx,QWORD PTR [rbp-0x8]
+    3035:	mov    rax,QWORD PTR [rbp-0x10]
+    3039:	mov    edx,0x0
+    303e:	mov    rsi,rcx
+    3041:	mov    rdi,rax
+    3044:	call   33b0 <_ZNSt15__new_allocatorIiE8allocateEmPKv>
+    3049:	nop
+    304a:	jmp    3051 <_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm+0x4b>
+    304c:	mov    eax,0x0
+      }
+    3051:	leave
+    3052:	ret
+
+0000000000003053 <_ZSt25__uninitialized_default_nIPimET_S1_T0_>:
+    __uninitialized_default_n(_ForwardIterator __first, _Size __n)
+    3053:	endbr64
+    3057:	push   rbp
+    3058:	mov    rbp,rsp
+    305b:	sub    rsp,0x20
+    305f:	mov    QWORD PTR [rbp-0x18],rdi
+    3063:	mov    QWORD PTR [rbp-0x20],rsi
+      constexpr bool __can_fill
+    3067:	mov    BYTE PTR [rbp-0x1],0x1
+	__uninit_default_n(__first, __n);
+    306b:	mov    rdx,QWORD PTR [rbp-0x20]
+    306f:	mov    rax,QWORD PTR [rbp-0x18]
+    3073:	mov    rsi,rdx
+    3076:	mov    rdi,rax
+    3079:	call   31f5 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_>
+    }
+    307e:	leave
+    307f:	ret
+
+0000000000003080 <_ZNSt15__new_allocatorIfE10deallocateEPfm>:
+      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    3080:	endbr64
+    3084:	push   rbp
+    3085:	mov    rbp,rsp
+    3088:	sub    rsp,0x20
+    308c:	mov    QWORD PTR [rbp-0x8],rdi
+    3090:	mov    QWORD PTR [rbp-0x10],rsi
+    3094:	mov    QWORD PTR [rbp-0x18],rdx
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    3098:	mov    rax,QWORD PTR [rbp-0x18]
+    309c:	lea    rdx,[rax*4+0x0]
+    30a4:	mov    rax,QWORD PTR [rbp-0x10]
+    30a8:	mov    rsi,rdx
+    30ab:	mov    rdi,rax
+    30ae:	call   1190 <_ZdlPvm@plt>
+      }
+    30b3:	leave
+    30b4:	ret
+
+00000000000030b5 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfmEET_S3_T0_>:
+        __uninit_default_n(_ForwardIterator __first, _Size __n)
+    30b5:	endbr64
+    30b9:	push   rbp
+    30ba:	mov    rbp,rsp
+    30bd:	sub    rsp,0x70
+    30c1:	mov    QWORD PTR [rbp-0x68],rdi
+    30c5:	mov    QWORD PTR [rbp-0x70],rsi
+    30c9:	mov    rax,QWORD PTR fs:0x28
+    30d2:	mov    QWORD PTR [rbp-0x8],rax
+    30d6:	xor    eax,eax
+	  if (__n > 0)
+    30d8:	cmp    QWORD PTR [rbp-0x70],0x0
+    30dd:	je     31a5 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfmEET_S3_T0_+0xf0>
+    30e3:	mov    rax,QWORD PTR [rbp-0x68]
+    30e7:	mov    QWORD PTR [rbp-0x10],rax
+   */
+  template<typename _Tp>
+    __attribute__((__always_inline__))
+    inline _GLIBCXX_CONSTEXPR _Tp*
+    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
+    { return __builtin_addressof(__r); }
+    30eb:	mov    rax,QWORD PTR [rbp-0x10]
+		= std::__addressof(*__first);
+    30ef:	mov    QWORD PTR [rbp-0x58],rax
+	      std::_Construct(__val);
+    30f3:	mov    rax,QWORD PTR [rbp-0x58]
+    30f7:	mov    rdi,rax
+    30fa:	call   336b <_ZSt10_ConstructIfJEEvPT_DpOT0_>
+	      ++__first;
+    30ff:	add    QWORD PTR [rbp-0x68],0x4
+	      __first = std::fill_n(__first, __n - 1, *__val);
+    3104:	mov    rax,QWORD PTR [rbp-0x70]
+    3108:	lea    rdx,[rax-0x1]
+    310c:	mov    rax,QWORD PTR [rbp-0x68]
+    3110:	mov    QWORD PTR [rbp-0x60],rax
+    3114:	mov    QWORD PTR [rbp-0x50],rdx
+    3118:	mov    rax,QWORD PTR [rbp-0x58]
+    311c:	mov    QWORD PTR [rbp-0x48],rax
+  template<typename _Iter>
+    __attribute__((__always_inline__))
+    inline _GLIBCXX_CONSTEXPR
+    typename iterator_traits<_Iter>::iterator_category
+    __iterator_category(const _Iter&)
+    { return typename iterator_traits<_Iter>::iterator_category(); }
+    3120:	nop
+    fill_n(_OI __first, _Size __n, const _Tp& __value)
+    {
+      // concept requirements
+      __glibcxx_function_requires(_OutputIteratorConcept<_OI, const _Tp&>)
+
+      return std::__fill_n_a(__first, std::__size_to_integer(__n), __value,
+    3121:	mov    rax,QWORD PTR [rbp-0x50]
+    3125:	mov    rdi,rax
+    3128:	call   1f55 <_ZSt17__size_to_integerm>
+    312d:	mov    rdx,QWORD PTR [rbp-0x60]
+    3131:	mov    QWORD PTR [rbp-0x40],rdx
+    3135:	mov    QWORD PTR [rbp-0x38],rax
+    3139:	mov    rax,QWORD PTR [rbp-0x48]
+    313d:	mov    QWORD PTR [rbp-0x30],rax
+      if (__n <= 0)
+    3141:	cmp    QWORD PTR [rbp-0x38],0x0
+    3146:	jne    314e <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfmEET_S3_T0_+0x99>
+	return __first;
+    3148:	mov    rax,QWORD PTR [rbp-0x40]
+    314c:	jmp    31a0 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfmEET_S3_T0_+0xeb>
+      std::__fill_a(__first, __first + __n, __value);
+    314e:	mov    rax,QWORD PTR [rbp-0x38]
+    3152:	lea    rdx,[rax*4+0x0]
+    315a:	mov    rax,QWORD PTR [rbp-0x40]
+    315e:	add    rdx,rax
+    3161:	mov    rax,QWORD PTR [rbp-0x40]
+    3165:	mov    QWORD PTR [rbp-0x28],rax
+    3169:	mov    QWORD PTR [rbp-0x20],rdx
+    316d:	mov    rax,QWORD PTR [rbp-0x30]
+    3171:	mov    QWORD PTR [rbp-0x18],rax
+    { std::__fill_a1(__first, __last, __value); }
+    3175:	mov    rdx,QWORD PTR [rbp-0x18]
+    3179:	mov    rcx,QWORD PTR [rbp-0x20]
+    317d:	mov    rax,QWORD PTR [rbp-0x28]
+    3181:	mov    rsi,rcx
+    3184:	mov    rdi,rax
+    3187:	call   345e <_ZSt9__fill_a1IPffEvT_S1_RKT0_>
+    318c:	nop
+      return __first + __n;
+    318d:	mov    rax,QWORD PTR [rbp-0x38]
+    3191:	lea    rdx,[rax*4+0x0]
+    3199:	mov    rax,QWORD PTR [rbp-0x40]
+    319d:	add    rax,rdx
+			       std::__iterator_category(__first));
+    31a0:	nop
+    31a1:	mov    QWORD PTR [rbp-0x68],rax
+	  return __first;
+    31a5:	mov    rax,QWORD PTR [rbp-0x68]
+	}
+    31a9:	mov    rdx,QWORD PTR [rbp-0x8]
+    31ad:	sub    rdx,QWORD PTR fs:0x28
+    31b6:	je     31bd <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfmEET_S3_T0_+0x108>
+    31b8:	call   11a0 <__stack_chk_fail@plt>
+    31bd:	leave
+    31be:	ret
+    31bf:	nop
+
+00000000000031c0 <_ZNSt15__new_allocatorIiE10deallocateEPim>:
+      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    31c0:	endbr64
+    31c4:	push   rbp
+    31c5:	mov    rbp,rsp
+    31c8:	sub    rsp,0x20
+    31cc:	mov    QWORD PTR [rbp-0x8],rdi
+    31d0:	mov    QWORD PTR [rbp-0x10],rsi
+    31d4:	mov    QWORD PTR [rbp-0x18],rdx
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    31d8:	mov    rax,QWORD PTR [rbp-0x18]
+    31dc:	lea    rdx,[rax*4+0x0]
+    31e4:	mov    rax,QWORD PTR [rbp-0x10]
+    31e8:	mov    rsi,rdx
+    31eb:	mov    rdi,rax
+    31ee:	call   1190 <_ZdlPvm@plt>
+      }
+    31f3:	leave
+    31f4:	ret
+
+00000000000031f5 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_>:
+        __uninit_default_n(_ForwardIterator __first, _Size __n)
+    31f5:	endbr64
+    31f9:	push   rbp
+    31fa:	mov    rbp,rsp
+    31fd:	sub    rsp,0x70
+    3201:	mov    QWORD PTR [rbp-0x68],rdi
+    3205:	mov    QWORD PTR [rbp-0x70],rsi
+    3209:	mov    rax,QWORD PTR fs:0x28
+    3212:	mov    QWORD PTR [rbp-0x8],rax
+    3216:	xor    eax,eax
+	  if (__n > 0)
+    3218:	cmp    QWORD PTR [rbp-0x70],0x0
+    321d:	je     32e5 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_+0xf0>
+    3223:	mov    rax,QWORD PTR [rbp-0x68]
+    3227:	mov    QWORD PTR [rbp-0x10],rax
+    322b:	mov    rax,QWORD PTR [rbp-0x10]
+		= std::__addressof(*__first);
+    322f:	mov    QWORD PTR [rbp-0x58],rax
+	      std::_Construct(__val);
+    3233:	mov    rax,QWORD PTR [rbp-0x58]
+    3237:	mov    rdi,rax
+    323a:	call   341b <_ZSt10_ConstructIiJEEvPT_DpOT0_>
+	      ++__first;
+    323f:	add    QWORD PTR [rbp-0x68],0x4
+	      __first = std::fill_n(__first, __n - 1, *__val);
+    3244:	mov    rax,QWORD PTR [rbp-0x70]
+    3248:	lea    rdx,[rax-0x1]
+    324c:	mov    rax,QWORD PTR [rbp-0x68]
+    3250:	mov    QWORD PTR [rbp-0x60],rax
+    3254:	mov    QWORD PTR [rbp-0x50],rdx
+    3258:	mov    rax,QWORD PTR [rbp-0x58]
+    325c:	mov    QWORD PTR [rbp-0x48],rax
+    3260:	nop
+      return std::__fill_n_a(__first, std::__size_to_integer(__n), __value,
+    3261:	mov    rax,QWORD PTR [rbp-0x50]
+    3265:	mov    rdi,rax
+    3268:	call   1f55 <_ZSt17__size_to_integerm>
+    326d:	mov    rdx,QWORD PTR [rbp-0x60]
+    3271:	mov    QWORD PTR [rbp-0x40],rdx
+    3275:	mov    QWORD PTR [rbp-0x38],rax
+    3279:	mov    rax,QWORD PTR [rbp-0x48]
+    327d:	mov    QWORD PTR [rbp-0x30],rax
+      if (__n <= 0)
+    3281:	cmp    QWORD PTR [rbp-0x38],0x0
+    3286:	jne    328e <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_+0x99>
+	return __first;
+    3288:	mov    rax,QWORD PTR [rbp-0x40]
+    328c:	jmp    32e0 <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_+0xeb>
+      std::__fill_a(__first, __first + __n, __value);
+    328e:	mov    rax,QWORD PTR [rbp-0x38]
+    3292:	lea    rdx,[rax*4+0x0]
+    329a:	mov    rax,QWORD PTR [rbp-0x40]
+    329e:	add    rdx,rax
+    32a1:	mov    rax,QWORD PTR [rbp-0x40]
+    32a5:	mov    QWORD PTR [rbp-0x28],rax
+    32a9:	mov    QWORD PTR [rbp-0x20],rdx
+    32ad:	mov    rax,QWORD PTR [rbp-0x30]
+    32b1:	mov    QWORD PTR [rbp-0x18],rax
+    { std::__fill_a1(__first, __last, __value); }
+    32b5:	mov    rdx,QWORD PTR [rbp-0x18]
+    32b9:	mov    rcx,QWORD PTR [rbp-0x20]
+    32bd:	mov    rax,QWORD PTR [rbp-0x28]
+    32c1:	mov    rsi,rcx
+    32c4:	mov    rdi,rax
+    32c7:	call   34a5 <_ZSt9__fill_a1IPiiEvT_S1_RKT0_>
+    32cc:	nop
+      return __first + __n;
+    32cd:	mov    rax,QWORD PTR [rbp-0x38]
+    32d1:	lea    rdx,[rax*4+0x0]
+    32d9:	mov    rax,QWORD PTR [rbp-0x40]
+    32dd:	add    rax,rdx
+			       std::__iterator_category(__first));
+    32e0:	nop
+    32e1:	mov    QWORD PTR [rbp-0x68],rax
+	  return __first;
+    32e5:	mov    rax,QWORD PTR [rbp-0x68]
+	}
+    32e9:	mov    rdx,QWORD PTR [rbp-0x8]
+    32ed:	sub    rdx,QWORD PTR fs:0x28
+    32f6:	je     32fd <_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_+0x108>
+    32f8:	call   11a0 <__stack_chk_fail@plt>
+    32fd:	leave
+    32fe:	ret
+    32ff:	nop
+
+0000000000003300 <_ZNSt15__new_allocatorIfE8allocateEmPKv>:
+      allocate(size_type __n, const void* = static_cast<const void*>(0))
+    3300:	endbr64
+    3304:	push   rbp
+    3305:	mov    rbp,rsp
+    3308:	sub    rsp,0x30
+    330c:	mov    QWORD PTR [rbp-0x18],rdi
+    3310:	mov    QWORD PTR [rbp-0x20],rsi
+    3314:	mov    QWORD PTR [rbp-0x28],rdx
+    3318:	mov    rax,QWORD PTR [rbp-0x18]
+    331c:	mov    QWORD PTR [rbp-0x8],rax
+	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    3320:	movabs rax,0x1fffffffffffffff
+	if (__builtin_expect(__n > this->_M_max_size(), false))
+    332a:	cmp    rax,QWORD PTR [rbp-0x20]
+    332e:	setb   al
+    3331:	movzx  eax,al
+    3334:	test   rax,rax
+    3337:	setne  al
+    333a:	test   al,al
+    333c:	je     3358 <_ZNSt15__new_allocatorIfE8allocateEmPKv+0x58>
+	    if (__n > (std::size_t(-1) / sizeof(_Tp)))
+    333e:	movabs rax,0x3fffffffffffffff
+    3348:	cmp    rax,QWORD PTR [rbp-0x20]
+    334c:	jae    3353 <_ZNSt15__new_allocatorIfE8allocateEmPKv+0x53>
+	      std::__throw_bad_array_new_length();
+    334e:	call   1160 <_ZSt28__throw_bad_array_new_lengthv@plt>
+	    std::__throw_bad_alloc();
+    3353:	call   1140 <_ZSt17__throw_bad_allocv@plt>
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    3358:	mov    rax,QWORD PTR [rbp-0x20]
+    335c:	shl    rax,0x2
+    3360:	mov    rdi,rax
+    3363:	call   1180 <_Znwm@plt>
+    3368:	nop
+      }
+    3369:	leave
+    336a:	ret
+
+000000000000336b <_ZSt10_ConstructIfJEEvPT_DpOT0_>:
+    _Construct(_Tp* __p, _Args&&... __args)
+    336b:	endbr64
+    336f:	push   rbp
+    3370:	mov    rbp,rsp
+    3373:	push   rbx
+    3374:	sub    rsp,0x18
+    3378:	mov    QWORD PTR [rbp-0x18],rdi
+      ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...);
+    337c:	mov    rbx,QWORD PTR [rbp-0x18]
+    3380:	mov    rsi,rbx
+    3383:	mov    edi,0x4
+    3388:	call   1f67 <_ZnwmPv>
+    338d:	pxor   xmm0,xmm0
+    3391:	movss  DWORD PTR [rax],xmm0
+    3395:	mov    edx,0x0
+    339a:	test   dl,dl
+    339c:	je     33a9 <_ZSt10_ConstructIfJEEvPT_DpOT0_+0x3e>
+    339e:	mov    rsi,rbx
+    33a1:	mov    rdi,rax
+    33a4:	call   1f7d <_ZdlPvS_>
+    }
+    33a9:	nop
+    33aa:	mov    rbx,QWORD PTR [rbp-0x8]
+    33ae:	leave
+    33af:	ret
+
+00000000000033b0 <_ZNSt15__new_allocatorIiE8allocateEmPKv>:
+      allocate(size_type __n, const void* = static_cast<const void*>(0))
+    33b0:	endbr64
+    33b4:	push   rbp
+    33b5:	mov    rbp,rsp
+    33b8:	sub    rsp,0x30
+    33bc:	mov    QWORD PTR [rbp-0x18],rdi
+    33c0:	mov    QWORD PTR [rbp-0x20],rsi
+    33c4:	mov    QWORD PTR [rbp-0x28],rdx
+    33c8:	mov    rax,QWORD PTR [rbp-0x18]
+    33cc:	mov    QWORD PTR [rbp-0x8],rax
+	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    33d0:	movabs rax,0x1fffffffffffffff
+	if (__builtin_expect(__n > this->_M_max_size(), false))
+    33da:	cmp    rax,QWORD PTR [rbp-0x20]
+    33de:	setb   al
+    33e1:	movzx  eax,al
+    33e4:	test   rax,rax
+    33e7:	setne  al
+    33ea:	test   al,al
+    33ec:	je     3408 <_ZNSt15__new_allocatorIiE8allocateEmPKv+0x58>
+	    if (__n > (std::size_t(-1) / sizeof(_Tp)))
+    33ee:	movabs rax,0x3fffffffffffffff
+    33f8:	cmp    rax,QWORD PTR [rbp-0x20]
+    33fc:	jae    3403 <_ZNSt15__new_allocatorIiE8allocateEmPKv+0x53>
+	      std::__throw_bad_array_new_length();
+    33fe:	call   1160 <_ZSt28__throw_bad_array_new_lengthv@plt>
+	    std::__throw_bad_alloc();
+    3403:	call   1140 <_ZSt17__throw_bad_allocv@plt>
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    3408:	mov    rax,QWORD PTR [rbp-0x20]
+    340c:	shl    rax,0x2
+    3410:	mov    rdi,rax
+    3413:	call   1180 <_Znwm@plt>
+    3418:	nop
+      }
+    3419:	leave
+    341a:	ret
+
+000000000000341b <_ZSt10_ConstructIiJEEvPT_DpOT0_>:
+    _Construct(_Tp* __p, _Args&&... __args)
+    341b:	endbr64
+    341f:	push   rbp
+    3420:	mov    rbp,rsp
+    3423:	push   rbx
+    3424:	sub    rsp,0x18
+    3428:	mov    QWORD PTR [rbp-0x18],rdi
+      ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...);
+    342c:	mov    rbx,QWORD PTR [rbp-0x18]
+    3430:	mov    rsi,rbx
+    3433:	mov    edi,0x4
+    3438:	call   1f67 <_ZnwmPv>
+    343d:	mov    DWORD PTR [rax],0x0
+    3443:	mov    edx,0x0
+    3448:	test   dl,dl
+    344a:	je     3457 <_ZSt10_ConstructIiJEEvPT_DpOT0_+0x3c>
+    344c:	mov    rsi,rbx
+    344f:	mov    rdi,rax
+    3452:	call   1f7d <_ZdlPvS_>
+    }
+    3457:	nop
+    3458:	mov    rbx,QWORD PTR [rbp-0x8]
+    345c:	leave
+    345d:	ret
+
+000000000000345e <_ZSt9__fill_a1IPffEvT_S1_RKT0_>:
+    __fill_a1(_ForwardIterator __first, _ForwardIterator __last,
+    345e:	endbr64
+    3462:	push   rbp
+    3463:	mov    rbp,rsp
+    3466:	mov    QWORD PTR [rbp-0x18],rdi
+    346a:	mov    QWORD PTR [rbp-0x20],rsi
+    346e:	mov    QWORD PTR [rbp-0x28],rdx
+      const bool __load_outside_loop =
+    3472:	mov    BYTE PTR [rbp-0x5],0x1
+      _Up __val(__value);
+    3476:	mov    rax,QWORD PTR [rbp-0x28]
+    347a:	movss  xmm0,DWORD PTR [rax]
+    347e:	movss  DWORD PTR [rbp-0x4],xmm0
+      for (; __first != __last; ++__first)
+    3483:	jmp    3497 <_ZSt9__fill_a1IPffEvT_S1_RKT0_+0x39>
+	*__first = __val;
+    3485:	mov    rax,QWORD PTR [rbp-0x18]
+    3489:	movss  xmm0,DWORD PTR [rbp-0x4]
+    348e:	movss  DWORD PTR [rax],xmm0
+      for (; __first != __last; ++__first)
+    3492:	add    QWORD PTR [rbp-0x18],0x4
+    3497:	mov    rax,QWORD PTR [rbp-0x18]
+    349b:	cmp    rax,QWORD PTR [rbp-0x20]
+    349f:	jne    3485 <_ZSt9__fill_a1IPffEvT_S1_RKT0_+0x27>
+    }
+    34a1:	nop
+    34a2:	nop
+    34a3:	pop    rbp
+    34a4:	ret
+
+00000000000034a5 <_ZSt9__fill_a1IPiiEvT_S1_RKT0_>:
+    __fill_a1(_ForwardIterator __first, _ForwardIterator __last,
+    34a5:	endbr64
+    34a9:	push   rbp
+    34aa:	mov    rbp,rsp
+    34ad:	mov    QWORD PTR [rbp-0x18],rdi
+    34b1:	mov    QWORD PTR [rbp-0x20],rsi
+    34b5:	mov    QWORD PTR [rbp-0x28],rdx
+      const bool __load_outside_loop =
+    34b9:	mov    BYTE PTR [rbp-0x5],0x1
+      _Up __val(__value);
+    34bd:	mov    rax,QWORD PTR [rbp-0x28]
+    34c1:	mov    eax,DWORD PTR [rax]
+    34c3:	mov    DWORD PTR [rbp-0x4],eax
+      for (; __first != __last; ++__first)
+    34c6:	jmp    34d6 <_ZSt9__fill_a1IPiiEvT_S1_RKT0_+0x31>
+	*__first = __val;
+    34c8:	mov    rax,QWORD PTR [rbp-0x18]
+    34cc:	mov    edx,DWORD PTR [rbp-0x4]
+    34cf:	mov    DWORD PTR [rax],edx
+      for (; __first != __last; ++__first)
+    34d1:	add    QWORD PTR [rbp-0x18],0x4
+    34d6:	mov    rax,QWORD PTR [rbp-0x18]
+    34da:	cmp    rax,QWORD PTR [rbp-0x20]
+    34de:	jne    34c8 <_ZSt9__fill_a1IPiiEvT_S1_RKT0_+0x23>
+    }
+    34e0:	nop
+    34e1:	nop
+    34e2:	pop    rbp
+    34e3:	ret
+
+Disassembly of section .fini:
+
+00000000000034e4 <_fini>:
+    34e4:	endbr64
+    34e8:	sub    rsp,0x8
+    34ec:	add    rsp,0x8
+    34f0:	ret
