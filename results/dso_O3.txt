@@ -1,0 +1,20 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 910  of event 'cpu/cycles/P'
+# Event count (approx.): 4648846307
+#
+# Overhead  Shared Object       
+# ........  ....................
+#
+    88.32%  lab_O3              
+     7.31%  libc.so.6           
+     4.34%  [kernel.kallsyms]   
+     0.02%  ld-linux-x86-64.so.2
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

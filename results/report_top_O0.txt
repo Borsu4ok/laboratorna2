@@ -1,0 +1,30 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 9K of event 'cpu/cycles/P'
+# Event count (approx.): 51137145208
+#
+# Overhead  Command  Shared Object      Symbol                                                              
+# ........  .......  .................  ....................................................................
+#
+    46.32%  lab_O0   lab_O0             [.] matmul
+    26.15%  lab_O0   lab_O0             [.] branchy_sum
+    19.78%  lab_O0   lab_O0             [.] saxpy
+     5.62%  lab_O0   lab_O0             [.] fib
+     0.25%  lab_O0   lab_O0             [.] fill_random_f(std::vector<float, std::allocator<float> >&)
+     0.20%  lab_O0   libc.so.6          [.] __random_r
+     0.20%  lab_O0   libc.so.6          [.] __random
+     0.18%  lab_O0   lab_O0             [.] void std::__fill_a1<float*, float>(float*, float*, float const&)
+     0.14%  lab_O0   lab_O0             [.] void std::__fill_a1<int*, int>(int*, int*, int const&)
+     0.12%  lab_O0   [kernel.kallsyms]  [k] __irqentry_text_end
+     0.12%  lab_O0   lab_O0             [.] fill_random_i(std::vector<int, std::allocator<int> >&)
+     0.10%  lab_O0   libc.so.6          [.] rand
+     0.08%  lab_O0   [kernel.kallsyms]  [k] error_entry
+     0.04%  lab_O0   [kernel.kallsyms]  [k] sync_regs
+     0.04%  lab_O0   [kernel.kallsyms]  [k] native_irq_return_iret
+     0.03%  lab_O0   [kernel.kallsyms]  [k] update_cfs_group
+     0.03%  lab_O0   [kernel.kallsyms]  [k] __rcu_read_unlock
+     0.03%  lab_O0   [kernel.kallsyms]  [k] mas_walk
+     0.03%  lab_O0   [kernel.kallsyms]  [k] update_se

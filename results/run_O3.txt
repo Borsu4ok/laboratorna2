@@ -1,0 +1,7 @@
+[init  ]   0.161 s
+[matmul]   0.272 s
+[saxpy ]   0.635 s
+[branch]   0.210 s
+[fib   ]   0.487 s
+[total ]   1.765 s
+checksum = 4.830783e+10

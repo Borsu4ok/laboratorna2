@@ -1,0 +1,8 @@
+    14d9:	movss  DWORD PTR [rax],xmm0
+    1523:	movss  xmm0,DWORD PTR [rax]
+    1527:	movss  DWORD PTR [rbp-0x4],xmm0
+    1554:	movss  xmm1,DWORD PTR [rax]
+    1577:	movss  xmm0,DWORD PTR [rax]
+    157b:	mulss  xmm0,DWORD PTR [rbp-0x4]
+    159f:	addss  xmm0,xmm1
+    15a3:	movss  DWORD PTR [rax],xmm0

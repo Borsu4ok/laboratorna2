@@ -1,0 +1,83 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 9K of event 'cpu/cycles/P'
+# Event count (approx.): 51137145208
+#
+# Overhead  Command  Shared Object      Symbol                                                              
+# ........  .......  .................  ....................................................................
+#
+    46.32%  lab_O0   lab_O0             [.] matmul
+    26.15%  lab_O0   lab_O0             [.] branchy_sum
+    19.78%  lab_O0   lab_O0             [.] saxpy
+     5.62%  lab_O0   lab_O0             [.] fib
+     0.25%  lab_O0   lab_O0             [.] fill_random_f(std::vector<float, std::allocator<float> >&)
+     0.20%  lab_O0   libc.so.6          [.] __random_r
+     0.20%  lab_O0   libc.so.6          [.] __random
+     0.18%  lab_O0   lab_O0             [.] void std::__fill_a1<float*, float>(float*, float*, float const&)
+     0.14%  lab_O0   lab_O0             [.] void std::__fill_a1<int*, int>(int*, int*, int const&)
+     0.12%  lab_O0   [kernel.kallsyms]  [k] __irqentry_text_end
+     0.12%  lab_O0   lab_O0             [.] fill_random_i(std::vector<int, std::allocator<int> >&)
+     0.10%  lab_O0   libc.so.6          [.] rand
+     0.08%  lab_O0   [kernel.kallsyms]  [k] error_entry
+     0.04%  lab_O0   [kernel.kallsyms]  [k] sync_regs
+     0.04%  lab_O0   [kernel.kallsyms]  [k] native_irq_return_iret
+     0.03%  lab_O0   [kernel.kallsyms]  [k] update_cfs_group
+     0.03%  lab_O0   [kernel.kallsyms]  [k] __rcu_read_unlock
+     0.03%  lab_O0   [kernel.kallsyms]  [k] mas_walk
+     0.03%  lab_O0   [kernel.kallsyms]  [k] update_se
+     0.03%  lab_O0   [kernel.kallsyms]  [k] __rcu_read_lock
+     0.02%  lab_O0   [kernel.kallsyms]  [k] nohz_balancer_kick
+     0.02%  lab_O0   [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.02%  lab_O0   [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.02%  lab_O0   lab_O0             [.] rand@plt
+     0.02%  lab_O0   [kernel.kallsyms]  [k] _raw_spin_lock
+     0.02%  lab_O0   [kernel.kallsyms]  [k] __update_load_avg_cfs_rq
+     0.02%  lab_O0   [kernel.kallsyms]  [k] fpregs_assert_state_consistent
+     0.02%  lab_O0   [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.02%  lab_O0   [kernel.kallsyms]  [k] lru_gen_add_folio
+     0.01%  lab_O0   [kernel.kallsyms]  [k] asm_exc_page_fault
+     0.01%  lab_O0   [kernel.kallsyms]  [k] count_memcg_events
+     0.01%  lab_O0   [kernel.kallsyms]  [k] enqueue_entity
+     0.01%  lab_O0   [kernel.kallsyms]  [k] __handle_mm_fault
+     0.01%  lab_O0   [kernel.kallsyms]  [k] __pte_offset_map
+     0.01%  lab_O0   [kernel.kallsyms]  [k] _raw_spin_unlock
+     0.01%  lab_O0   [kernel.kallsyms]  [k] zap_present_ptes.constprop.0
+     0.01%  lab_O0   [kernel.kallsyms]  [k] native_write_msr
+     0.01%  lab_O0   [kernel.kallsyms]  [k] _raw_spin_lock_irq
+     0.01%  lab_O0   [kernel.kallsyms]  [k] rb_insert_color
+     0.01%  lab_O0   [kernel.kallsyms]  [k] arch_scale_freq_tick
+     0.01%  lab_O0   [kernel.kallsyms]  [k] rb_next
+     0.01%  lab_O0   [kernel.kallsyms]  [k] tick_do_update_jiffies64
+     0.01%  lab_O0   [kernel.kallsyms]  [k] update_cfs_rq_load_avg
+     0.01%  lab_O0   [alcor_pci]        [k] alcor_read32
+     0.01%  lab_O0   [kernel.kallsyms]  [k] account_user_time
+     0.01%  lab_O0   [kernel.kallsyms]  [k] __update_load_avg_se
+     0.01%  lab_O0   [kernel.kallsyms]  [k] ktime_get
+     0.01%  lab_O0   [kernel.kallsyms]  [k] timekeeping_update_from_shadow
+     0.01%  lab_O0   [kernel.kallsyms]  [k] timerqueue_add
+     0.01%  lab_O0   [kernel.kallsyms]  [k] perf_adjust_freq_unthr_context
+     0.01%  lab_O0   [kernel.kallsyms]  [k] task_tick_fair
+     0.01%  lab_O0   [kernel.kallsyms]  [k] tmigr_handle_remote
+     0.01%  lab_O0   [kernel.kallsyms]  [k] reweight_entity
+     0.01%  lab_O0   [kernel.kallsyms]  [k] notifier_call_chain
+     0.01%  lab_O0   [kernel.kallsyms]  [k] avg_vruntime
+     0.01%  lab_O0   [kernel.kallsyms]  [k] __css_rstat_updated
+     0.00%  lab_O0   [kernel.kallsyms]  [k] sched_balance_trigger
+     0.00%  lab_O0   [kvm]              [k] pvclock_gtod_notify
+     0.00%  lab_O0   [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%  lab_O0   lab_O0             [.] main
+     0.00%  lab_O0   [kernel.kallsyms]  [k] __calc_delta.constprop.0
+     0.00%  lab_O0   [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.00%  lab_O0   [kernel.kallsyms]  [k] ktime_get_update_offsets_now
+     0.00%  lab_O0   [kernel.kallsyms]  [k] __rb_insert_augmented
+     0.00%  lab_O0   [kernel.kallsyms]  [k] update_dl_rq_load_avg
+     0.00%  lab_O0   [kernel.kallsyms]  [k] __bpf_tramp_enter
+     0.00%  lab_O0   [kernel.kallsyms]  [k] handle_mm_fault
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

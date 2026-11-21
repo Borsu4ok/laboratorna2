@@ -1,0 +1,8 @@
+    1a8d:	vbroadcastss ymm1,DWORD PTR [rdi+0x4]
+    1a97:	vbroadcastss ymm2,xmm3
+    1ac0:	vmovups ymm0,YMMWORD PTR [r8+rax*1]
+    1ac6:	vfmadd213ps ymm0,ymm2,YMMWORD PTR [r15+rax*1]
+    1acc:	vfmadd231ps ymm0,ymm1,YMMWORD PTR [rdx+rax*1]
+    1ad2:	vmovups YMMWORD PTR [r15+rax*1],ymm0
+    1b11:	vbroadcastss xmm1,xmm3
+    1b31:	vbroadcastss xmm0,DWORD PTR [r14+r11*4]

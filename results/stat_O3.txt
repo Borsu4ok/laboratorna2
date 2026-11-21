@@ -1,0 +1,22 @@
+# started on Sat Nov 21 10:34:33 2026
+
+
+ Performance counter stats for './lab_O3':
+
+                14      context-switches                 #      8.4 cs/sec  cs_per_second     
+                 0      cpu-migrations                   #      0.0 migrations/sec  migrations_per_second
+             19605      page-faults                      #  11803.6 faults/sec  page_faults_per_second
+           1660.93 msec task-clock                       #      1.0 CPUs  CPUs_utilized       
+         331110470      L1-dcache-load-misses            #     16.6 %  l1d_miss_rate            (37.41%)
+         144079573      LLC-loads                        #     24.2 %  llc_miss_rate            (25.01%)
+           5336751      branch-misses                    #      0.4 %  branch_miss_rate         (25.04%)
+        1343884132      branches                         #    809.1 M/sec  branch_frequency     (25.04%)
+        4616507780      cpu-cycles                       #      2.8 GHz  cycles_frequency       (37.56%)
+        8506614396      instructions                     #      1.8 instructions  insn_per_cycle  (37.55%)
+
+       1.662235617 seconds time elapsed
+
+       1.618103000 seconds user
+       0.044002000 seconds sys
+
+

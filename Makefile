@@ -28,6 +28,6 @@ vecreport: lab.cpp
 	$(CXX) $(CFLAGS3) -fopt-info-vec-optimized -c -o /dev/null lab.cpp
 
 clean:
-	rm -rf lab_O0 lab_O3 lab_O3sse asm asm_vec_missed.txt results
+	rm -f lab_O0 lab_O3 lab_O3sse perf_*.data* out_*.perf *.folded
 
 .PHONY: all asm vecreport clean

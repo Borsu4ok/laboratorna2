@@ -1,0 +1,30 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 910  of event 'cpu/cycles/P'
+# Event count (approx.): 4648846307
+#
+# Overhead  Command  Shared Object         Symbol                                                        
+# ........  .......  ....................  ..............................................................
+#
+    30.99%  lab_O3   lab_O3                [.] saxpy
+    28.44%  lab_O3   lab_O3                [.] fib
+    14.99%  lab_O3   lab_O3                [.] matmul
+    11.75%  lab_O3   lab_O3                [.] branchy_sum
+     4.01%  lab_O3   libc.so.6             [.] __random_r
+     2.38%  lab_O3   libc.so.6             [.] __random
+     1.49%  lab_O3   lab_O3                [.] fill_random_f(std::vector<float, std::allocator<float> >&)
+     0.82%  lab_O3   [kernel.kallsyms]     [k] __irqentry_text_end
+     0.58%  lab_O3   libc.so.6             [.] __memset_avx2_unaligned_erms
+     0.47%  lab_O3   [kernel.kallsyms]     [k] error_entry
+     0.46%  lab_O3   [kernel.kallsyms]     [k] kernel_init_pages
+     0.44%  lab_O3   lab_O3                [.] rand@plt
+     0.33%  lab_O3   libc.so.6             [.] rand
+     0.33%  lab_O3   [kernel.kallsyms]     [k] native_irq_return_iret
+     0.22%  lab_O3   lab_O3                [.] fill_random_i(std::vector<int, std::allocator<int> >&)
+     0.21%  lab_O3   [kernel.kallsyms]     [k] timerqueue_add
+     0.15%  lab_O3   [kernel.kallsyms]     [k] lru_add
+     0.15%  lab_O3   [kernel.kallsyms]     [k] handle_mm_fault
+     0.15%  lab_O3   [kernel.kallsyms]     [k] arch_exit_to_user_mode_prepare.isra.0

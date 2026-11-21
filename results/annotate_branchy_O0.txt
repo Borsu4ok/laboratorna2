@@ -1,0 +1,50 @@
+ Percent |	Source code & Disassembly of lab_O0 for cpu/cycles/P (2006 samples, percent: local period)
+----------------------------------------------------------------------------------------------------------
+         :
+         :
+         :
+         : 3    Disassembly of section .text:
+         :
+         : 5    000000000000165e <branchy_sum>:
+         : 6    KERNEL void saxpy(float a, const float *__restrict x, float *__restrict y, size_t n) {
+         : 7    for (size_t i = 0; i < n; i++)
+         : 8    y[i] = a * x[i] + y[i];
+         : 9    }
+         :
+         : 11   KERNEL int64_t branchy_sum(const int32_t *__restrict a, size_t n) {
+    0.00 :   165e:   endbr64
+    0.00 :   1662:   push   rbp
+    0.00 :   1663:   mov    rbp,rsp
+    0.00 :   1666:   mov    QWORD PTR [rbp-0x18],rdi
+    0.00 :   166a:   mov    QWORD PTR [rbp-0x20],rsi
+         : 17   int64_t s = 0;
+    0.00 :   166e:   mov    QWORD PTR [rbp-0x10],0x0
+         : 19   for (size_t i = 0; i < n; i++)
+    0.00 :   1676:   mov    QWORD PTR [rbp-0x8],0x0
+    0.00 :   167e:   jmp    16ba <branchy_sum+0x5c>
+         : 22   if (a[i] >= 128)
+    0.05 :   1680:   mov    rax,QWORD PTR [rbp-0x8]
+    2.69 :   1684:   lea    rdx,[rax*4+0x0]
+    0.00 :   168c:   mov    rax,QWORD PTR [rbp-0x18]
+    3.65 :   1690:   add    rax,rdx
+   21.46 :   1693:   mov    eax,DWORD PTR [rax]
+    2.01 :   1695:   cmp    eax,0x7f
+    2.16 :   1698:   jle    16b5 <branchy_sum+0x57>
+         : 30   s += a[i];
+   21.19 :   169a:   mov    rax,QWORD PTR [rbp-0x8]
+    1.52 :   169e:   lea    rdx,[rax*4+0x0]
+    0.00 :   16a6:   mov    rax,QWORD PTR [rbp-0x18]
+    1.90 :   16aa:   add    rax,rdx
+    5.54 :   16ad:   mov    eax,DWORD PTR [rax]
+    0.90 :   16af:   cdqe
+    3.16 :   16b1:   add    QWORD PTR [rbp-0x10],rax
+         : 38   for (size_t i = 0; i < n; i++)
+   26.22 :   16b5:   add    QWORD PTR [rbp-0x8],0x1
+    2.79 :   16ba:   mov    rax,QWORD PTR [rbp-0x8]
+    0.00 :   16be:   cmp    rax,QWORD PTR [rbp-0x20]
+    4.77 :   16c2:   jb     1680 <branchy_sum+0x22>
+         : 43   return s;
+    0.00 :   16c4:   mov    rax,QWORD PTR [rbp-0x10]
+         : 45   }
+    0.00 :   16c8:   pop    rbp
+    0.00 :   16c9:   ret
